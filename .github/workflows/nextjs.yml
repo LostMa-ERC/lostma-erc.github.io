@@ -11,7 +11,6 @@ on:
       - 'public/**'
       - 'src/**'
       - 'package*.json'
-      - 'README.md'
       - '.github/workflows/**'
 
   # Allows you to run this workflow manually from the Actions tab
