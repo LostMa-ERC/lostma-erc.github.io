@@ -10,6 +10,7 @@ on:
     paths:
       - 'public/**'
       - 'src/**'
+      - 'README.md'
       - 'package*.json'
       - '.github/workflows/**'
 
