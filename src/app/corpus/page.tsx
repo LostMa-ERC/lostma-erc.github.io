@@ -48,7 +48,18 @@ export default function Corpus() {
       </div>
 
       <h2>Resources</h2>
-      <div className="container my-2 bg-gradient-to-l from-gray-100 dark:from-gray-800 p-4 rounded-xl">
+
+      <div className="container section-block">
+        <div className="w-fit">
+          <Link className="flex gap-2 p-1" href='/corpus/documentation'>
+            {ShareSVG}
+            <h2>Documentation / Data Model</h2>
+          </Link>
+        </div>
+        <p>Documentation explaining the data (entities) and their metadata.</p>
+      </div>
+
+      <div className="container section-block">
         <div className="w-fit">
           <Link className="flex gap-2 p-1" href='/corpus/metadata'>
             {XMLFileSVG}
@@ -59,7 +70,7 @@ export default function Corpus() {
         <p>See the <button><Link href='/corpus/documentation'>data model</Link></button> for more information about how these entities and their metadata are defined. The documentation will also help you understand how to use this dataset for your own research purposes.</p>
       </div>
 
-      <div className="container my-2 bg-gradient-to-l from-gray-100 dark:from-gray-800 p-4 rounded-xl">
+      <div className="container section-block">
         <div className="w-fit">
           <Link className="flex gap-2 p-1" href='/corpus/full-text'>
             {XMLFileSVG}
@@ -67,16 +78,6 @@ export default function Corpus() {
           </Link>
         </div>
         <p>TEI-XML documents that include the metadata of a witness and its full text, as predicted from an Handwritten Text Recognition (HRT) model.</p>
-      </div>
-
-      <div className="container my-2 bg-gradient-to-l from-gray-100 dark:from-gray-800 p-4 rounded-xl">
-        <div className="w-fit">
-          <Link className="flex gap-2 p-1" href='/corpus/documentation'>
-            {ShareSVG}
-            <h2>Documentation / Data Model</h2>
-          </Link>
-        </div>
-        <p>Documentation explaining the data (entities) and their metadata.</p>
       </div>
 
       <div className="container mt-4">

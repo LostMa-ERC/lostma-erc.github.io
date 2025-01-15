@@ -27,7 +27,7 @@ async function MakeForeignKeyLabel({entityID,}: {entityID: number | null}) {
     if (entityID) {
         let fkEntity = await fetchData(entityID.toString())
         if (fkEntity) {
-            return <Link href={`/corpus/model/entities/${entityID}`}>{fkEntity?.metadata.rty_Name}</Link>       
+            return <Link href={`/corpus/documentation/entities/${entityID}`}>{fkEntity?.metadata.rty_Name}</Link>       
         }
         else {
             return <></>

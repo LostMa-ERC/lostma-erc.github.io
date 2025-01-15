@@ -5,7 +5,7 @@ import Team from "./components/Team/page";
 export default function Home() {
   return (
     <div>
-      <div className="container my-2 bg-gradient-to-l from-gray-100 dark:from-gray-800 p-4 rounded-xl">
+      <div className="section-block">
         <h1>What is LostMa?</h1>
         <p>
             A digital humanities research project that blends AI, complexity science, and philological expertise to unravel the mysteries behind the deviation from pure chance of a text&apos;s transmission.
@@ -15,7 +15,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="py-2 container my-2 bg-gradient-to-l from-gray-100 dark:from-gray-800 p-4 rounded-xl">
+      <div className="section-block">
         <div className="w-fit">
           <Link className="flex gap-2 p-1" href='/corpus'>
             {DatabaseSVG}
@@ -58,7 +58,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="py-2 container my-2 bg-gradient-to-l from-gray-100 dark:from-gray-800 p-4 rounded-xl">
+      <div className="section-block">
         <div className="flex gap-2">
           {ToolsSVG}
           <h2>Methods</h2>
@@ -66,7 +66,7 @@ export default function Home() {
           <p>...</p>
       </div>
 
-      <div className="py-2 container my-2 bg-gradient-to-l from-gray-100 dark:from-gray-800 p-4 rounded-xl">
+      <div className="section-block">
         <div className="flex gap-2">
           {InboxSVG}
           <h2>Output</h2>

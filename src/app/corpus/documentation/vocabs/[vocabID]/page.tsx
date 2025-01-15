@@ -27,7 +27,7 @@ export default async function Page({params, }: {params: Promise<{ vocabID: strin
     return (
       <>
       <div className="flex">
-        <Link className="hover:bg-[--background]" href="/corpus/model">
+        <Link className="hover:bg-[--background]" href="/corpus/documentation">
           {UturnIcon}
         </Link>
         <p>Return to list of vocabularies.</p>
