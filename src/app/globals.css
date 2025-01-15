@@ -90,5 +90,5 @@ p {
 }
 
 .section-block {
-  @apply hover:outline hover:outline-2 dark:hover:bg-gray-800 m-2 md:m-4 px-2 md:px-4 py-6 rounded-lg shadow-lg h-full border-solid border-2;
+  @apply dark:bg-gray-800 m-2 md:m-4 px-2 md:px-4 py-6 rounded-lg shadow-lg h-full border-solid border-2;
 }
