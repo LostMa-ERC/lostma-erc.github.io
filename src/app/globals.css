@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+::-webkit-scrollbar-corner {
+  background-color: var(--background);
+} */
+
+:root {
+  --background: #ffffff;
+  --foreground: #1b1b1b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1b1b1b;
+    --foreground: #ededed;
+  }
+}
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+
+  h2 {
+    @apply text-xl;
+  }
+
+  h3 {
+    @apply text-lg;
+  }
+
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+a {
+  @apply hover:bg-orange-200 dark:hover:bg-orange-600;
+  @apply text-center ;
+  @apply text-blue-600 dark:text-blue-200 ;
+  @apply px-1 rounded;
+}
+
+main {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  @apply min-h-0 md:min-h-full;
+  @apply px-8 md:px-20 py-4 md:py-8;
+}
+
+p {
+  @apply my-2 md:my-4;
+}
+
+.container {
+  @apply py-1 md:py-2 max-w-full;
+}
+
+.icon-link {
+  @apply stroke-blue-400;
+  @apply stroke-2;
+  @apply hover:fill-slate-300;
+  @apply dark:hover:fill-black dark:stroke-blue-200 dark:hover:stroke-blue-400;
+  @apply hover:drop-shadow-lg;
+}
+
+#footer {
+  position: fixed;
+  font-size: small;
+  width: 100%;
+  @apply flex container mx-auto;
+}

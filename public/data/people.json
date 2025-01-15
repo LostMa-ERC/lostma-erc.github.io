@@ -1,0 +1,61 @@
+{
+    "Team": [
+        {
+            "forename": "Jean-Baptiste",
+            "surname": "Camps",
+            "role": "Project Leader"
+        },
+        {
+            "forename": "Beatriz",
+            "surname": "Tadeo Fuica",
+            "role": "Administrator"
+        },
+        {
+            "forename": "Kelly",
+            "surname": "Christensen",
+            "role": "Data Architect"
+        },
+        {
+            "forename": "Ulysse",
+            "surname": "Godreau",
+            "role": "Postdoc"
+        },
+        {
+            "forename": "Théo",
+            "surname": "Moins",
+            "role": "AI Engineer"
+        }
+    ],
+    "Collaborators": [
+        {
+            "forename": "Elisabeth de",
+            "surname": "Bruijn",
+            "role": "Middle Dutch Corpus"
+        },
+        {
+            "forename": "Mike",
+            "surname": "Kestemont",
+            "role": "Middle Dutch Corpus"
+        },
+        {
+            "forename": "Remco",
+            "surname": "Sleiderink",
+            "role": "Middle Dutch Corpus"
+        },
+        {
+            "forename": "Cecile",
+            "surname": "Vermaas",
+            "role": "Middle Dutch Corpus"
+        },
+        {
+            "forename": "Katarzyna",
+            "surname": "Kapitan",
+            "role": "Old Norse Corpus"
+        },
+        {
+            "forename": "Carolina",
+            "surname": "Macedo",
+            "role": "Iberian Corpus"
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+[
+    {
+        "title": "Hackathon 2025",
+        "date": "TBD, 2025",
+        "venue": "École nationale des chartes",
+        "city": "Paris, France",
+        "description": "With initial corpora entered into the database, hackathon to work with and analyse the data, driven by scientific inquiries and leading to early results.",
+        "image": "public/images/lostma_logo.png",
+        "label": "Conference Website",
+        "a": null,
+        "link": "/events/hackathon2025"
+    },
+    {
+        "title": "Collaborators' Meeting #2",
+        "date": "29 September, 2024 - 1 October, 2024",
+        "venue": "University of Antwerp",
+        "city": "Antwerp, Belgium",
+        "description": "Orientation of collaborators with the data model, discussion of final adjustments, and beginning of data entry.",
+        "image": "public/images/lostma_logo.png",
+        "label": null,
+        "a": null,
+        "link": null
+    },
+    {
+        "title": "Collaborators' Meeting #1",
+        "date": "22 July, 2024",
+        "venue": "Royal Library of Belgium",
+        "city": "Brussels, Belgium",
+        "description": "Break ground on adjusting the data model in accordance with the needs of diverse corpora.",
+        "image": "public/images/lostma_logo.png",
+        "label": null,
+        "a": null,
+        "link": null
+    },
+    {
+        "title": "Kickoff Conference",
+        "date": "28-29 May, 2024",
+        "venue": "École nationale des chartes",
+        "city": "Paris, France",
+        "description": "Kick-off conference, inviting the scientific community to interrogate the key questions of the project.",
+        "image": "public/images/lostma_logo.png",
+        "label": "Conference Program",
+        "a": "https://www.chartes.psl.eu/sites/default/files/public/media/document/2024-05/lostma_kickoff_event_program.pdf",
+        "link": null
+    }
+]
