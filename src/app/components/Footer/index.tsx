@@ -14,7 +14,7 @@ const Zenodo =
 
 export default function Footer() {
     return (
-        <footer className='footer'>
+        <footer className='flex justify-center text-sm relative'>
             <div className="mt-2 pt-9">
                 <hr className='pt-1' />
                 <div className="mx-auto max-w-[1166px] px-4 xl:px-0">
@@ -26,11 +26,12 @@ export default function Footer() {
                         grid-cols-1 md:grid-cols-3
                         divide-dashed 
                         divide-y
+                        w-full mx-4
                         md:divide-x md:divide-y-0 lg:divide-x lg:divide-y-0
                     ">
                         <div 
                         id="footer-erc-boilerplate" 
-                        className='max-h-25'
+                        className='w-auto max-h-25 mx-4'
                         >   
                             <div className='flex items-center md:items-start justify-center md:justify-left dark:bg-gray-600 dark:rounded-xl p-4'>
                                 <Image className='object-contain w-[216px]' src={logo} alt='ERC & European Union logos' />
@@ -47,7 +48,7 @@ export default function Footer() {
                         className="
                             grid gap-4
                             pt-6 md:pt-0 md:pl-6
-                            w-fit
+                            w-full
                         ">
                             <p 
                             className="font-inter text-[14px] font-medium leading-normal my-0 text-left"
@@ -62,27 +63,27 @@ export default function Footer() {
                             ">
                                 <Link href="/">
                                     <span
-                                    className="font-inter text-[12px] font-normal hover:font-semibold text-left"
+                                    className="font-inter text-[12px] font-normal text-left"
                                     >Home</span>
                                 </Link>
                                 <Link href="/corpus">
                                     <span
-                                    className="font-inter text-[12px] font-normal hover:font-semibold text-left"
+                                    className="font-inter text-[12px] font-normal text-left"
                                     >Corpus</span>
                                 </Link>
                                 <Link href="/events">
                                     <span
-                                    className="font-inter text-[12px] font-normal hover:font-semibold text-left"
+                                    className="font-inter text-[12px] font-normal text-left"
                                     >Events</span>
                                 </Link>
                                 <Link href="/publications">
                                     <span
-                                    className="font-inter text-[12px] font-normal hover:font-semibold text-left"
+                                    className="font-inter text-[12px] font-normal text-left"
                                     >Publications</span>
                                 </Link>
                                 <Link href="/releases">
                                     <span
-                                    className="font-inter text-[12px] font-normal hover:font-semibold text-left"
+                                    className="font-inter text-[12px] font-normal text-left"
                                     >Releases</span>
                                 </Link>
                             </div>
