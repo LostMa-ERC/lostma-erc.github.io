@@ -14,7 +14,7 @@ const Zenodo =
 
 export default function Footer() {
     return (
-        <footer className='flex justify-center text-sm relative'>
+        <div className='flex justify-center text-sm relative'>
             <div className="mt-2 pt-9">
                 <hr className='pt-1' />
                 <div className="mx-auto max-w-[1166px] px-4 xl:px-0">
@@ -137,7 +137,7 @@ export default function Footer() {
                     <p className='my-0 text-[10px] font-normal md:text-[12px]'>&copy; 2025 LostMa-ERC | All rights reserved.</p>
                 </div>
             </div>
-        </footer>
+        </div>
     );
 }
 

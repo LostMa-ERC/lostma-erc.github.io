@@ -46,7 +46,7 @@ export default function Navbar({links}: {links: LinkItem[]}) {
                 id="user-menu"
                 type="button" 
                 className="
-                    relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white
+                    relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white bg-transparent
                 " 
                 aria-controls="mobile-menu" 
                 aria-expanded="false"
@@ -115,16 +115,17 @@ export default function Navbar({links}: {links: LinkItem[]}) {
                         }
 
                         return (
+                            <div key={href} className="flex items-center">
                             <Link 
-                                key={href} 
-                                href={href} 
+                                href={href}
                                 className={`
                                     ${isActive ? "bg-gray-300 text-gray-900 dark:bg-gray-900 dark:text-white" : "text-white"} 
                                     rounded-md px-3 py-2 
-                                    text-sm font-medium 
+                                    font-medium text-sm tracking-tight
                                     hover:bg-gray-700 hover:text-white`}>
                             {label}
                             </Link>
+                            </div>
                         )
                     }
                     )}

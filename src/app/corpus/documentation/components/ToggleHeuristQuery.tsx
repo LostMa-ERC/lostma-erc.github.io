@@ -13,9 +13,7 @@ export default function ToggleHeuristQuery({id}: {id:number}) {
         <button 
                 id="contributor-popup-button"
                 type="button" 
-                className="
-                    flex items-center px-4 py-2 rounded-full dark:bg-primary-dark bg-primary hover:outline-none hover:ring-2 hover:ring-inset hover:ring-white
-                " 
+                className="button" 
                 aria-controls="contributor-popup" 
                 aria-expanded="false"
                 aria-label="contributor-popup"

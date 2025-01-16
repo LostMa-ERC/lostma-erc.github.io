@@ -28,7 +28,7 @@ export default async function Page({params, }: {params: Promise<{ vocabID: strin
       <>
       <div>
         <div className="flex">
-          <Link className="hover:bg-[--background]" href="/corpus/documentation">
+          <Link className="hover:bg-[--background] hover:text-highlight" href="/corpus/documentation">
             {UturnIcon}
           </Link>
           <p className="font-light tracking-wide mt-2">

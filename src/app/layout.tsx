@@ -17,15 +17,24 @@ export default function RootLayout({
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="shortcut icon" href="./favicon.ico" />
   </head>
-  <body className="prefers-color-scheme">
+  <body className="
+    prefers-color-scheme 
+    bg-gradient-to-r 
+    from-gray-100 via-[var(--background)] to-gray-100 
+    dark:from-[var(--background)] dark:via-slate-900 dark:to-[var(--background)]
+  ">
     <Header />
     <nav className="bg-primary dark:bg-primary-dark">
       <Navbar links={MainLinks} />
     </nav>
-    <main>
+    <main className="
+      px-8 md:px-20 py-4 md:py-8 h-full 
+    ">
       {children}
     </main>
-    <Footer />
+    <footer>
+      <Footer />
+    </footer>
   </body>
 </html>
   );

@@ -8,16 +8,18 @@ export default function makeLink(data: EventData) {
     if (data.label) {
         if (data.a) {
             button = (
-                <button className="rounded-md outline outline-1">
-                    <a target="_blank" rel="noreferrer" href={data.a}>
-                    {data.label}
+                <div className="w-fit button text-center">
+                    <a className="text-inherit bg-inherit hover:text-inherit hover:bg-inherit" target="_blank" rel="noreferrer" href={data.a}>
+                        {data.label}
                     </a>
-                </button>
+                </div>
             )
         }
         else if (data.link) {
             button = (
-                <button className="rounded-md outline outline-1"><Link href={data.link}>{data.label}</Link></button>
+                <div className="w-fit button text-center">
+                    <Link className="text-inherit bg-inherit hover:text-inherit hover:bg-inherit" href={data.link}>{data.label}</Link>
+                </div>
             )
         }
     }

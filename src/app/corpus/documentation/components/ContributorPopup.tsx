@@ -18,9 +18,7 @@ export default function ContributorPopup(entityDetail:EntityDetail) {
                 <button 
                     id="contributor-popup-button"
                     type="button" 
-                    className="
-                        relative px-4 py-2 rounded-full dark:bg-primary-dark bg-primary hover:outline-none hover:ring-2 hover:ring-inset hover:ring-white
-                    " 
+                    className="button" 
                     aria-controls="contributor-popup" 
                     aria-expanded="false"
                     aria-label="contributor-popup"
@@ -37,7 +35,7 @@ export default function ContributorPopup(entityDetail:EntityDetail) {
                     <p>Do you want to upload instances of this record type? Download a template for organising each record&apos;s information, wherein each row will be 1 new record of this type.</p>
                     <div className="flex justify-center py-2">
                         <button 
-                            className="h-12 px-4 py-1 w-max rounded-full dark:bg-primary-dark bg-primary hover:outline-none hover:ring-2 hover:ring-inset hover:ring-white"
+                            className="button"
                             onClick={() => GenerateFullTemplate({entity:entityDetail})}
                         >
                             CSV Template: All Fields
@@ -45,7 +43,7 @@ export default function ContributorPopup(entityDetail:EntityDetail) {
                     </div>
                     <div className="flex justify-center py-2">
                         <button 
-                            className="h-12 px-4 py-1 w-max rounded-full dark:bg-primary-dark bg-primary hover:outline-none hover:ring-2 hover:ring-inset hover:ring-white"
+                            className="button"
                             onClick={() => GenerateReqTemplate({entity:entityDetail})}
                         >
                             CSV Template: Required Fields

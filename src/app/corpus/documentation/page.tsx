@@ -26,9 +26,7 @@ export default async function DataModelPage() {
         To enrich resources in the corpus, we use citations in a public Zotero library at this address: <a href="https://www.zotero.org/groups/5710605/lostma-international"
               target="_blank" rel="noopener noreferrer">https://www.zotero.org/groups/5710605/lostma-international</a>.
       </p>
-      <button className="relative px-2 py-1 rounded-full dark:bg-primary-dark bg-primary dark:hover:outline-none dark:hover:ring-2 dark:hover:ring-inset dark:hover:ring-white">
-        <Link href='/corpus/documentation/bibliography'>Click for Contributor Information</Link>
-      </button>
+        <Link className="button" href='/corpus/documentation/bibliography'>Click for Contributor Information</Link>
     </div>
 
     <div id="data-model" className="py-4 md:py-2">
