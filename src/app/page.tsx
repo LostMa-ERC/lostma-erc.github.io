@@ -12,7 +12,7 @@ const CollaboratorData = Object.values(peopleJSON.Collaborators).sort(
     (a, b) => a.surname.localeCompare(b.surname)
 );
 
-export async function Team() {
+async function Team() {
   return (
     <div>
 
