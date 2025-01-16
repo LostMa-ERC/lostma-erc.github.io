@@ -12,20 +12,20 @@ export default function EntityProfile({data}: {data:EntityDetail}) {
     return (
         <div>
             {Header({data})}
-            <div className="grid md:grid-cols-[max-content_1fr] md:gap-12 gap-6">
+            <div className="grid md:grid-cols-[max-content_1fr] mt-6 md:mt-4 md:gap-12 gap-6">
                 <div className="flex items-center justify-center">
                     <div className="grid md:grid-cols-3 gap-2 py-2">
-                        <div>
-                            <span>{RepeatableSVG}</span>
-                            <label>Repeatable</label> 
+                        <div className="flex">
+                            <div className="size-6">{RepeatableSVG}</div>
+                            <label className="font-light tracking-tight">Repeatable</label> 
                         </div>
-                        <div>
-                            <span>{LockSVG}</span>
-                            <label>Required</label>
+                        <div className="flex">
+                            <div className="size-6">{LockSVG}</div>
+                            <label className="font-light tracking-tight">Required</label>
                         </div>
-                        <div>
-                            <span>{UnlockSVG}</span>
-                            <label>Not required</label>
+                        <div className="flex">
+                            <div className="size-6">{UnlockSVG}</div>
+                            <label className="font-light tracking-tight">Not required</label>
                         </div>
                     </div>
                 </div>
@@ -33,31 +33,35 @@ export default function EntityProfile({data}: {data:EntityDetail}) {
                     <ContributorPopup {...data} />
                 </div>
             </div>
-            {
-                Object.values(data.sections).map((section, index) => 
-                    <div className="container relative overflow-x" key={`section-${index}`}>
-                        <table className="md:w-full min-w-fit overflow-scroll table-fixed text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                            <caption className="caption-top text-muted">
-                                {section.sectionName}
-                            </caption>
-                            <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                                <tr>
-                                    <th scope="col" className="px-6 py-3 w-12"></th>
-                                    <th scope="col" className="px-6 py-3 w-12"></th>
-                                    <th scope="col" className="px-6 py-3">Name</th>
-                                    <th scope="col" className="px-6 py-3">Type</th>
-                                    <th scope="col" className="px-6 py-3">Description</th>
-                                    <th scope="col" className="px-6 py-3">Equivalent Property</th>
-                                    <th scope="col" className="px-6 py-3">Controlled Vocabulary</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {
+
+            <div className="relative overflow-x">
+                <table className="md:w-full min-w-fit overflow-scroll table-fixed text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <thead className="text-xs text-gray-700 uppercase bg-gray-200 dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th scope="col" className="px-6 py-3 w-12"></th>
+                            <th scope="col" className="px-6 py-3 w-12"></th>
+                            <th scope="col" className="px-6 py-3">Name</th>
+                            <th scope="col" className="px-6 py-3">Type</th>
+                            <th scope="col" className="px-6 py-3">Description</th>
+                            <th scope="col" className="px-6 py-3">Equivalent Property</th>
+                            <th scope="col" className="px-6 py-3">Controlled Vocabulary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            Object.values(data.sections).map((section, index) => 
+                                <>
+                                <tr key={`section-${index}`}>
+                                    <td colSpan={7} className="w-full left-0 bg-gray-100/50 dark:bg-gray-400/50 p-2 -bottom-10 text-center">
+                                        {section.sectionName}
+                                    </td>
+                                </tr>                           
+                                    {
                                     Object.values(section.fields).map((field, index) =>
-                                        <tr key={`field-${field.dty_ID}-${index}`} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                        <tr key={`field-${field.dty_ID}-${index}`} className="font-light bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                             <td scope="row" className="px-6 py-4"><IsRepeatable data={field.rst_MaxValues}/></td>
                                             <td scope="row" className="px-6 py-4"><IsRequired data={field.rst_RequirementType} /></td>
-                                            <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            <th scope="row" className="px-6 py-4 text-gray-900 dark:text-white">
                                                 {field.rst_DisplayName}
                                             </th>
                                             <td className="px-6 py-4">
@@ -83,13 +87,14 @@ export default function EntityProfile({data}: {data:EntityDetail}) {
                                                 </ul>
                                             </td>
                                         </tr>
+                                
                                     )
                                 }
-                            </tbody>
-                        </table>
-                    </div>
-                )
-            }
+                        </>
+                        )}
+                    </tbody>
+                </table>
+            </div>
         </div>
     )
 }

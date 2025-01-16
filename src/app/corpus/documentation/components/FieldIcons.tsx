@@ -2,7 +2,7 @@ import { LockSVG, UnlockSVG, RepeatableSVG } from "@/public/svgs";
 
 function IsRepeatable({data}: {data:number|null}) {
     if (data === 0 || !data) {
-        return (<>{RepeatableSVG}</>)
+        return (<div className="size-6">{RepeatableSVG}</div>)
     }
     else {
         return (<></>)
@@ -11,10 +11,10 @@ function IsRepeatable({data}: {data:number|null}) {
 
 function IsRequired({data}: {data:string}) {
     if (data === "required") {
-        return (<>{LockSVG}</>)
+        return (<div className="size-6">{LockSVG}</div>)
     }
     else {
-        return (<>{UnlockSVG}</>)
+        return (<div className="size-6">{UnlockSVG}</div>)
     }
 }
 

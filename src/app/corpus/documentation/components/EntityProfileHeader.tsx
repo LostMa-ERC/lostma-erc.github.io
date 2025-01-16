@@ -1,5 +1,4 @@
 import { EntityDetail } from "./models";
-import Card from "@/app/components/Card";
 import Hashtag from "@/app/components/Hashtag";
 import SetInnerHTML from "@/app/components/innerHTML";
 import ToggleHeuristQuery from "./ToggleHeuristQuery";
@@ -25,7 +24,19 @@ export default function Header({data} :{data:EntityDetail}) {
     return (
         <div className="flex justify-center">
             <div id="header" className="container md:w-3/4">
-                <Card title={data.metadata.rty_Name} subtitle={data.id.toString()} paragraph={p} />
+                <div className="rounded overflow-hidden shadow-lg h-full border-solid border-2">
+                    <div className="px-6 py-4">
+                        <div className="font-bold mb-2 text-center text-lg">
+                            {data.metadata.rty_Name}
+                        </div>
+                        <div className="text-muted font-light mb-2 text-center">
+                            {data.id.toString()}
+                        </div>
+                        <div className="text-base font-light">
+                            {p}
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );

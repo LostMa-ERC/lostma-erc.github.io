@@ -43,7 +43,7 @@ export default function ConvertFieldType({field,}: {field: Field}) {
     if (field.dty_Type === HeuristFieldTypes.resource) {
         return (
         <div className="grid grid-rows-2">
-            <span className="flex gap-2">foreign key {LinkSVG}</span>
+            <span className="flex gap-2">foreign key <div className="size-6">{LinkSVG}</div></span>
             <div className="flex gap-2">
             {
                 Object.values(field.dty_PtrTargetRectypeIDs).map((value, index) => 

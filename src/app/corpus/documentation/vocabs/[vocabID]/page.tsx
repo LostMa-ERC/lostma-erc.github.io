@@ -26,18 +26,30 @@ export default async function Page({params, }: {params: Promise<{ vocabID: strin
   if (data) {
     return (
       <>
-      <div className="flex">
-        <Link className="hover:bg-[--background]" href="/corpus/documentation">
-          {UturnIcon}
-        </Link>
-        <p>Return to list of vocabularies.</p>
+      <div>
+        <div className="flex">
+          <Link className="hover:bg-[--background]" href="/corpus/documentation">
+            {UturnIcon}
+          </Link>
+          <p className="font-light tracking-wide mt-2">
+            Return to list of vocabularies.
+          </p>
+        </div>
+        <p className="font-light tracking-wide mt-2 text-xs">
+          Last updated on {lastModifiedOn.toDateString()}.
+        </p>
       </div>
-      <div className="flex justify-center items-center">
-        <p>Last updated on {lastModifiedOn.toDateString()}.</p>
-      </div>
-      <h1>{data.label}</h1>
-      {SetInnerHTML(data.description)}
-      <div className="container relative overflow-x">
+
+      <header className="text-center mb-4 md:mb-8">
+          <h1 className="tracking-wide inline-block md:text-xl text-2xl font-bold text-slate-900 tracking-tight dark:text-slate-200">
+            {data.label}
+          </h1>
+          <div className="font-light px-4 md:px-16 tracking-wide">
+            {SetInnerHTML(data.description)}
+          </div>
+      </header>
+      
+      <div className="relative overflow-x">
         <table className="md:w-full min-w-fit overflow-scroll table-fixed text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
           <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
@@ -49,8 +61,8 @@ export default async function Page({params, }: {params: Promise<{ vocabID: strin
           <tbody>
             {
               Object.values(data.terms).map((term) => 
-                <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700" key={`field-${term.id}`}>
-                  <td className="px-6 py-4">{term.label}</td>
+                <tr className="font-light tracking-tight bg-white border-b dark:bg-gray-800 dark:border-gray-700" key={`field-${term.id}`}>
+                  <td className="font-normal tracking-wide px-6 py-4">{term.label}</td>
                   <td className="px-6 py-4">
                     {SetInnerHTML(term.description)}
                   </td>
