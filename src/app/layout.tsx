@@ -21,7 +21,7 @@ export default function RootLayout({
     prefers-color-scheme 
     bg-gradient-to-r 
     from-gray-100 via-[var(--background)] to-gray-100 
-    dark:from-[var(--background)] dark:via-slate-900 dark:to-[var(--background)]
+    dark:from-black dark:via-[var(--background)] dark:to-black
   ">
     <Header />
     <nav className="bg-primary dark:bg-primary-dark">
