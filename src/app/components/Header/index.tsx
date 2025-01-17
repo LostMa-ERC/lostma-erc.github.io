@@ -19,6 +19,7 @@ export default function Header() {
                 max-h-40
                 z-0
                 opacity-50
+                w-full
             "
             alt="Background image"
             />
