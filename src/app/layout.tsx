@@ -1,8 +1,5 @@
 import "./globals.css";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Navbar from "./components/Navbar/navbar";
-import { MainLinks } from "./components/Navbar/Links";
+import Footer from "./shared/Footer";
 
 export default function RootLayout({
   children,
@@ -23,16 +20,8 @@ export default function RootLayout({
     from-gray-100 via-[var(--background)] to-gray-100 
     dark:from-black dark:via-[var(--background)] dark:to-black
   ">
-    <Header />
-    <nav className="bg-primary dark:bg-primary-dark">
-      <Navbar links={MainLinks} />
-    </nav>
-    <main className="
-      px-8 md:px-20 py-4 md:py-8 h-full 
-    ">
-      {children}
-    </main>
-    <footer>
+    {children}
+    <footer className="pb-16 text-sm leading-6 dark:bg-primary-dark">
       <Footer />
     </footer>
   </body>

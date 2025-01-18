@@ -1,5 +1,5 @@
 const MainLinks = [
-    {"href": "/", "label": "About"},
+    {"href": "/about", "label": "About"},
     {"href": "/corpus", "label": "Corpus"},
     {"href": "/publications", "label": "Publications"},
     {"href": "/releases", "label": "Releases"},
