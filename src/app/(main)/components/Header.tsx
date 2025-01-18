@@ -32,7 +32,8 @@ export default function Header() {
           >
             <div
             className="
-              ml-24
+              lg:ml-24
+              ml-8
               min-h-52
               flex
               items-center

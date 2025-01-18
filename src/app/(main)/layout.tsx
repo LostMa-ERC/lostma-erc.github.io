@@ -1,5 +1,5 @@
 import "../globals.css";
-import MainHTML from "../shared/Main";
+import MainHTML from "../shared/MainLayout";
 import Header from "./components/Header";
 
 export default function RootLayout({

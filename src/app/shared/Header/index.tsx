@@ -16,7 +16,7 @@ export default function Header() {
             className="
                 absolute
                 object-cover 
-                max-h-40
+                h-40
                 z-0
                 opacity-60
                 w-full
@@ -26,7 +26,8 @@ export default function Header() {
             <div
             className="
                 z-20
-                ml-24
+                lg:ml-24
+                ml-8
             "
             >
                 <h1

@@ -1,7 +1,7 @@
-import Navbar from "../shared/Navbar/navbar";
-import { MainLinks } from "../shared/Navbar/Links";
+import Navbar from "./Navbar/navbar";
+import { MainLinks } from "./Navbar/Links";
 
-export default function MainHTML({
+export default function MainLayout({
     children,
   }: Readonly<{
     children: React.ReactNode;
