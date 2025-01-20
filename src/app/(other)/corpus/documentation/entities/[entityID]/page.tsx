@@ -3,7 +3,6 @@ import fetchData from "../../components/fetchData";
 import EntityProfile from "../../components/EntityProfile";
 import { loadDataModificationDate } from "../../components/loadData";
 import Link from "next/link";
-import SetInnerHTML from "@/app/components/innerHTML";
 
 const UturnIcon = <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
@@ -42,7 +41,7 @@ export default async function Page({params, }: {params: Promise<{ entityID: stri
       </div>
 
       <p className="font-light text-normal tracking-tight mt-2">
-        We&apos;re building our database in public, in the spirit of open science. Consequently, this page serves as both information for the general public and documentation for our community of contributors, who should click on the blue buttons below to reveal more specific information.
+        We&apos;re building our database in public, in the spirit of open science. Consequently, this page serves as both information for the general public and documentation for our community of contributors, who should click on the buttons below to reveal more specific information.
       </p>
 
       {EntityProfile({data})}
