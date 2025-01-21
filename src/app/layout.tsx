@@ -19,14 +19,12 @@ export default function RootLayout({
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="LostMa"/>
     <meta property="og:description" content="ERC Research Project, 2024-2029"/>
-    <meta property="og:image" content="public/images/lostma_logo.png"/>
     {/* Twitter meta tags */}
     <meta name="twitter:card" content="summary_large_image"/>
     <meta property="twitter:domain" content="lostma-erc.github.io"/>
     <meta property="twitter:url" content="https://lostma-erc.github.io/"/>
     <meta name="twitter:title" content="LostMa"/>
     <meta name="twitter:description" content="ERC Research Project, 2024-2029"/>
-    <meta name="twitter:image" content="public/images/lostma_logo.png"/>
   </head>
   <body className="
     prefers-color-scheme 
