@@ -21,7 +21,6 @@ export default function RootLayout({
     <meta property="og:description" content="ERC Research Project, 2024-2029"/>
     <meta property="og:image" content="https://i.postimg.cc/0ykFJ18s/lostma-logo.png"/>
     {/* Twitter meta tags */}
-    <meta name="twitter:card" content="summary_large_image"/>
     <meta property="twitter:domain" content="lostma-erc.github.io"/>
     <meta property="twitter:url" content="https://lostma-erc.github.io/"/>
     <meta name="twitter:title" content="LostMa"/>
