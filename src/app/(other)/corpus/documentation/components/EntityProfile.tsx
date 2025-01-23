@@ -34,8 +34,8 @@ export default function EntityProfile({data}: {data:EntityDetail}) {
                 </div>
             </div>
 
-            <div className="relative overflow-x">
-                <table className="md:w-full min-w-fit overflow-scroll table-fixed text-sm text-left rtl:text-right text-gray-500">
+            <div className="relative overflow-scroll">
+                <table className="md:w-full min-w-fit table-fixed text-sm text-left rtl:text-right text-gray-500">
                     <thead className="text-xs text-gray-700 uppercase bg-gray-200">
                         <tr>
                             <th scope="col" className="px-6 py-3 w-12"></th>
@@ -58,7 +58,7 @@ export default function EntityProfile({data}: {data:EntityDetail}) {
                                 </tr>                           
                                     {
                                     Object.values(section.fields).map((field, index) =>
-                                        <tr key={`field-${field.dty_ID}-${index}`} className="font-light bg-white border-b">
+                                        <tr key={`field-${field.dty_ID}-${index}`} className="font-light bg-white dark:bg-gray-100/75 border-b">
                                             <td scope="row" className="px-6 py-4"><IsRepeatable data={field.rst_MaxValues}/></td>
                                             <td scope="row" className="px-6 py-4"><IsRequired data={field.rst_RequirementType} /></td>
                                             <th scope="row" className="px-6 py-4 text-gray-900">
