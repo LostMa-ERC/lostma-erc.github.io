@@ -73,7 +73,7 @@ export default function EntityProfile({data}: {data:EntityDetail}) {
                                             <td className="px-6 py-4 text-center overflow-x-scroll"><Hashtag url={field.dty_SemanticReferenceURL} /></td>
                                             <td className="px-6 py-4 space-y-1">
                                                 <div className="uppercase text-xs text-center">
-                                                    <Link href={`/corpus/documentation/vocabs/${field.trm_TreeID}`}>
+                                                    <Link className="link" href={`/corpus/documentation/vocabs/${field.trm_TreeID}`}>
                                                         {field.trm_Label}
                                                     </Link>
                                                 </div>
