@@ -35,8 +35,8 @@ export default function EntityProfile({data}: {data:EntityDetail}) {
             </div>
 
             <div className="relative overflow-x">
-                <table className="md:w-full min-w-fit overflow-scroll table-fixed text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                    <thead className="text-xs text-gray-700 uppercase bg-gray-200 dark:bg-gray-700 dark:text-gray-400">
+                <table className="md:w-full min-w-fit overflow-scroll table-fixed text-sm text-left rtl:text-right text-gray-500">
+                    <thead className="text-xs text-gray-700 uppercase bg-gray-200">
                         <tr>
                             <th scope="col" className="px-6 py-3 w-12"></th>
                             <th scope="col" className="px-6 py-3 w-12"></th>
@@ -52,16 +52,16 @@ export default function EntityProfile({data}: {data:EntityDetail}) {
                             Object.values(data.sections).map((section, index) => 
                                 <>
                                 <tr key={`section-${index}`}>
-                                    <td colSpan={7} className="w-full left-0 bg-gray-100/50 dark:bg-gray-400/50 p-2 -bottom-10 text-center">
+                                    <td colSpan={7} className="w-full left-0 bg-gray-100/50 p-2 -bottom-10 text-center">
                                         {section.sectionName}
                                     </td>
                                 </tr>                           
                                     {
                                     Object.values(section.fields).map((field, index) =>
-                                        <tr key={`field-${field.dty_ID}-${index}`} className="font-light bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                        <tr key={`field-${field.dty_ID}-${index}`} className="font-light bg-white border-b">
                                             <td scope="row" className="px-6 py-4"><IsRepeatable data={field.rst_MaxValues}/></td>
                                             <td scope="row" className="px-6 py-4"><IsRequired data={field.rst_RequirementType} /></td>
-                                            <th scope="row" className="px-6 py-4 text-gray-900 dark:text-white">
+                                            <th scope="row" className="px-6 py-4 text-gray-900">
                                                 {field.rst_DisplayName}
                                             </th>
                                             <td className="px-6 py-4">

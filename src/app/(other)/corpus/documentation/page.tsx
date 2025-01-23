@@ -14,7 +14,7 @@ export default async function DataModelPage() {
 
   return (
     <>
-    <h1 className="mt-2 md:mb-4 inline-block md:text-2xl text-3xl font-bold text-slate-900 tracking-tight dark:text-slate-200">
+    <h1 className="mt-2 md:mb-4 inline-block md:text-2xl text-3xl font-bold text-slate-900 tracking-tight">
       Documentation
     </h1>
 
@@ -53,7 +53,7 @@ export default async function DataModelPage() {
                 const entityURL = "/corpus/documentation/entities/" + value.id;
                 const entityLinkID = "entity-link-" + index;
                 return (
-                  <li key={entityLinkID}><Link href={entityURL}>{value.metadata.rty_Name}</Link></li>
+                  <li key={entityLinkID}><Link className="link" href={entityURL}>{value.metadata.rty_Name}</Link></li>
                 );
               })
             }
@@ -70,7 +70,7 @@ export default async function DataModelPage() {
                 const vocabURL = "/corpus/documentation/vocabs/" + value.id;
                 const vocabLinkID = "vocab-link-" + index;
                 return (
-                  <li key={vocabLinkID}><Link href={vocabURL}>{value.label}</Link></li>
+                  <li key={vocabLinkID}><Link className="link" href={vocabURL}>{value.label}</Link></li>
                 );
               })
             }

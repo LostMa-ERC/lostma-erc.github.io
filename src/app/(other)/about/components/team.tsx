@@ -10,7 +10,7 @@ export default async function Team() {
               <div className="md:size-8 size-6">
                 {PeopleSVG}
               </div>
-              <span className="inline-block font-bold text-slate-900 tracking-tight dark:text-slate-200">
+              <span className="inline-block font-bold text-slate-900 tracking-tight">
                 People
               </span>
             </div>

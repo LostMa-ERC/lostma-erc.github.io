@@ -31,10 +31,10 @@ export default function RootLayout({
     prefers-color-scheme 
     bg-gradient-to-r 
     from-gray-100 via-[var(--background)] to-gray-100 
-    dark:from-black dark:via-[var(--background)] dark:to-black
+    dark:from-gray-200 dark:via-gray-100 dark:to-gray-200
   ">
     {children}
-    <footer className="pb-16 text-sm leading-6 dark:bg-primary-dark">
+    <footer className="pb-16 text-sm leading-6">
       <Footer />
     </footer>
   </body>

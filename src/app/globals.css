@@ -2,48 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ::-webkit-scrollbar {
-  width: 12px;
-}
-
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-}
-
-::-webkit-scrollbar-corner {
-  background-color: var(--background);
-} */
-
 :root {
   --background: #fefcfb;
   --foreground: #1b1b1b;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #1b1b1b;
     --foreground: #fefcfb;
   }
-}
+} */
+
+@theme {  --breakpoint-xs: 400px;}
 
 body {
   color: var(--foreground);
   background: var(--background);
-  display: flex;
-  flex-direction: column;
+  @apply dark:backdrop-sepia-[.66];
 }
 
-a {
+.link {
   @apply text-center;
-  @apply text-link dark:text-highlight;
+  @apply text-link;
   @apply hover:bg-gray-300 hover:text-gray-900;
-  @apply dark:hover:bg-highlight dark:hover:text-dark;
   @apply rounded-md;
   @apply p-1;
 }
@@ -52,7 +34,7 @@ a {
   @apply text-center;
   @apply text-gray-900;
   @apply bg-gray-300;
-  @apply hover:bg-highlight dark:hover:text-dark;
+  @apply hover:bg-highlight;
   @apply p-2 rounded-full;
   @apply font-normal tracking-tight;
 }

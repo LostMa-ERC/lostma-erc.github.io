@@ -4,68 +4,88 @@ import ERC_LOGO from "@/public/images/erc-logo.png";
 import Link from 'next/link';
 import LOSTMA_LOGO from "@/public/images/lostma_logo.png";
 import ENC_LOGO from "@/public/images/logo-enc.png";
+import { faGithub, faLinkedin, faBluesky } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Footer() {
     return (
         <div className="overflow-hidden mx-auto divide-y divide-slate-200 px-4 sm:px-6 md:px-8 dark:divide-slate-700">
-            <div className="ms-2 md:ms-8 flex space-x-12 mt-4">
+            <div className="mx-8 lg:space-x-24 lg:flex mt-4 space-y-4 justify-center">
 
-                <div className="flex-none w-1/2 space-y-10 space-x-4 sm:space-y-8 lg:flex lg:space-y-0">
-                    <div className="lg:flex-none lg:w-1/2">
-                        <h2 className="font-semibold text-slate-900 dark:text-slate-100">
-                            Partners
+                <div className='flex space-x-12'>
+                    <div className="w-fit">
+                        <h2 className="font-semibold text-slate-900 mb-3">
+                            Pages
                         </h2>
-                        <ul className="mt-3 space-y-4">
-                            <li className='dark:bg-black/10 w-fit p-1 dark:rounded-xl'>
-                                <Image className='object-contain max-w-[200px]' src={ENC_LOGO} alt='ENC logo' />
+                        <ul className="space-y-2 text-xs">
+                            <li><Link className='link' href='/about'>About</Link></li>
+                            <li><Link className='link' href='/about#team'>Team</Link></li>
+                            <li><Link className='link' href='/corpus'>Corpus</Link></li>
+                            <li><Link className='link' href='/corpus/documentation'>Data Model</Link></li>
+                            <li><Link className='link' href='/publications'>Publications</Link></li>
+                            <li><Link className='link' href='/releases'>Releases</Link></li>
+                            <li><Link className='link' href='/about'>Events</Link></li>
+                        </ul>
+                    </div>
+
+                    <div className="w-fit">
+                        <h2 className="font-semibold text-slate-900 mb-3">
+                            Community
+                        </h2>
+                        <ul className="space-y-2 text-xs">
+                            <li>
+                                <Link className='grid grid-cols-2 link justify-start items-center' target="_blank" rel="noreferrer" href="https://bsky.app/profile/lostma.bsky.social">
+                                    <FontAwesomeIcon className='w-[18px]' icon={faBluesky} />
+                                    Bluesky
+                                </Link>
                             </li>
-                            <li className='dark:bg-white/10 w-fit p-1 dark:rounded-xl'>
-                                <Image className='object-contain max-w-[200px]' src={ERC_LOGO} alt='ERC logo'/>
+                            <li>
+                                <div className='grid grid-cols-2 link justify-start items-center'>
+                                    <FontAwesomeIcon className='w-[18px]' icon={faLinkedin} />
+                                    LinkedIn
+                                </div>
+                            </li>
+                            <li>
+                                <Link className='grid grid-cols-2 link justify-start items-center' target="_blank" rel="noreferrer" href="https://github.com/LostMa-ERC">
+                                    <FontAwesomeIcon className='w-[18px]' icon={faGithub} />
+                                    GitHub
+                                </Link>
                             </li>
                         </ul>
                     </div>
-                    <div className="lg:flex-none lg:w-1/2">
-                        <h2 className="font-semibold text-slate-900 dark:text-slate-100">
+                </div>
+
+                    <div className="md:max-w-96">
+                        <h2 className="font-semibold text-slate-900 mb-3">
                             ERC Starting Grant
                         </h2>
-                        <ul className="mt-3 space-y-2">
-                            <li className='text-xs'>
-                                Horizon Europe ERC Grant number: <a target="_blank" rel="noreferrer" href="https://doi.org/10.3030/101117408">101117408</a>
+                        <ul className="space-y-2 text-xs">
+                            <li>
+                                Horizon Europe ERC Grant number: <Link className='link' target="_blank" rel="noreferrer" href="https://doi.org/10.3030/101117408">101117408</Link>
                             </li>
-                            <li className='text-xs'>
+                            <li>
                                 Funded by the European Research Council. Views and opinions expressed are however those of the author(s) only and not necessarily reflect those of the European Union or the European Research Council. Neither the European Union nor the granting authority can be held responsible for them.
                             </li>
                         </ul>
                     </div>
-                </div>
 
-                <div className="ps-1 flex-none w-1/2 space-y-10 sm:space-y-8 lg:flex lg:space-y-0">
-                    <div className="lg:flex-none lg:w-1/2">
-                        <h2 className="font-semibold text-slate-900 dark:text-slate-100">
-                            Pages
+                    <div className="min-w-96">
+                        <h2 className="font-semibold text-slate-900 mb-3">
+                            Partners
                         </h2>
-                        <ul className="mt-3 space-y-2 text-xs">
-                            <li><Link href='/about'>About</Link></li>
-                            <li><Link href='/about#team'>Team</Link></li>
-                            <li><Link href='/corpus'>Corpus</Link></li>
-                            <li><Link href='/corpus/documentation'>Data Model</Link></li>
-                            <li><Link href='/publications'>Publications</Link></li>
-                            <li><Link href='/releases'>Releases</Link></li>
-                            <li><Link href='/about'>Events</Link></li>
+                        <ul className="grid lg:flex gap-8 items-center max-h-[400px]">
+                            <li>
+                                <Link target="_blank" rel="noreferrer" href="https://doi.org/10.3030/101117408">
+                                    <Image className='object-contain w-fit max-h-[100px]' src={ERC_LOGO} alt='ERC logo'/>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link target="_blank" rel="noreferrer" href="https://www.chartes.psl.eu/">
+                                        <Image className='object-contain w-fit' src={ENC_LOGO} alt='ENC logo' />
+                                </Link>
+                            </li>
                         </ul>
                     </div>
-                    <div className="lg:flex-none lg:w-1/2">
-                        <h2 className="font-semibold text-slate-900 dark:text-slate-100">
-                            Community
-                        </h2>
-                        <ul className="mt-3 space-y-2 text-xs">
-                            <li><Link target="_blank" rel="noreferrer" href="https://bsky.app/profile/lostma.bsky.social">Bluesky</Link></li>
-                            <li className='p-1'>LinkedIn</li>
-                            <li><Link target="_blank" rel="noreferrer" href="https://github.com/LostMa-ERC">GitHub</Link></li>
-                            <li className='p-1'>Zenodo</li>                              
-                        </ul>
-                    </div>
-                </div>
 
             </div>
             

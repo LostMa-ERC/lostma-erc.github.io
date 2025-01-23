@@ -8,7 +8,7 @@ export default function MainLayout({
   }>) {
     return (
         <>
-        <nav className="bg-primary dark:bg-primary-dark">
+        <nav className="bg-primary">
         <Navbar links={MainLinks} />
       </nav>
       <main className="px-8 md:px-20 py-4 md:py-8">

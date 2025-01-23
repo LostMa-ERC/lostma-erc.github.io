@@ -30,16 +30,18 @@ export default function Navbar({links}: {links: LinkItem[]}) {
             
             {/* <!-- Mobile menu button--> */}
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                <div className="flex items-center">
-                    <Link 
-                        href="/" 
-                        className={`
-                            text-white 
-                            rounded-md px-3 py-2 
-                            text-sm font-medium 
-                            hover:bg-gray-700 hover:text-white`}>
-                    {HomeSVG}
-                    </Link>
+                <div className="flex flex-1 items-stretch justify-start ms-6">
+                    <div className="flex items-center">
+                        <Link 
+                            href="/" 
+                            className={`
+                                text-white 
+                                rounded-md px-3 py-2 
+                                text-md font-medium 
+                                hover:bg-gray-700 hover:text-white`}>
+                        {HomeSVG}
+                        </Link>
+                    </div>
                 </div>
                 
                 <button 
@@ -62,7 +64,7 @@ export default function Navbar({links}: {links: LinkItem[]}) {
 
                     Menu open: "hidden", Menu closed: "block"
                 --> */}
-                <svg className="block size-6 dark:stroke-black stroke-slate-500" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" aria-hidden="true" data-slot="icon">
+                <svg className="block size-6 stroke-slate-500" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" aria-hidden="true" data-slot="icon">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
 
@@ -71,65 +73,67 @@ export default function Navbar({links}: {links: LinkItem[]}) {
 
                     Menu open: "block", Menu closed: "hidden"
                 --> */}
-                <svg className="hidden size-6 dark:stroke-black stroke-slate-500" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" aria-hidden="true" data-slot="icon">
+                <svg className="hidden size-6 stroke-slate-500" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" aria-hidden="true" data-slot="icon">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
                 </svg>
                 </button>
             </div>
 
             {/* <!-- Expanded Navbar Links --> */}
-            <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex shrink-0 items-center">
-                
-                </div>
+            <div>
                 <div className="hidden sm:ml-6 sm:block">
-                <div className="flex space-x-4">
-                    <div className="flex items-center">
-                        <Link 
-                            href="/" 
-                            className={`
-                                text-white 
-                                rounded-md px-3 py-2 
-                                text-sm font-medium 
-                                hover:bg-gray-700 hover:text-white`}>
-                        {HomeSVG}
-                        </Link>
-                    </div>
-                    {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
-                    {links.map(({href, label}) => {
+                    <div className="flex space-x-4 container">
 
-                        let isActive ;
-
-                        {/* If the path is a Main Link (from top-level navbar) */}
-                        if (MainLinkPaths.includes(pathName)) {
-                            isActive = pathName === href;
-                            
-                        }
-                        else {
-                            if (href === "/") {
-                                isActive = false;
-                            }
-                            else {
-                                isActive = pathName.includes(href);
-                            }
-                        }
-
-                        return (
-                            <div key={href} className="flex items-center">
+                        <div className="flex items-center me-2">
                             <Link 
-                                href={href}
+                                href="/" 
                                 className={`
-                                    ${isActive ? "bg-gray-300 text-gray-900 dark:bg-gray-900 dark:text-white" : "text-white"} 
-                                    rounded-md px-3 py-2 
-                                    font-medium text-sm tracking-tight
+                                    text-white 
+                                    rounded-full px-3 py-2 
+                                    text-lg font-medium 
                                     hover:bg-gray-700 hover:text-white`}>
-                            {label}
+                                LostMa
                             </Link>
-                            </div>
-                        )
-                    }
-                    )}
-                </div>
+                        </div>
+
+                        <div className="container flex w-2/3">
+                            <ul className="flex items-center gap-2 flex-row">
+                            {links.map(({href, label}) => {
+
+                                let isActive ;
+
+                                {/* If the path is a Main Link (from top-level navbar) */}
+                                if (MainLinkPaths.includes(pathName)) {
+                                    isActive = pathName === href;
+                                    
+                                }
+                                else {
+                                    if (href === "/") {
+                                        isActive = false;
+                                    }
+                                    else {
+                                        isActive = pathName.includes(href);
+                                    }
+                                }
+
+                                return (
+                                    <li key={href} className="flex items-center">
+                                        <Link 
+                                            href={href}
+                                            className={`
+                                                ${isActive ? "bg-gray-300 text-gray-900 dark:bg-gray-400" : "text-white"} 
+                                                rounded-md px-3 py-2 
+                                                font-medium text-sm tracking-tight
+                                                hover:bg-gray-700 hover:text-white`}>
+                                        {label}
+                                        </Link>
+                                    </li>
+                                )
+                            }
+                            )}
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

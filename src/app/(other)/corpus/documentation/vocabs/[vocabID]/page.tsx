@@ -41,7 +41,7 @@ export default async function Page({params, }: {params: Promise<{ vocabID: strin
       </div>
 
       <header className="text-center mb-4 md:mb-8">
-          <h1 className="tracking-wide inline-block md:text-xl text-2xl font-bold text-slate-900 tracking-tight dark:text-slate-200">
+          <h1 className="tracking-wide inline-block md:text-xl text-2xl font-bold text-slate-900 tracking-tight">
             {data.label}
           </h1>
           <div className="font-light px-4 md:px-16 tracking-wide">
@@ -50,8 +50,8 @@ export default async function Page({params, }: {params: Promise<{ vocabID: strin
       </header>
       
       <div className="relative overflow-x">
-        <table className="md:w-full min-w-fit overflow-scroll table-fixed text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-          <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+        <table className="md:w-full min-w-fit overflow-scroll table-fixed text-sm text-left rtl:text-right text-gray-500">
+          <thead className="text-xs text-gray-700 uppercase bg-gray-500">
             <tr>
               <th scope="col" className="px-6 py-3">Label</th>
               <th scope="col" className="px-6 py-3">Description</th>
@@ -61,7 +61,7 @@ export default async function Page({params, }: {params: Promise<{ vocabID: strin
           <tbody>
             {
               Object.values(data.terms).map((term) => 
-                <tr className="font-light tracking-tight bg-white border-b dark:bg-gray-800 dark:border-gray-700" key={`field-${term.id}`}>
+                <tr className="font-light tracking-tight bg-white border-b" key={`field-${term.id}`}>
                   <td className="font-normal tracking-wide px-6 py-4">{term.label}</td>
                   <td className="px-6 py-4">
                     {SetInnerHTML(term.description)}

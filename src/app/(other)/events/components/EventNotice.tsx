@@ -11,7 +11,7 @@ export default function EventNotice(data: EventData) {
           </h2>
           <div className="flex gap-4 py-4 font-light">
             <div className="flex-none md:w-48 md:h-48 w-24 h-24">
-              <Image src={PlaceHolder} alt="event-image-placeholder" className="object-scale-down max-h-full m-auto"/>
+              <Image src={PlaceHolder} alt="event-image-placeholder" className="object-scale-down max-h-full m-auto rounded"/>
             </div>
             <div className="flex-1">
               <p>{data.date}</p>

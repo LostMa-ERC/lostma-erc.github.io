@@ -26,7 +26,6 @@ export default function Header() {
           <div
           className="
             z-20
-            dark:bg-gray-800/50
             bg-gray-200/50
           "
           >

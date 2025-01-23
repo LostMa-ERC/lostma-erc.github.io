@@ -5,8 +5,8 @@ export default function Links() {
     return (
     <>
         <div id="data-header" className="py-8 md:py-4 rounded-xl">
-            <h2 className="p-1 w-fit md:text-xl text-2xl dark:bg-gray-800 dark:hover:bg-inherit rounded-xl p-1">
-                <Link className="flex items-center gap-2" href='/corpus'>
+            <h2 className="p-1 w-fit md:text-xl text-2xl shadow-md border-solid border-2 hover:bg-gray-300 hover:border-dark rounded-xl p-1">
+                <Link className="flex items-center gap-2 mx-2" href='/corpus'>
                 <div className="md:size-8 size-6">
                     {DatabaseSVG}
                 </div>
@@ -71,7 +71,7 @@ export default function Links() {
             </dl>
 
             <p className="font-light tracking-tight mt-4">
-                <Link className="p-1" href="/corpus">Learn more about the corpus, database, and data model.</Link>
+                <Link className="link" href="/corpus">Learn more about the corpus, database, and data model.</Link>
             </p>
         </div>
 
@@ -82,7 +82,7 @@ export default function Links() {
                 <div className="md:size-8 size-6">
                     {ToolsSVG}
                 </div>
-                <span className="inline-block font-bold text-slate-900 tracking-tight dark:text-slate-200">
+                <span className="inline-block font-bold text-slate-900 tracking-tight">
                     Methods
                 </span>
                 </div>
@@ -101,7 +101,7 @@ export default function Links() {
                 <div className="md:size-8 size-6">
                     {InboxSVG}
                 </div>
-                <span className="inline-block font-bold text-slate-900 tracking-tight dark:text-slate-200">
+                <span className="inline-block font-bold text-slate-900 tracking-tight">
                     Output
                 </span>
                 </div>
@@ -114,7 +114,7 @@ export default function Links() {
             <dl className="grid md:grid-cols-3 pt-4 md:pt-0 gap-8 px-4 md:px-8">
 
                 <dt>
-                <h2 className="text-xl w-fit dark:bg-gray-800 dark:hover:bg-inherit rounded-xl p-1">
+                <h2 className="text-xl w-fit shadow-md border-solid border-2 hover:bg-gray-300 hover:border-dark rounded-xl p-1">
                     <Link className="flex items-center gap-4 px-4" href='/publications'>
                     <div className="md:size-8 size-6">
                         {PublicationIcon}
@@ -128,7 +128,7 @@ export default function Links() {
                 </dt>
 
                 <dt>
-                <h2 className="text-xl w-fit dark:bg-gray-800 dark:hover:bg-inherit rounded-xl p-1">
+                <h2 className="text-xl w-fit shadow-md border-solid border-2 hover:bg-gray-300 hover:border-dark rounded-xl p-1">
                     <Link className="flex items-center gap-4 px-4" href='/releases'>
                     <div className="md:size-8 size-6">
                         {DownloadSVG}
@@ -142,7 +142,7 @@ export default function Links() {
                 </dt>
 
                 <dt>
-                <h2 className="text-xl w-fit dark:bg-gray-800 dark:hover:bg-inherit rounded-xl p-1">
+                <h2 className="text-xl w-fit shadow-md border-solid border-2 hover:bg-gray-300 hover:border-dark rounded-xl p-1">
                     <Link className="flex items-center gap-4 px-4" href='/events'>
                     <div className="md:size-8 size-6">
                         {PresentationIcon}

@@ -14,7 +14,7 @@ export default function Corpus() {
   return (
     <div>
       <header>
-        <h1 className="mt-2 md:mb-4 inline-block md:text-2xl text-3xl font-bold text-slate-900 tracking-tight dark:text-slate-200">
+        <h1 className="mt-2 md:mb-4 inline-block md:text-2xl text-3xl font-bold text-slate-900 tracking-tight">
           Corpus
         </h1>
 
@@ -86,11 +86,11 @@ export default function Corpus() {
 
           <dt className="py-8 md:py-4">
             <h2 className="p-1 w-fit md:text-lg text-xl">
-              <Link className="flex items-center gap-2" href='/corpus/documentation'>
+              <Link className="flex items-center gap-2 link" href='/corpus/documentation'>
                 <div className="md:size-8 size-6">
                   {ShareSVG}
                 </div>
-                <span className="inline-block text-slate-900 tracking-tight dark:text-slate-200">
+                <span className="inline-block text-slate-900 tracking-tight">
                   Documentation / Data Model
                 </span>
               </Link>
@@ -102,11 +102,11 @@ export default function Corpus() {
 
           <dt className="py-8 md:py-4">
             <h2 className="p-1 w-fit md:text-lg text-xl">
-              <Link className="flex items-center gap-2" href='/corpus/metadata'>
+              <Link className="flex items-center gap-2 link" href='/corpus/metadata'>
                 <div className="md:size-8 size-6">
                   {XMLFileSVG}
                 </div>
-                <span className="inline-block text-slate-900 tracking-tight dark:text-slate-200">
+                <span className="inline-block text-slate-900 tracking-tight">
                   Corpus Metadata
                 </span>
               </Link>
@@ -115,17 +115,17 @@ export default function Corpus() {
               Metadata about the literary corpus, which describe works, versions of works, manuscripts, etc.
             </p>
             <p className="font-light tracking-wide mt-2">
-              See the <button><Link href='/corpus/documentation'>data model</Link></button> for more information about how these entities and their metadata are defined. The documentation will also help you understand how to use this dataset for your own research purposes.
+              See the <button><Link className="link" href='/corpus/documentation'>data model</Link></button> for more information about how these entities and their metadata are defined. The documentation will also help you understand how to use this dataset for your own research purposes.
             </p>
           </dt>
 
           <dt className="py-8 md:py-4">
             <h2 className="p-1 w-fit md:text-lg text-xl">
-              <Link className="flex items-center gap-2" href='/corpus/full-text'>
+              <Link className="flex items-center gap-2 link" href='/corpus/full-text'>
                 <div className="md:size-8 size-6">
                   {XMLFileSVG}
                 </div>
-                <span className="inline-block text-slate-900 tracking-tight dark:text-slate-200">
+                <span className="inline-block text-slate-900 tracking-tight">
                   Corpus Full Text
                 </span>
               </Link>
@@ -178,7 +178,7 @@ export default function Corpus() {
             When we&apos;re ready to share the most up-to-date data again, we can restart the CI workflow and update the data store.
           </p>
           <p className="my-2">
-            Check out the source code on our <a className="dark:text-blue-800" target="_blank" rel="noreferrer" href="https://github.com/kat-kel/lostma-website-test">open-source GitHub project</a> to learn more.
+            Check out the source code on our <a className=" target="_blank" rel="noreferrer" href="https://github.com/kat-kel/lostma-website-test">open-source GitHub project</a> to learn more.
           </p>
         </div>
         )
