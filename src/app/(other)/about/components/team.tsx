@@ -20,13 +20,13 @@ export default async function Team() {
               <div className="grid order-first md:order-last">
                   <div className="ms-lg-5 mb-5 content-around">
                       <span className="text-muted">
-                          LostMa / French Corpus
+                          LostMa
                       </span>
                       <h2 className="font-light text-xl md:text-lg mb-3 mb-xl-5">
                           Meet the Team
                       </h2>
                       <p className="font-light">
-                        Our core team is responsible for the project&apos;s milestones and the French-language part of the corpus.
+                        Our core team is responsible for the project&apos;s milestones and much of the French-language part of the corpus.
                       </p>
                   </div>
               </div>
