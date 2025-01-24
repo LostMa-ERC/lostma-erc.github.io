@@ -17,7 +17,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  @apply dark:backdrop-sepia-[.66];
+  /* @apply dark:backdrop-sepia-[.66]; */
 }
 
 .link {
