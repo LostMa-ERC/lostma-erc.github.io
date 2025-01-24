@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { XMLFileSVG, ShareSVG, QuestionMarkSVG as What, MailSVG as How, ClockSVG as When, GlobeSVG as Where } from "@/public/svgs";
+import Dash from "./components/dashboard";
 
 export default function Corpus() {
 
@@ -146,47 +147,15 @@ export default function Corpus() {
         <p className="font-light tracking-wide mt-2">
           As our specialist contributors assemble the corpus, you can observe some key indicators about its evolving composition.
         </p>
-{/* 
-        <button 
-          id="developer-popup-button"
-          type="button" 
-          className="
-              relative rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white
-          " 
-          aria-controls="developer-popup" 
-          aria-expanded="false"
-          aria-label="developer-popup"
-          aria-haspopup="true"
-          onClick={toggleDropdown}
-        >
-          Are you a developer? Want to know how we&apos;re doing this in-progress observability?
-        </button>
-        {isOpen && (
-        <div className="rounded-xl ml-4 py-1 px-3 bg-info text-[14px] text-gray-100">
-          <p>
-            You&apos;re currently looking at a static site generated with NextJS and hosted by GitHub Pages.
-            What you&apos;re not seeing is the LostMa corpus, which is being developed in real time via an OLTP relational database on a different server / platform, specifically Heurist.
+      <div id="#dashboard" key="dashboard" className="container">
+        <div className="grid my-8 w-fit">
+          <p className="font-bold p-1 w-fit md:text-lg text-xl">
+            Distribution of texts by language
           </p>
-          <p className="my-2">
-            On GitHub, a continuous integration / continuous deployment (CI/CD) periodically performs a process.
-            First, the workflow extracts the current data from our Heurist server; 
-            then, it transforms the relational data into flat information; 
-            finally, it loads the cleaned data into a data store that this static site&apos;s JavaScript then parses--without needing to communicate with the Heurist server.
-          </p>
-          <p>
-            Furthermore, if we want to stop updating the statistics on this page for some reason, we can halt the workflow whilst we continue developing the corpus on the OLTP database. 
-            When we&apos;re ready to share the most up-to-date data again, we can restart the CI workflow and update the data store.
-          </p>
-          <p className="my-2">
-            Check out the source code on our <a className=" target="_blank" rel="noreferrer" href="https://github.com/kat-kel/lostma-website-test">open-source GitHub project</a> to learn more.
-          </p>
+          <div className="overflow-scroll">
+            <Dash />
+          </div>
         </div>
-        )
-      } */}
-      <div key="dashboard" className="text-center">
-        <p className="font-light italic tracking-wide mt-2">
-          Dashboard is currently under construction...
-        </p>
       </div>
       </div>
     </div>
