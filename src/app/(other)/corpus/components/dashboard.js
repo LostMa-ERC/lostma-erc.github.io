@@ -27,42 +27,42 @@ var trace1 = {
 };
 
 var trace2 = {
-    type: 'scatter',
-    x: countMissing,
-    y: langMissing,
-    mode: 'markers',
-    name: 'Texts missing a language',
-    marker: {
-        color: 'red',
-        line: {
-          color: 'rgba(217, 217, 217, 1.0)',
-          width: 1,
-        },
-      symbol: 'circle',
-      size: 16
-    }
-  };
+  type: 'scatter',
+  x: countMissing,
+  y: langMissing,
+  mode: 'markers',
+  name: 'Texts missing a language',
+  marker: {
+    color: 'red',
+    line: {
+      color: 'rgba(217, 217, 217, 1.0)',
+      width: 1,
+    },
+    symbol: 'circle',
+    size: 16
+  }
+};
 
 var data = [trace2, trace1];
 
 var layout = {
-    xaxis: {
-        showgrid: true,
-        showline: true,
-        linecolor: 'black',
-        tickfont: {
-          font: {
-            color: 'black'
-          }
-        },
-        tickmode: 'linear',
-        dtick: 10,
-        ticks: 'inside',
-        tickcolor: 'black'
-      },
-    yaxis: {
-        gridcolor: 'rgba(200,200,200, 1.0)',
+  xaxis: {
+    showgrid: true,
+    showline: true,
+    linecolor: 'black',
+    tickfont: {
+      font: {
+        color: 'black'
+      }
     },
+    tickmode: 'linear',
+    dtick: 10,
+    ticks: 'inside',
+    tickcolor: 'black'
+  },
+  yaxis: {
+    gridcolor: 'rgba(200,200,200, 1.0)',
+  },
   margin: {
     l: 200,
     r: 40,
@@ -76,28 +76,32 @@ var layout = {
     yanchor: 'middle',
     xanchor: 'right'
   },
-  width: 1200,
-  height: 500,
+  // width: 1200,
+  // height: 500,
   hovermode: 'closest',
   paper_bgcolor: 'rgba(0,0,0,0)',
   plot_bgcolor: 'rgba(0,0,0,0)'
 };
 
-export default class Dash extends React.Component {
-    render() {
+var config = { responsive: true }
 
-        return (
-    
-          <Plotly
-    
-            data={data}
-    
-            layout={layout}
-    
-          />
-    
-        );
-    
-      }
-    
-    }
+export default class Dash extends React.Component {
+  render() {
+
+    return (
+
+      <Plotly
+
+        data={data}
+
+        layout={layout}
+
+        config={config}
+
+      />
+
+    );
+
+  }
+
+}
