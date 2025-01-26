@@ -147,17 +147,16 @@ export default function Corpus() {
         <p className="font-light tracking-wide mt-2">
           As our specialist contributors assemble the corpus, you can observe some key indicators about its evolving composition.
         </p>
-      <div id="dashboard" key="dashboard" className="container">
-        <div className="grid my-8 w-fit">
-          <p className="font-bold p-1 w-fit md:text-lg text-xl">
-            Distribution of texts by language
-          </p>
-          <div className="overflow-scroll">
-            <Dash />
-          </div>
+        <div id="dashboard" key="dashboard" className="grid justify-center">
+            <p className="font-bold p-1 w-fit md:text-lg text-xl">
+              Distribution of texts by language
+            </p>
+            <div className="overflow-scroll">
+              <Dash />
+            </div>
         </div>
       </div>
-      </div>
+
     </div>
   );
 }
