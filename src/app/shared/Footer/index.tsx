@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="overflow-hidden mx-auto divide-y divide-slate-200 px-4 sm:px-6 md:px-8 dark:divide-slate-700">
             <div className="mx-8 lg:space-x-24 lg:flex mt-4 space-y-4 justify-center">
 
-                <div className='flex space-x-12'>
+                <div className='grid grid-cols-2 space-x-12 place-items-stretch'>
                     <div className="w-fit">
                         <h2 className="font-semibold text-slate-900 mb-3">
                             Pages
@@ -55,6 +55,7 @@ export default function Footer() {
                     </div>
                 </div>
 
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 md:space-x-4 lg:space-x-4 place-items-stretch'>
                     <div className="md:max-w-96">
                         <h2 className="font-semibold text-slate-900 mb-3">
                             ERC Starting Grant
@@ -69,11 +70,11 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    <div className="min-w-96">
+                    <div className="grid min-w-96 justify-center">
                         <h2 className="font-semibold text-slate-900 mb-3">
                             Partners
                         </h2>
-                        <ul className="grid lg:flex gap-8 items-center max-h-[400px]">
+                        <ul className="grid lg:grid-cols-2 lg:flex gap-8 place-items-stretch max-h-[400px]">
                             <li>
                                 <Link target="_blank" rel="noreferrer" href="https://doi.org/10.3030/101117408">
                                     <Image className='object-contain w-fit max-h-[100px]' src={ERC_LOGO} alt='ERC logo'/>
@@ -86,7 +87,7 @@ export default function Footer() {
                             </li>
                         </ul>
                     </div>
-
+                </div>
             </div>
             
             <div className="flex mt-16 pt-10 gap-4">
