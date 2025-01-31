@@ -42,5 +42,16 @@
         "label": "Conference Program",
         "a": "https://www.chartes.psl.eu/sites/default/files/public/media/document/2024-05/lostma_kickoff_event_program.pdf",
         "link": null
+    },
+    {
+        "title": "Public Conference: Les Manuscrits perdus de l'Europe médiévale",
+        "date": "24 May 2024",
+        "venue": "École nationale des chartes",
+        "city": "Paris, France",
+        "description": "Lecture to the general public presenting LostMA, and its current results and objectives; then broadcasted online, available at: https://www.youtube.com/watch?v=_rekmYY4-Pc",
+        "image": "public/images/lostma_logo.png",
+        "label": "Conference Website",
+        "a": "https://www.youtube.com/watch?v=_rekmYY4-Pc",
+        "link": null
     }
 ]
