@@ -6,9 +6,11 @@
         "city": "Paris, France",
         "description": "With initial corpora entered into the database, hackathon to work with and analyse the data, driven by scientific inquiries and leading to early results.",
         "image": "public/images/lostma_logo.png",
-        "label": "Conference Website",
-        "a": null,
-        "link": "/events/hackathon2025"
+        "link": {
+            "page": true,
+            "label": "Conference Website",
+            "url": "/events/hackathon2025"
+        }
     },
     {
         "title": "Collaborators' Meeting #2",
@@ -17,8 +19,6 @@
         "city": "Antwerp, Belgium",
         "description": "Orientation of collaborators with the data model, discussion of final adjustments, and beginning of data entry.",
         "image": "public/images/lostma_logo.png",
-        "label": null,
-        "a": null,
         "link": null
     },
     {
@@ -28,8 +28,6 @@
         "city": "Brussels, Belgium",
         "description": "Break ground on adjusting the data model in accordance with the needs of diverse corpora.",
         "image": "public/images/lostma_logo.png",
-        "label": null,
-        "a": null,
         "link": null
     },
     {
@@ -39,19 +37,23 @@
         "city": "Paris, France",
         "description": "Kick-off conference, inviting the scientific community to interrogate the key questions of the project.",
         "image": "public/images/lostma_logo.png",
-        "label": "Conference Program",
-        "a": "https://www.chartes.psl.eu/sites/default/files/public/media/document/2024-05/lostma_kickoff_event_program.pdf",
-        "link": null
+        "link": {
+            "page": false,
+            "label": "Conference Program",
+            "url": "https://www.chartes.psl.eu/sites/default/files/public/media/document/2024-05/lostma_kickoff_event_program.pdf"
+        }
     },
     {
         "title": "Public Conference: Les Manuscrits perdus de l'Europe médiévale",
         "date": "24 May 2024",
         "venue": "École nationale des chartes",
         "city": "Paris, France",
-        "description": "Lecture to the general public presenting LostMA, and its current results and objectives; then broadcasted online, available at: https://www.youtube.com/watch?v=_rekmYY4-Pc",
+        "description": "Lecture to the general public presenting LostMA, and its current results and objectives; then broadcasted online.",
         "image": "public/images/lostma_logo.png",
-        "label": "Conference Website",
-        "a": "https://www.youtube.com/watch?v=_rekmYY4-Pc",
-        "link": null
+        "link": {
+            "page": false,
+            "label": "Video Recording",
+            "url": "https://www.youtube.com/watch?v=_rekmYY4-Pc"
+        }
     }
 ]

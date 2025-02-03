@@ -31,6 +31,9 @@
       ],
       "@/data/*": [
         "./public/data/*"
+      ],
+      "@/test/*": [
+        "./src/types/*"
       ]
     }
   },
