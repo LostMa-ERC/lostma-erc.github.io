@@ -1,4 +1,5 @@
 type EventDataType = {
+    start: Date
     title: string
     date: string
     venue: string

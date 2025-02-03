@@ -2,7 +2,7 @@ import { loadVocabData } from "../../components/loadData";
 import { fetchVocab } from "../../components/fetchData";
 import Hashtag from "@/app/components/Hashtag";
 import Link from "next/link";
-import SetInnerHTML from "@/app/components/innerHTML";
+import InnerHTMLParagraph from "@/app/components/InnerHTMLParagraph";
 import { loadDataModificationDate } from "../../components/loadData";
 
 const UturnIcon = <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -45,7 +45,7 @@ export default async function Page({params, }: {params: Promise<{ vocabID: strin
             {data.label}
           </h1>
           <div className="font-light px-4 md:px-16 tracking-wide">
-            {SetInnerHTML(data.description)}
+            < InnerHTMLParagraph content={data.description} />
           </div>
       </header>
       
@@ -64,7 +64,7 @@ export default async function Page({params, }: {params: Promise<{ vocabID: strin
                 <tr className="font-light tracking-tight bg-white border-b" key={`field-${term.id}`}>
                   <td className="font-normal tracking-wide px-6 py-4">{term.label}</td>
                   <td className="px-6 py-4">
-                    {SetInnerHTML(term.description)}
+                    < InnerHTMLParagraph content={term.description} />
                   </td>
                   <td className="px-6 py-4"><Hashtag url={term.url}/></td>
                 </tr>

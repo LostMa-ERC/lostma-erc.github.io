@@ -1,7 +1,7 @@
-export default function SetInnerHTML(str:string | null | undefined) {
+const InnerHTMLParagraph = ({content,}: {content :string | null | undefined}) => {
     let p;
-    if (str) {
-        var cleanString = str.replace(/\\n/g, "<br/>")
+    if (content) {
+        var cleanString = content.replace(/\\n/g, "<br/>")
                 .replace(/\n/g, "<br/>")
                 .replace(/\\'/g, "\'")
                 .replace(/\\"/g, '\"')
@@ -18,3 +18,5 @@ export default function SetInnerHTML(str:string | null | undefined) {
     return p;
 
 }
+
+export default InnerHTMLParagraph

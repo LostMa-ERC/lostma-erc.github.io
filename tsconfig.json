@@ -32,7 +32,7 @@
       "@/data/*": [
         "./data/*"
       ],
-      "@/test/*": [
+      "@/types/*": [
         "./src/types/*"
       ]
     }

@@ -1,9 +1,9 @@
 import { assert, expect, describe, test } from 'vitest';
-import eventData from '@/data/events.json';
+import events from '@/data/events.json';
 import '@testing-library/jest-dom/vitest';
 
 
-describe.each(eventData)
+describe.each(events)
     ('Validate events.json array, index %#', (item) => {
     
     test('Title is valid string (<250 char).', () => {

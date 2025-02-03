@@ -11,7 +11,7 @@ on:
     paths:
       - 'src/**'
       - 'public/**'
-      - 'data/**'
+      - 'data/**/*.json'
       - 'package.*'
       - '*.ts'
 

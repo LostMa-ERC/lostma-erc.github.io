@@ -1,6 +1,6 @@
 import { EntityDetail } from "./models";
 import Hashtag from "@/app/components/Hashtag";
-import SetInnerHTML from "@/app/components/innerHTML";
+import InnerHTMLParagraph from "@/app/components/InnerHTMLParagraph";
 import ToggleHeuristQuery from "./ToggleHeuristQuery";
 
 export default function Header({data} :{data:EntityDetail}) {    
@@ -14,7 +14,7 @@ export default function Header({data} :{data:EntityDetail}) {
     }
 
     const p = <>
-            {SetInnerHTML(data.metadata.rty_Description)}
+            <InnerHTMLParagraph content={data.metadata.rty_Description} />
             <p className="text-muted">
                 Equivalent Entity: {url}
             </p>
