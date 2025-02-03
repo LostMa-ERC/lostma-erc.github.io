@@ -12,12 +12,6 @@ permissions:
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
   tests:
     runs-on: ubuntu-latest
@@ -64,7 +58,7 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
       - name: Run unit tests
-        run: ${{ steps.detect-package-manager.outputs.runner }} run test
+        run: npm run test
   
       - name: Testing build
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
