@@ -5,16 +5,6 @@
 name: Deploy Next.js site to Pages
 
 on:
-  # Runs on pushes targeting code base
-  workflow_run:
-    workflows: ["Run tests"]
-    branches: [main]
-    types:
-      - completed
-  # push:
-  #   paths:
-  #     - '.github/workflows/**'
-  #     - '*.ts'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -32,7 +22,6 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
