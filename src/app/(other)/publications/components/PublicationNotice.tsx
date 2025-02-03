@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { PublicationDataType } from "@/app/types/PublicationData";
+import { PublicationDataType } from "@/types/PublicationData";
 import PlaceHolder from "@/public/images/lostma_logo.png";
 
 const PublicationNotice = ({data}: {data:PublicationDataType}) => {

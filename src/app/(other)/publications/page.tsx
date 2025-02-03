@@ -1,4 +1,4 @@
-import { PublicationDataType } from "@/app/types/PublicationData";
+import { PublicationDataType } from "@/types/PublicationData";
 import jsonData from "@/data/publications.json";
 import { fetchChronologicalData } from "@/app/functions/fetchData";
 import PublicationNotice from "./components/PublicationNotice";
