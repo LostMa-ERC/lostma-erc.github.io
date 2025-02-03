@@ -4,6 +4,8 @@
 #
 name: Tests
 
+run-name: '"${{ github.triggering_actor }}" has triggered unittests'
+
 on:
   push:
     paths:
