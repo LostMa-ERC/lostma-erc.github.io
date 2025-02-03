@@ -25,9 +25,17 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
+  on-failure:
     runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
     steps:
+      - run: echo 'The testing workflow failed.'
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - run: echo 'The testing workflow succeeded.'
       - name: Checkout
         uses: actions/checkout@v4
       - name: Detect package manager
