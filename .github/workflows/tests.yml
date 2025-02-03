@@ -9,10 +9,9 @@ on:
     paths:
       - 'src/**'
       - 'public/**'
+      - 'data/**'
       - 'package.*'
       - '*.ts'
-  pull_request:
-    branches: main
 
 permissions:
   contents: read
@@ -63,7 +62,7 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
       - name: Run unit tests
-        run: npm run test
+        run: ${{ steps.detect-package-manager.outputs.runner }} vitest --disable-console-intercept
   
       - name: Testing build
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
