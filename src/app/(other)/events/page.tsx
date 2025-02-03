@@ -1,5 +1,5 @@
 import EventNotice from "./components/EventNotice";
-import jsonData from "@/public/data/events.json";
+import jsonData from "@/data/events.json";
 
 const News = () => {
   return (
