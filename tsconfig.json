@@ -33,7 +33,7 @@
         "./data/*"
       ],
       "@/types/*": [
-        "./src/types/*"
+        "./src/app/types/*"
       ]
     }
   },
