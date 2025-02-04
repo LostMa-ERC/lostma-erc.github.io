@@ -1,7 +1,7 @@
-import { EventLinkType } from "@/types/EventData";
+import { LinkButtonType } from "@/types/LinkButtonType";
 import Link from "next/link";
 
-const EventLink = ({data,}: {data: EventLinkType | null}) => {
+const EventLink = ({data,}: {data: LinkButtonType | null}) => {
 
     let button = <></>
 

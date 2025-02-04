@@ -1,4 +1,4 @@
-import Navbar from "./Navbar/navbar";
+import Navbar from "./Navbar/Navbar";
 import { MainLinks } from "./Navbar/Links";
 
 export default function MainLayout({

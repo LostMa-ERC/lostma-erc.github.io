@@ -3,7 +3,7 @@ const MainLinks = [
     {"href": "/corpus", "label": "Corpus"},
     {"href": "/publications", "label": "Publications"},
     {"href": "/releases", "label": "Releases"},
-    {"href": "/events", "label": "Events"},
+    {"href": "/news", "label": "News"},
 ]
 
 const CorpusLinks = [

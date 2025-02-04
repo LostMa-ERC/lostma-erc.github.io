@@ -1,12 +1,9 @@
 import '@testing-library/jest-dom/vitest';
-import { expect, describe, test } from 'vitest';
-import { fetchChronologicalData, JsonArrayChrono } from '@/app/functions/fetchData';
-import events from '@/data/events.json';
+import news from '@/data/news.json';
 import publications from '@/data/publications.json';
-
-const sortedEvents = await fetchChronologicalData({arrays: events});
-const sortedPubs = await fetchChronologicalData({arrays: publications});
-const sortedNews = await fetchChronologicalData({arrays: [events, publications]})
+import { expect, describe, test, assert } from 'vitest';
+import { fetchChronologicalData, JsonArrayChrono } from '@/app/functions/fetchData';
+import { NewsCategory } from '@/app/types/NewsCategory';
 
 interface DateEndpoints {
     beginning: Date
@@ -14,25 +11,59 @@ interface DateEndpoints {
 }
 
 function getEndpoints({data,}: {data: JsonArrayChrono}): DateEndpoints {
-    const first = data[0].start
-    const last = data[data.length -1].start
-    const beginningDate = new Date(first)
-    const endDate = new Date(last)
+    const index0 = data[0].start
+    const index1 = data[data.length -1].start
+    const beginningDate = new Date(index1)
+    const endDate = new Date(index0)
     const endpoints: DateEndpoints = {beginning: beginningDate, end:endDate}
     return endpoints
 }
 
+const orderedPubs = await fetchChronologicalData(
+    {arrays: publications, category:null}
+);
+const orderedAll = await fetchChronologicalData(
+    {arrays: [news, publications], category:null}
+)
+const orderedEvents = await fetchChronologicalData(
+    {arrays: news, category:NewsCategory.Event}
+);
+const orderedPublicationNews = await fetchChronologicalData(
+    {arrays: news, category: NewsCategory.Publication}
+);
+const orderedOtherNews = await fetchChronologicalData(
+    {arrays: news, category: NewsCategory.Other}
+);
+
+describe('Filtered News Data', () => {
+    test('Events', () => {
+        for (let i of orderedEvents) {
+            assert.equal(i.category, NewsCategory.Event)
+        }
+    })
+    test('Publications', () => {
+        for (let i of orderedPublicationNews) {
+            assert.equal(i.category, NewsCategory.Publication)
+        }
+    })
+    test('Other', () => {
+        for (let i of orderedOtherNews) {
+            assert.equal(i.category, NewsCategory.Other)
+        }
+    })
+})
+
 describe('Fetch chronological data', () => {
     test('Test order of events', () => {
-        const endpoints = getEndpoints({data: sortedEvents})
-        expect.soft(endpoints.beginning).greaterThanOrEqual(endpoints.end)
+        const endpoints = getEndpoints({data: orderedEvents})
+        expect.soft(endpoints.beginning).lessThanOrEqual(endpoints.end)
     })
     test('Test order of publications', () => {
-        const endpoints = getEndpoints({data: sortedPubs})
-        expect.soft(endpoints.beginning).greaterThanOrEqual(endpoints.end)
+        const endpoints = getEndpoints({data: orderedPubs})
+        expect.soft(endpoints.beginning).lessThanOrEqual(endpoints.end)
     })
-    test('Test order of news', () => {
-        const endpoints = getEndpoints({data: sortedNews})
-        expect.soft(endpoints.beginning).greaterThanOrEqual(endpoints.end)
+    test('Test order of all news', () => {
+        const endpoints = getEndpoints({data: orderedAll})
+        expect.soft(endpoints.beginning).lessThanOrEqual(endpoints.end)
     })
 })

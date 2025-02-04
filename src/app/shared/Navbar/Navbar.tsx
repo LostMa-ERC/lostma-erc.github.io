@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LinkItem } from "./types";
+import { LinkItem } from "@/types/NavLinkType";
 import { MainLinks } from "./Links";
 import { HomeSVG } from "@/public/svgs";
 
@@ -10,7 +10,7 @@ const MainLinkPaths = MainLinks.map(({ href }) => {
   return href;
 });
 
-export default function Navbar({links}: {links: LinkItem[]}) {
+const Navbar = ({links}: {links: LinkItem[]}) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleDropdown = () => {
@@ -123,7 +123,7 @@ export default function Navbar({links}: {links: LinkItem[]}) {
                                             className={`
                                                 ${isActive ? "bg-gray-300 text-gray-900 dark:bg-gray-400" : "text-white"} 
                                                 rounded-md px-3 py-2 
-                                                font-medium text-sm tracking-tight
+                                                font-medium text-md tracking-tight
                                                 hover:bg-gray-700 hover:text-white`}>
                                         {label}
                                         </Link>
@@ -185,4 +185,6 @@ export default function Navbar({links}: {links: LinkItem[]}) {
         }
     </>
     );
-}
+};
+
+export default Navbar;

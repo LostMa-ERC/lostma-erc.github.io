@@ -1,40 +1,42 @@
 import { assert, expect, describe, test } from 'vitest';
-import events from '@/data/events.json';
+import events from '@/data/news.json';
 import '@testing-library/jest-dom/vitest';
+import { fetchChronologicalData } from '@/app/functions/fetchData';
+import { NewsCategory } from '@/app/types/NewsCategory';
 
+const array = await fetchChronologicalData({arrays: events, category: null})
 
-describe.each(events)
-    ('Validate events.json array, index %#', (item) => {
+describe.each(array)
+    ('Validate news.json array, index %#', (item) => {
     
     test('Title is valid string (<250 char).', () => {
       expect.soft(item.title).toBeTypeOf('string')
       expect.soft(item.title.length).lessThanOrEqual(250)
     })
-    
-    test('Date is valid string (<50 char).', () => {
-        expect.soft(item.date).toBeTypeOf('string')
-        expect.soft(item.date.length).lessThanOrEqual(50)
-    })
 
-    test('Venue is valid string (<250 char).', () => {
-        expect.soft(item.date).toBeTypeOf('string')
-        expect.soft(item.date.length).lessThanOrEqual(250)
-    })
-
-    test('City is valid string (<250 char).', () => {
-        expect.soft(item.venue).toBeTypeOf('string')
-        expect.soft(item.venue.length).lessThanOrEqual(250)
-    })
-
-    test('Description is valid string (<750 char).', () => {
-        expect.soft(item.description).toBeTypeOf('string')
-        expect.soft(item.description.length).lessThanOrEqual(750)
-    })
+    if (Array.isArray(item.subtitle)) {
+        test('Subtitle is list of authors.', () => {
+            expect.soft(item.subtitle.length).greaterThanOrEqual(1)
+        })
+    }
+    else {
+        test('Subtitle is valid string (<50 char).', () => {
+            expect.soft(item.subtitle).toBeTypeOf('string')
+            expect.soft(item.subtitle.length).lessThanOrEqual(50)
+        })
+    }
 
     test('Description has no URL.', () => {
         assert.notInclude(item.description, 'https://')
         assert.notInclude(item.description, 'http://')
     })
+
+    if (item.category != NewsCategory.Publication) {
+        test('Description is valid string (<750 char).', () => {
+            expect.soft(item.description).toBeTypeOf('string')
+            expect.soft(item.description.length).lessThanOrEqual(750)
+        })
+    }
 
     if(item.link) {
         if (item.link.page) {

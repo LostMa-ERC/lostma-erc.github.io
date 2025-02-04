@@ -1,3 +1,5 @@
+import { NewsCategory } from "../types/NewsCategory"
+
 interface ChronologicalData {
     start: string
     [key: string]: any
@@ -5,15 +7,24 @@ interface ChronologicalData {
 
 type JsonArrayChrono = ChronologicalData[];
 
-export async function fetchChronologicalData({arrays,}: {arrays: any[]}): Promise<JsonArrayChrono> {
+export async function fetchChronologicalData({arrays, category}: {arrays: any[], category: NewsCategory | null}): Promise<JsonArrayChrono> {
+
     // Concatenate the array or arrays to an empty array
-    var arrayConcat: JsonArrayChrono = [].concat.apply([], arrays)
-    // Sort the full array by date ('start' property)
-    const l = arrayConcat.sort((a, b) => b.start.localeCompare(a.start))
-    // Return a subset of the full array, ignoring length and other non-data objects
-    return Object.values(l).flatMap(
-        ({start,}, index) => start ? l[index]: []
-    )
+    const arrayConcat: JsonArrayChrono = [].concat.apply([], arrays)
+    
+    // Return a subset that ignores length and other non-data objects
+    const subsetBasic = arrayConcat.filter((i) => i.start != undefined)
+
+    // If filtering on a category type, further refine the subset
+    if (category) {
+        var subsetFinal = subsetBasic.filter((i) => i.category === category)
+    }
+    else {
+        var subsetFinal = subsetBasic
+    }
+    
+    // Sort the filtered array by date ('start' property)
+    return subsetFinal.sort((a, b) => b.start.localeCompare(a.start))
 };
 
 export type { JsonArrayChrono };
