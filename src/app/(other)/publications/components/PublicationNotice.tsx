@@ -5,8 +5,8 @@ const PublicationNotice = ({data}: {data:PublicationDataType}) => {
     const date = data.start.toString()
 
     return (
-        <>
-          <div className="bg-primary text-white">
+        <div className="bg-white/50 rounded-md md:rounded-lg">
+          <div className="bg-primary text-white rounded-md md:rounded-lg">
             <div className="p-4">
               <h2 className="md:text-2xl text-xl italic">
                 <a target="_blank" rel="noreferrer" href={data.link}>{data.title}</a>
@@ -30,7 +30,7 @@ const PublicationNotice = ({data}: {data:PublicationDataType}) => {
               </a>
             </div>
           </div>
-        </>
+        </div>
     )
 };
 

@@ -3,9 +3,9 @@ import EventLink from "./EventLink";
 
 const EventNotice = ({data}: {data:EventDataType}) => {
     return (
-      <div className="rounded shadow-lg border-solid border-2 h-full">
+      <div className="rounded md:rounded-lg border-solid border-2 h-full bg-white/50">
         {/* Header */}
-        <div className="bg-primary text-white">
+        <div className="bg-primary rounded md:rounded-lg text-white">
           <div className="p-4 ">
             <div className="font-light tracking-wide text-sm pb-2">
               {data.date}
@@ -16,7 +16,7 @@ const EventNotice = ({data}: {data:EventDataType}) => {
           </div>
         </div>
         {/* Body */}
-        <div className="p-4 md:px-4">
+        <div className="p-4 md:px-4 rounded md:rounded-lg">
           <div className="flex font-light">
             <div className="flex-1">
               <div className="font-light tracking-wide text-sm md:text-base">

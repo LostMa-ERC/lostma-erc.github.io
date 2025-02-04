@@ -80,7 +80,7 @@ var layout = {
   // height: 500,
   hovermode: 'closest',
   paper_bgcolor: 'rgba(0,0,0,0)',
-  plot_bgcolor: 'rgba(0,0,0,0)'
+  plot_bgcolor: 'rgba(300,300,300,0.33)'
 };
 
 var config = { responsive: true }
