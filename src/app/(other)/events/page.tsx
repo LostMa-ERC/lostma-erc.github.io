@@ -11,16 +11,18 @@ let events = array as Array<EventDataType>;
 const News = () => {
   return (
     <div className="gap-4">
-        <h1 className="mt-2 md:mb-4 inline-block md:text-2xl text-3xl font-bold text-slate-900 tracking-tight">
-          LostMa Events
+        <h1 className="my-2 inline-block text-2xl font-bold text-slate-900 tracking-tight md:hidden">
+          Events
         </h1>
-        {Object.values(events).map((event, idx) =>
-          <article className="p-1 w-full" key={`event-${idx}`}>
-            <div className="my-2 p-4 rounded shadow-lg border-solid border-2">
-              < EventNotice data={event} />
-            </div>
-          </article>
-        )}
+        <div className="md:py-2 flex justify-center">
+          <div className="md:grid md:grid-cols-3 gap-x-12 md:gap-y-8 md:space-y-0 space-y-8">
+            {Object.values(events).map((event, idx) =>
+              <article className="max-w-96 h-96 overflow-y-scroll" id={`${idx}`} key={`event-${idx}`}>
+                < EventNotice data={event} />
+              </article>
+            )}
+          </div>
+        </div>
     </div>
   );
 };

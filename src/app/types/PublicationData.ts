@@ -2,7 +2,7 @@ type PublicationDataType = {
     start: Date
     title: string
     authors: string[]
-    description: string
+    abstract: string
     link: string
 }
 

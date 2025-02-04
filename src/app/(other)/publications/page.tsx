@@ -11,16 +11,16 @@ let pubs = array as Array<PublicationDataType>;
 const Publications = () => {
   return (
     <div className="gap-4">
-        <h1 className="mt-2 md:mb-4 inline-block md:text-2xl text-3xl font-bold text-slate-900 tracking-tight">
-          LostMa Publications
-        </h1>
-        {Object.values(pubs).map((pub, idx) =>
-          <article className="p-1 w-auto" key={`event-${idx}`}>
-            <div className="my-2 rounded shadow-lg border-solid border-2">
-              < PublicationNotice data={pub} />
-            </div>
-          </article>
-        )}
+      <h1 className="my-2 inline-block text-2xl font-bold text-slate-900 tracking-tight md:hidden">
+        Publications
+      </h1>
+      {Object.values(pubs).map((pub, idx) =>
+        <article className="p-1 w-auto" id={`${idx}`} key={`article-${idx}`}>
+          <div className="my-2 rounded shadow-lg border-solid border-2">
+            < PublicationNotice data={pub} />
+          </div>
+        </article>
+      )}
     </div>
   );
 };

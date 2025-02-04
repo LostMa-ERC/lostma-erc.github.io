@@ -5,7 +5,6 @@ type EventDataType = {
     venue: string
     city: string
     description: string
-    image: string | null
     link: EventLinkType | null
 }
 

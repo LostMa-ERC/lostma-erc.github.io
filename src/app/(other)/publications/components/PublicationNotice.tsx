@@ -22,7 +22,7 @@ const PublicationNotice = ({data}: {data:PublicationDataType}) => {
             </div>
             <hr className="mt-2" />
             <p className="font-light tracking-tight md:tracking-wide md:px-8 max-h-40 overflow-y-scroll">
-              {data.description}
+              {data.abstract}
             </p>
             <div className="w-fit button text-center">
               <a className="text-inherit text-xs md:text-sm bg-inherit hover:text-inherit hover:bg-inherit" target="_blank" rel="noreferrer" href={data.link}>
