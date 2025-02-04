@@ -1,1 +1,1 @@
-See how to update the website's data [here](data/).
+See how to update the website's data [here](data/README.md).
