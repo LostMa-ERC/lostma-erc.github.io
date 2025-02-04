@@ -49,7 +49,7 @@ const NewsComponent = ({data, index}: {data:NewsType, index:number}) => {
 
       <div className="p-4 md:px-4 rounded md:rounded-lg">
          <div className="flex font-light">
-           <div className="flex-1 w-full overflow-y-hidden">
+           <div className="flex-1 w-full h-full">
              {location}
              {description}
            </div>

@@ -10,7 +10,7 @@ let news = array as Array<NewsType>;
 
 const News = () => {
   return (
-    <div className="md:flex md:gap-8">
+    <div className="md:flex md:gap-8 justify-center">
       <div className="justify-center items-center">
         <h1 className="my-2 text-center text-2xl font-bold text-slate-900 tracking-tight md:order-2">
           News
@@ -28,9 +28,9 @@ const News = () => {
         </div>
       </div>
       <div className="md:py-2 flex justify-center">
-        <div className="md:grid md:grid-cols-3 gap-x-12 md:gap-y-8 md:space-y-0 space-y-8">
+        <div className="grid md:grid-cols-3 gap-x-12 md:gap-y-8 md:space-y-0 space-y-8">
           {Object.values(news).map((event, idx) =>
-            <article className="max-w-96 max-h-80 min-h-40" id={`${idx}`} key={`event-${idx}`}>
+            <article className="max-w-96 max-h-80" id={`${idx}`} key={`event-${idx}`}>
               < NewsNotice data={event} index={idx} />
             </article>
           )}
