@@ -14,7 +14,6 @@ on:
       - 'data/**/*.json'
       - 'package.*'
       - '*.ts'
-      - '.github/workflows/**'
   pull_request:
     branches:
       - main
@@ -40,7 +39,7 @@ jobs:
   # Call the build workflow
   build:
     needs: test
-    name: Build distribution
+    name: Static site generation
     uses: ./.github/workflows/build.yml
 
   # Deployment job
