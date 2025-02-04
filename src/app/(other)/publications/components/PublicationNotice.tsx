@@ -21,7 +21,7 @@ const PublicationNotice = ({data}: {data:PublicationDataType}) => {
                 {data.authors.join(', ')}
             </div>
             <hr className="mt-2" />
-            <p className="max-h-40 overflow-y-scroll font-light tracking-tight md:tracking-wide">
+            <p className="font-light tracking-tight md:tracking-wide md:px-8 max-h-40 overflow-y-scroll">
               {data.description}
             </p>
             <div className="w-fit button text-center">
