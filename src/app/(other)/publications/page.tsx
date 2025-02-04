@@ -16,7 +16,7 @@ const Publications = () => {
         </h1>
         {Object.values(pubs).map((pub, idx) =>
           <article className="p-1 w-auto" key={`event-${idx}`}>
-            <div className="my-2 p-4 rounded shadow-lg border-solid border-2">
+            <div className="my-2 rounded shadow-lg border-solid border-2">
               < PublicationNotice data={pub} />
             </div>
           </article>
