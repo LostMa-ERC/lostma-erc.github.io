@@ -1,0 +1,54 @@
+# Sample workflow for building and deploying a Next.js site to GitHub Pages
+#
+# To get started with Next.js see: https://nextjs.org/docs/getting-started
+#
+name: '[Automated] Deploy if tests passed'
+
+run-name: '[Automated] Deployment 🚀'
+
+on:
+  push:
+    paths:
+      - 'src/**'
+      - 'public/**'
+      - 'data/**/*.json'
+      - 'package.*'
+      - '*.ts'
+      - '.github/workflows/**'
+  pull_request:
+    branches:
+      - main
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Call the unit test workflow
+  test:
+    uses: ./.github/workflows/tests.yml
+
+  # Call the build workflow
+  build:
+    needs: test
+    uses: ./.github/workflows/build.yml
+
+  # Deployment job
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
