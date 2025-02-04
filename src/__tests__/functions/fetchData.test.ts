@@ -1,6 +1,5 @@
 import '@testing-library/jest-dom/vitest';
 import news from '@/data/news.json';
-import publications from '@/data/publications.json';
 import { expect, describe, test, assert } from 'vitest';
 import { fetchChronologicalData, JsonArrayChrono } from '@/app/functions/fetchData';
 import { NewsCategory } from '@/app/types/NewsCategory';
@@ -19,11 +18,8 @@ function getEndpoints({data,}: {data: JsonArrayChrono}): DateEndpoints {
     return endpoints
 }
 
-const orderedPubs = await fetchChronologicalData(
-    {arrays: publications, category:null}
-);
 const orderedAll = await fetchChronologicalData(
-    {arrays: [news, publications], category:null}
+    {arrays: [news], category:null}
 )
 const orderedEvents = await fetchChronologicalData(
     {arrays: news, category:NewsCategory.Event}
@@ -59,7 +55,7 @@ describe('Fetch chronological data', () => {
         expect.soft(endpoints.beginning).lessThanOrEqual(endpoints.end)
     })
     test('Test order of publications', () => {
-        const endpoints = getEndpoints({data: orderedPubs})
+        const endpoints = getEndpoints({data: orderedPublicationNews})
         expect.soft(endpoints.beginning).lessThanOrEqual(endpoints.end)
     })
     test('Test order of all news', () => {

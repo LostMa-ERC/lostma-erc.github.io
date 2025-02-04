@@ -42,7 +42,7 @@ describe.each(array)
         if (item.link.page) {
             test('Link is valid', () => {
                 expect.soft(item.link.url).toBeTypeOf('string')
-                expect.soft(item.link.url).toMatch(RegExp('^/events/'))
+                expect.soft(item.link.url).toMatch(RegExp('^/news/'))
             })
         }
         else {
