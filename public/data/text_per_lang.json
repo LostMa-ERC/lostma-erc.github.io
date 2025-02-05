@@ -1,0 +1,55 @@
+{
+  "lastModified": "2025-02-05",
+  "items": [
+    {
+      "n": 77,
+      "lang": "dum",
+      "lang_label": "Middle Dutch"
+    },
+    {
+      "n": 8,
+      "lang": "frm",
+      "lang_label": "Middle French"
+    },
+    {
+      "n": 45,
+      "lang": "fro",
+      "lang_label": "Old French"
+    },
+    {
+      "n": 12,
+      "lang": "fro_ENG",
+      "lang_label": "Anglo-Norman"
+    },
+    {
+      "n": 16,
+      "lang": "fro_ITA",
+      "lang_label": "Franco-Italian"
+    },
+    {
+      "n": 2,
+      "lang": "fro_PRO",
+      "lang_label": "Franco-Occitan"
+    },
+    {
+      "n": 1,
+      "lang": "gmh",
+      "lang_label": "Middle High German"
+    },
+    {
+      "n": 2,
+      "lang": "non",
+      "lang_label": "Old Norse"
+    },
+    {
+      "n": 13,
+      "lang": "pro",
+      "lang_label": "Occitan"
+    },
+    {
+      "n": 198,
+      "lang": null,
+      "lang_label": null
+    }
+  ]
+}

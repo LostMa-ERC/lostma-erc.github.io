@@ -7,13 +7,13 @@ name: '[Automated] Deploy if tests passed'
 run-name: '[Automated] Deployment 🚀'
 
 on:
-  push:
-    paths:
-      - 'src/**'
-      - 'public/**'
-      - 'data/**/*.json'
-      - 'package.*'
-      - '*.ts'
+  # push:
+  #   paths:
+  #     - 'src/**'
+  #     - 'public/**'
+  #     - 'data/**/*.json'
+  #     - 'package.*'
+  #     - '*.ts'
   pull_request:
     branches:
       - main

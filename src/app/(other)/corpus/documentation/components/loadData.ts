@@ -40,7 +40,7 @@ export async function loadVocabData(): Promise<VocabDetail[]> {
 
 export default async function loadData(): Promise<EntityDetail[]> {
     // Import JSON data store
-    const jsonData = await import('@/data/recordTypes.json');
+    const jsonData = await import('@/public/data/recordTypes.json');
     const arr = jsonData.items as EntityDetail[];
     
     // Ignore the 'default' and 'length' from the JSON array 
@@ -49,6 +49,6 @@ export default async function loadData(): Promise<EntityDetail[]> {
 
 export async function loadDataModificationDate(): Promise<string> {
     // Import JSON data store
-    const jsonData = await import('@/data/recordTypes.json');
+    const jsonData = await import('@/public/data/recordTypes.json');
     return jsonData.lastModified;
 }

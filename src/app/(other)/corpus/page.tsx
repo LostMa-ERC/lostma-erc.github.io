@@ -2,8 +2,8 @@
 import Link from "next/link";
 import { XMLFileSVG, ShareSVG, QuestionMarkSVG as What, MailSVG as How, ClockSVG as When, GlobeSVG as Where } from "@/public/svgs";
 import { BarChart } from "./components/dashboard";
-import witData from "@/data/wits_per_lang.json";
-import textData from "@/data/text_per_lang.json";
+import witData from "@/public/data/wits_per_lang.json";
+import textData from "@/public/data/text_per_lang.json";
 
 export default function Corpus() {
   
@@ -148,19 +148,19 @@ export default function Corpus() {
         <div className="w-fit border p-1 md:p-2">
           <div className="p-4 font-light">
             <h3 className="md:text-lg text-xl">Texts</h3>
-            <h4 className="text-sm">Distribution by language of Text records currently in database</h4>
+            <h4 className="text-sm">Distribution by language of Text records currently in database<br/>(<em>last updated {witData.lastModified}</em>)</h4>
           </div>
           <div className="overflow-scroll">
-            <BarChart data={textData} />
+            <BarChart data={textData.items} />
           </div>
           </div>
           <div className="w-fit border p-1 md:p-2">
             <div className="p-4 font-light">
               <h3 className="md:text-lg text-xl">Witnesses</h3>
-              <h4 className="text-sm">Distribution by language of Witness records currently in database</h4>
+              <h4 className="text-sm">Distribution by language of Witness records currently in database<br/>(<em>last updated {witData.lastModified}</em>)</h4>
             </div>
             <div className="overflow-scroll">
-              <BarChart data={witData} />
+              <BarChart data={witData.items} />
             </div>
           </div>
         </div>
