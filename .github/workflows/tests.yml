@@ -44,7 +44,14 @@ jobs:
           result-type: statements
           upload-badge: false
 
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          file_pattern: './badge.svg'  
+      - name: Commit data
+        run: |
+          mv ./badge.svg docs/
+          if git diff docs/*.svg | grep . > /dev/null ; then
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
+            git pull
+            git add docs/*.svg
+            git commit -m "update badge"
+            git push
+          fi
