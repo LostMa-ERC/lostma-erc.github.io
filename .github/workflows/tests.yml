@@ -1,4 +1,4 @@
-name: Test
+name: test
 
 run-name: ${{ github.triggering_actor }} has triggered unittests
 
