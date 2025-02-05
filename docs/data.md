@@ -193,3 +193,5 @@ The last name of the individual. If the last name starts with an article or prep
 ### 3. `role` (_text_) [required]
 
 The individual's role or responsibility on the project. Every word of the role should be capitalised. For collaborators, this is the name of the corpus they contributed, i.e. "Middle Dutch Corpus."
+
+[Previous Page: Entering Data](./mechanics.md)
