@@ -2,7 +2,7 @@
 #
 # To get started with Next.js see: https://nextjs.org/docs/getting-started
 #
-name: '[Automated] Deploy if tests passed'
+name: 'Deploy'
 
 run-name: '[Automated] Deployment 🚀'
 
