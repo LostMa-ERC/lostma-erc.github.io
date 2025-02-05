@@ -33,9 +33,7 @@ export default function RootLayout({
     from-gray-200 via-[var(--background)] to-gray-200 
   ">
     {children}
-    <footer className="pb-16 text-sm leading-6">
-      <Footer />
-    </footer>
+    <Footer />
   </body>
 </html>
   );

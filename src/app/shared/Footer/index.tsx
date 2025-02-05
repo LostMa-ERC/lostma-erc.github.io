@@ -77,19 +77,13 @@ const Partners = () => {
             <h2 className="font-light md:font-semibold md:text-muted text-slate-900 mb-3">
                 Partners
             </h2>
-            <div className='flex justify-center'>
-                <ul className="grid lg:grid-cols-2 lg:flex gap-8 place-items-stretch max-h-[400px]">
-                    <li>
+            <div className='flex justify-center items-center'>
                         <Link target="_blank" rel="noreferrer" href="https://doi.org/10.3030/101117408">
                             <Image className='object-contain w-fit max-h-[100px]' src={ERC_LOGO} alt='ERC logo'/>
                         </Link>
-                    </li>
-                    <li>
                         <Link target="_blank" rel="noreferrer" href="https://www.chartes.psl.eu/">
                                 <Image className='object-contain w-fit' src={ENC_LOGO} alt='ENC logo' />
                         </Link>
-                    </li>
-                </ul>
             </div>
         </>
     )
@@ -97,7 +91,7 @@ const Partners = () => {
 
 const Bottom = () => {
     return (
-        <div className="flex mt-16 pt-10 gap-4">
+        <div className="flex px-6 mt-16 pt-10 gap-4">
             <Image className='flex-none w-fit h-[48px] object-contain' 
                 src={LOSTMA_LOGO} alt='LostMa logo' />
             <p className='grow my-0 text-[10px] font-normal md:text-[12px]'>
@@ -110,29 +104,31 @@ const Bottom = () => {
 
 export default function Footer() {
     return (
-        <div className="overflow-hidden mx-auto divide-y divide-slate-200 px-4 sm:px-6 md:px-8 dark:divide-slate-700">
+        <footer className="pb-16 text-sm leading-6 w-screen md:px-6">
+            <div className="overflow-hidden mx-auto divide-y divide-slate-200 dark:divide-slate-700">
 
-            <div className='md:flex gap-4 justify-center grid'>
+                <div className='md:flex gap-4 justify-center grid'>
 
-                <div className='md:min-w-24 w-fit px-4 md:px-0 md:order-4'>
-                    <Pages />
-                </div>
-                
-                <div className='md:w-24 px-4 md:px-0 md:order-3'>
-                    <Socials />
+                    <div className='md:min-w-24 w-fit px-4 md:px-0 md:order-4'>
+                        <Pages />
+                    </div>
+                    
+                    <div className='md:w-24 px-4 md:px-0 md:order-3'>
+                        <Socials />
+                    </div>
+
+                    <div className='md:w-96 px-4 md:px-0 md:order-1'>
+                        <Legal />
+                    </div>
+
+                    <div className='min-w-96 px-4 md:px-0 md:order-2'>
+                        <Partners />
+                    </div>
                 </div>
 
-                <div className='md:w-96 px-4 md:px-0 md:order-1'>
-                    <Legal />
-                </div>
+                < Bottom />
 
-                <div className='min-w-96 px-4 md:px-0 md:order-2'>
-                    <Partners />
-                </div>
             </div>
-
-            < Bottom />
-
-        </div>
+        </footer>
     )
 }
