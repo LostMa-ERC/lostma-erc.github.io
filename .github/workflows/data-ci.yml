@@ -1,11 +1,9 @@
 name: Update Heurist database info
 
 on:
-    push:
-        branches:
-            - main
-#   schedule:
-#     - cron: "00 12 * * *"
+  schedule:
+    # Run at 11:30 UTC (10:30 CET) on weekdays
+    - cron: "30 11 * * 1-5"
 
 jobs:
   update:
