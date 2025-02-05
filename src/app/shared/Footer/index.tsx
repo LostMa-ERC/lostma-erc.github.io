@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import ERC_LOGO from "@/public/images/erc-logo.png";
+import ERC_LOGO from "@/public/images/erc_logo.png";
 import Link from 'next/link';
 import LOSTMA_LOGO from "@/public/images/lostma_logo.png";
-import ENC_LOGO from "@/public/images/logo-enc.png";
+import ENC_LOGO from "@/public/images/enc_logo.png";
 import { faGithub, faLinkedin, faBluesky } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 

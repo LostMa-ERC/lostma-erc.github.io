@@ -1,134 +1,204 @@
-# Update Data
+# Data Formats
 
-LostMa team members will likely need to update the following information on the website:
+The 2 types of data that can be updated via the JSON files each have their own specific formatting that must be followed in order for the website's code to properly understand and parse the information you have provided.
 
-- [News](#how-to-update-news) (manual)
-- [People](#how-to-update-team) (manual)
+## Reference
 
-This data is stored in a JSON format, which is both human-readable and machine-parsable&mdash;the perfect pivot format! [Learn about JSON here.](https://www.w3schools.com/whatis/whatis_json.asp)
+Jump to the keys you're looking for:
 
-1. You: Edit the JSON file.
-2. You: Save and commit the file to the main branch.
-3. Automated: The edits will be added to the website if they pass the unit tests. Follow the progress of the update's deployment [here](https://github.com/LostMa-ERC/lostma-erc.github.io/actions).
-
+- News Item
+    - [start](#1-start-text-required)
+    - [category](#2-category-text-required)
+    - [title](#3-title-text-required)
+    - [detail](#4-detail-text-required)
+    - [description](#5-description-text-required)
+- Person
+    - [forename](#1-forename-text-required)
+    - [surname](#2-surname-text-required)
+    - [role](#3-role-text-required)
 ---
 
-### How to Update News
+## News Item
 
-Update news by editing the file [`news.json`](./news.json). As a JSON file, it's a set of keys and their values.
+News items are listed in an array in the `data/news.json` file. They are ordered chronologically when the website is generated, so you can add new items to the array in any order you want.
 
-- Required keys:
-    - **`start`**: The website's code automatically orders news by a date in ISO format (YYYY-MM-DD). Stored in the `start` key, this date can refer to the first day of a multi-day event, a date of publication, or the day in which you want the announcement to be made. The date itself will not show up on the website. Its purpose is to help us order the series of news chronologically, according to the time we find most relevant for the news item.
+Each news item is a dictionary, meaning it is a series of key-value pairs. The keys and the types of values they take are listed below:
 
-    - **`category`**: Each news item must be categorised as [`"Publication"`](#publication), [`"Event"`](#event), or [`"Other"`](#other).
+### 1. `start` (_text_) [required]
 
-    - **`title`**
+Date in ISO format (YYYY-MM-DD).
+
+- The website's code orders all the news items by the value of this date.
+
+- This date can be the first day of something, the exact day of something, or the day by which you want the news item to appear in the chronological order of items.
+
+- Except in the case of publications, this date will not show up on the website. It can serve as an internal date to help with ordering news items.
+
+```json
+{
+    "start": "2024-05-28",
+    ...
+}
+```
+
+### 2. `category` (_text_) [required]
+
+Either the value `"Publication"`, `"Event"`, or `"Other"`.
+
+- "Other" can include any kind of project output or activity that is not a publication or an event that LostMa organised. It is generally interpetted as "announcement."
+
+```json
+{
+    "start": "2024-05-28",
+    "category": "Event",
+    ...
+}
+```
+
+### 3. `title` (_text_) [required]
+
+A brief title or, in the case of publication, the title of the article.
+
+- In all cases, no longer than 250 characters.
+
+```json
+{
+    "start": "2024-05-28",
+    "category": "Event",
+    "title": "Kickoff Conference",
+    ...
+}
+```
     
-    - **`subtitle`**: The meaning of the subtitle changes depends on the category of news. Carefully read the categories below ([`"Publication"`](#publication), [`"Event"`](#event), or [`"Other"`](#other)).
+### 4. `detail` (_text_) [required]
+
+The meaning of the detail changes depends on the category of news. Carefully read the categories below `"Publication"`, `"Event"`, or `"Other"`.
+
+- For an `"Event"` and `"Other"`, `detail` is an English-language representation of the relevant date. If the day is known, write the day first. Separate the month and year with a comma.
+
+```json
+{
+    "start": "2024-05-28",
+    "category": "Event",
+    "title": "Kickoff Conference",
+    "detail": "28-29 May, 2024",
+    ...
+}
+```
+
+- For a `"Publication"`, `detail` is an array of the author name or authors' names. Do not invert or abbreviate the name. Even if there is only 1 author, put the name in an array.
+
+```json
+{
+    "start": "2022-10-26",
+    "category": "Publication",
+    "title": "Lost Manuscripts and Extinct Texts : A Dynamic Model of Cultural Transmission", 
+    "detail": ["Jean-Baptiste Camps", "Julien Randon-Furling"],
+    ...
+}
+```
     
-    - **`description`**
+### 5. `description` (_text_) [required] 
 
-- Optional keys:
+A brief description or, in the case of publication, the abstract of the article.
 
-    - **`location`**: This key is required for `Event` news and is itself a dictionary with 2 required keys.
-        * `city` (text): The English name of the city, followed by a comma and the English name of the country, i.e. `Antwerp, Belgium`.
-        * `venue` (text): The name of the institution and/or venue where the event took place.
-
-    - **`link`**: This key is not required but always a good thing to have. It is a dictionary with 3 required keys.
-        * `page` (true/false): `true` if the link is to another page on the website; `false` if the link is to an external website.
-        * `label` (text): The short label that will appear on the button that opens the link. The label must be 3 words or fewer, and each word should be capitalised, i.e. `"Journal Article"`.
-        * `url` (text): If `"page": false`, the URL to the external link; if `"page": true`, the path to the page, i.e. `"/news/EVENT"`
-
-#### Publication
-
-News about publications must have the category `"Publication"` (capitalised) and should have a link.
-
-- `"title"`: The title of the publication.
-- `"subtitle"`: A list of the authors' names. Even if there is only one author, the name must still be in an array `[]`.
-- `"description"`: An abstract describing the publication.
+- Except for publications, no longer than 750 characters.
 
 ```json
 {
     "start": "2022-10-26", 
     "category": "Publication",
     "title": "Lost Manuscripts and Extinct Texts : A Dynamic Model of Cultural Transmission", 
-    "subtitle": ["Jean-Baptiste Camps", "Julien Randon-Furling"],
+    "detail": ["Jean-Baptiste Camps", "Julien Randon-Furling"],
     "description": "How did written works evolve...",
+    ...
+}
+```
+
+### 6. `location` (_object_) [optional]
+
+A set of 2 key-value pairs (`venue`, `city`) that provide geographical context.
+
+- Events are required to have a location.
+- Publications and other news items are not required to (and usually don't) have a location.
+- `city` is the English name, followed by a comma and the English name of the country, i.e. `"Antwerp, Belgium"`.
+- `venue` is name of the institution and/or venue where the event took place.
+
+```json
+{
+    "start": "2024-05-28",
+    "category": "Event",
+    "title": "Kickoff Conference",
+    "detail": "28-29 May, 2024",
+    "description": "Kick-off conference, inviting the scientific community to interrogate the key questions of the project.",
+    "location": {
+        "venue": "École nationale des chartes",
+        "city": "Paris, France"
+    },
+    ...
+},
+```
+
+### 7. `link` (_object_) [optional]
+
+A set of 3 key-value pairs (`page`, `label`, `url`) that provide information for an internal or external link to another resource.
+
+- `page` is a `true` or `false` value that indicates whether the link is to an internal or external resource. If `true`, meaning the link is to another page on the website, that page needs to have already been created.
+- `label` is a word or very brief phrase, no more than 3 words, that will appear on the button used to open the link.
+- `url` is the path to the resource. If the link is to an internal page, it will be something like `/news/EVENT`, meaning it links to a page that is created inside the `news` directory. If the link is to an external website, please privilege a link with a secure protocol, meaning it starts with "https://" rather than "http://".
+
+A link to an external resource:
+
+```json
+{
+    "start": "2024-05-24",
+    "category": "Event",
+    ...
     "link": {
         "page": false,
-        "label": "Conference Paper",
-        "url": "https://shs.hal.science/halshs-03827975"
+        "label": "Video Recording",
+        "url": "https://www.youtube.com/watch?v=_rekmYY4-Pc"
     }
 }
 ```
 
-#### Event
-
-News about events LostMa has organised must have the category `"Event"` (capitalised).
-
-- `"title"`: The name of the event.
-- `"subtitle"`: An English-language expression of the date, as you want it to appear. It can differ from the ISO-formatted date in the key `"start"`.
-- `"description"`: A brief description of the event; maximum 250 characters.
-
-All events must have a location.
+A link to an internal web page:
 
 ```json
 {
     "start": "2025-02-01",
     "category": "Event",
-    "title": "Hackathon 2025",
-    "subtitle": "TBD, 2025",
-    "description": "Hackathon to work with and analyse the data, driven by scientific inquiries and leading to early results.",
-    "location": {
-        "venue": "École nationale des chartes",
-        "city": "Paris, France"
-    },
+    ...
     "link": {
         "page": true,
         "label": "Conference Website",
         "url": "/news/hackathon2025"
     }
-},
-```
-
-#### Other
-
-Other news can include any kind of announcement.
-
-- `"title"`: A title for the announcement.
-- `"subtitle"`: An English-language expression of the date, as you want it to appear. It can differ from the ISO-formatted date in the key `"start"`.
-- `"description"`: A brief description of the announcement, no more than 250 characters. 
-
-```json
-{
-    "start": "2024-03-01",
-    "category": "Other",
-    "title": "New team member 🤝",
-    "subtitle": "1 March, 2024",
-    "description": "Kelly Christensen joins as a Data Architect.",
-    "link": {
-        "page": false,
-        "label": "GitHub",
-        "url": "https://github.com/kat-kel"
-    },
-},
+}
 ```
 
 ---
 
-### How to Update Team
+## People
 
-
-Update names of team members and contributors by editing the file [`people.json`](./people.json). As a JSON file, it's a set of keys and their values.
+The [`JSON file`](../data/people.json) is a dictionary featuring 2 keys: `Team` and `Collaborators`. Though they're separate groups, the format for the personal information in each one is the same.
 
 ```json
 {
-    "forename": "Jean-Baptiste",
-    "surname": "Camps",
-    "role": "Project Leader"
+    "forename": "Catherine de",
+    "surname": "Medici",
+    "role": "Italian Corpus"
 }, 
 ```
 
-- `"forename"`: The first name or names. If the person's last name starts with a preposition or article, i.e. _de Medici_, include that at the end of the forename. This is because the website's code orders the people by the first letter of the value in the `"surname"` key.
-- `"surname"`: The family name.
-- `"role"`: The person's role or responsibility on the project. For contributors, this is the name of the corpus they contributed, i.e. "Middle Dutch Corpus." Capitalise each word.
+### 1. `forename` (_text_) [required]
+
+The given or given names of the individual. However, if the person's last name starts with a preposition or article, i.e. _de Medici_, add that preposition or article to the end of `forename`. The reason is because the website's code orders individuals alphabetically by the value in `surname`. In order to sorting "Catherine de Medici" around the lastnames that start with M, instead of D, the value of `forename` would be "Catherine de".
+
+### 2. `surname` (_text_) [required]
+
+The last name of the individual. If the last name starts with an article or preposition, i.e. _de Medici_, remove it and place it at the end of `forename`.
+
+### 3. `role` (_text_) [required]
+
+The individual's role or responsibility on the project. Every word of the role should be capitalised. For collaborators, this is the name of the corpus they contributed, i.e. "Middle Dutch Corpus."
