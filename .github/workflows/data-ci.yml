@@ -1,4 +1,4 @@
-name: Update badge
+name: Update Heurist database info
 
 on:
     push:
@@ -9,7 +9,7 @@ on:
 
 jobs:
   update:
-    name: Update in-progress database stats
+    name: Update database info
     runs-on: ubuntu-latest
     env:
       HEURIST_USER: ${{ secrets.HEURISTUSER }}
@@ -33,13 +33,13 @@ jobs:
 
       - name: Update database stats
         run: |
-            heurist dump -f public/data/heurist.db
+            heurist -l $HEURIST_USER -p $HEURIST_PASS -d jbcamps_gestes dump -f public/data/heurist.db
             python public/sql/run.py -q wits_per_lang
             python public/sql/run.py -q text_per_lang
         
       - name: Update database schema
         run: |
-            heurist doc -t json -o public/data
+            heurist -l $HEURIST_USER -p $HEURIST_PASS -d jbcamps_gestes doc -t json -o public/data
 
       - name: Commit data
         run: |
