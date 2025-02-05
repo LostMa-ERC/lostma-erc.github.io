@@ -1,4 +1,4 @@
-name: database update
+name: data integration
 
 on:
   schedule:

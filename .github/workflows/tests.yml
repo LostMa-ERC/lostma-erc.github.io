@@ -6,7 +6,7 @@ on:
   workflow_call:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   tests:
@@ -36,3 +36,18 @@ jobs:
 
       - name: Test 🧪
         run: npm run test
+
+      - name: Publish Results Badge
+        uses: wjervis7/vitest-badge-action@v1.0.0
+        if: success() || failure() # run whether steps succeed or not
+        with:
+          result-type: statements
+          upload-badge: false    
+      
+      - name: Move badge to docs
+        run: mv badge.svg docs/coverage.svg
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          file_pattern: './docs/coverage.svg'  
