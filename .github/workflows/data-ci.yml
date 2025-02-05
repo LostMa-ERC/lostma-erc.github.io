@@ -1,9 +1,9 @@
-name: Update Heurist database info
+name: database update
 
 on:
   schedule:
     # Run at 12:00 UTC (13:00 CET) on Mondays
-    - cron: "00 12 * * 1"
+    - cron: "00 12 * * 1-5"
 
 jobs:
   update:
