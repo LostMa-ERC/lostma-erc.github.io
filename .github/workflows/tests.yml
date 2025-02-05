@@ -5,7 +5,7 @@ run-name: ${{ github.triggering_actor }} has triggered unittests
 on:
   push:
     paths:
-      - "./.github/.workflows/**"
+      - ".github/**"
   workflow_call:
 
 permissions:
