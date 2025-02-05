@@ -6,8 +6,8 @@ import click
 import duckdb
 
 SQL_DIR = Path(__file__).parent
-DB_PATH = Path(__file__).parent.parent.parent.joinpath("data").joinpath("heurist.db")
 DATA_DIR = Path(__file__).parent.parent.joinpath("data")
+DB_PATH = DATA_DIR.joinpath("heurist.db")
 
 
 @click.command()
