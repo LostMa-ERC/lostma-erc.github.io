@@ -48,7 +48,7 @@ jobs:
 
       - name: Commit data
         run: |
-          mv ./badge.svg docs/
+          mv ./badge.svg docs/coverage.svg
           if git diff docs/*.svg | grep . > /dev/null ; then
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
