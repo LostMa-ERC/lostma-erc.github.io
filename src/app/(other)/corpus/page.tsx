@@ -1,16 +1,11 @@
 'use client';
-import { useState } from "react";
 import Link from "next/link";
 import { XMLFileSVG, ShareSVG, QuestionMarkSVG as What, MailSVG as How, ClockSVG as When, GlobeSVG as Where } from "@/public/svgs";
-import Dash from "./components/dashboard";
+import { BarChart } from "./components/dashboard";
+import witData from "@/data/wits_per_lang.json";
+import textData from "@/data/text_per_lang.json";
 
 export default function Corpus() {
-
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleDropdown = () => {
-          setIsOpen(!isOpen);
-      };
   
   return (
     <div>
@@ -146,14 +141,28 @@ export default function Corpus() {
         </h2>
         <p className="font-light tracking-wide mt-2">
           As our specialist contributors assemble the corpus, you can observe some key indicators about its evolving composition.
+          These indicators are updated at regular intervals and represent neither real-time information nor the composition of the finished corpus.
+          This is collaborative work in progress.
         </p>
-        <div id="dashboard" key="dashboard" className="grid justify-center">
-            <p className="font-bold p-1 w-fit md:text-lg text-xl">
-              Distribution of texts by language
-            </p>
-            <div className="overflow-scroll">
-              <Dash />
+        <div id="dashboard" key="dashboard" className="grid justify-center md:grid-cols-2">
+        <div className="w-fit border p-1 md:p-2">
+          <div className="p-4 font-light">
+            <h3 className="md:text-lg text-xl">Texts</h3>
+            <h4 className="text-sm">Distribution by language of Text records currently in database</h4>
+          </div>
+          <div className="overflow-scroll">
+            <BarChart data={textData} />
+          </div>
+          </div>
+          <div className="w-fit border p-1 md:p-2">
+            <div className="p-4 font-light">
+              <h3 className="md:text-lg text-xl">Witnesses</h3>
+              <h4 className="text-sm">Distribution by language of Witness records currently in database</h4>
             </div>
+            <div className="overflow-scroll">
+              <BarChart data={witData} />
+            </div>
+          </div>
         </div>
       </div>
 

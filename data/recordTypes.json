@@ -1,5 +1,5 @@
 {
-    "lastModified": "2025-01-06",
+    "lastModified": "2025-02-05",
     "items": [
         {
             "id": 101,
@@ -7,7 +7,7 @@
                 "rty_ID": 101,
                 "rty_Name": "text",
                 "rty_Description": "Formulation of a work in human language, whose literary form and style can be detected and whose creation can be attributed to one or more individuals.",
-                "rty_TitleMask": "[[[1101.term]]] [1090] \\\"[1244]\\\" ([1265], [1285])",
+                "rty_TitleMask": "[[[1101.term]]] [1090] [1288.2-18] [1288.2-1], \\n \\\"[1244]\\\" ([1265], [1285])",
                 "rty_ReferenceURL": null
             },
             "sections": [
@@ -1049,7 +1049,7 @@
                             "trm_Label": null,
                             "trm_Description": null,
                             "rst_RequirementType": "optional",
-                            "rst_MaxValues": 1,
+                            "rst_MaxValues": 0,
                             "vocabTerms": null
                         },
                         {
@@ -1122,7 +1122,7 @@
                     ]
                 },
                 {
-                    "sectionName": "Review",
+                    "sectionName": "review_note",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
@@ -1203,8 +1203,8 @@
                             "vocabTerms": null
                         },
                         {
-                            "rst_DisplayName": "member of cycle",
-                            "rst_DisplayHelpText": "The cycle of which this record is a part.",
+                            "rst_DisplayName": "is_part_of_storyverse",
+                            "rst_DisplayHelpText": "The storyverse of which this record is a part.",
                             "dty_ID": 1246,
                             "dty_Type": "resource",
                             "dty_PtrTargetRectypeIDs": [
@@ -1215,7 +1215,7 @@
                             "trm_Label": null,
                             "trm_Description": null,
                             "rst_RequirementType": "recommended",
-                            "rst_MaxValues": 1,
+                            "rst_MaxValues": 0,
                             "vocabTerms": null
                         }
                     ]
@@ -2651,7 +2651,7 @@
                     ]
                 },
                 {
-                    "sectionName": "References",
+                    "sectionName": "described_at_URL",
                     "fields": [
                         {
                             "rst_DisplayName": "described_by_source",
@@ -3449,7 +3449,7 @@
                     ]
                 },
                 {
-                    "sectionName": "review_status",
+                    "sectionName": "Review",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
@@ -3648,7 +3648,7 @@
                     ]
                 },
                 {
-                    "sectionName": "review_note",
+                    "sectionName": "Review",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
@@ -3706,7 +3706,7 @@
             "metadata": {
                 "rty_ID": 118,
                 "rty_Name": "scripta",
-                "rty_Description": "he regional writing style, similar to the written version of a spoken dialect, as defined by <a class=\\\"link\\\" target=\\\"_blank\\\" href=\\\"https://doi.org/10.4000/books.pulg.347\\\">Louis Remacle</a>.",
+                "rty_Description": "The regional writing style, similar to the written version of a spoken dialect, as defined by <a class=\\\"link\\\" target=\\\"_blank\\\" href=\\\"https://doi.org/10.4000/books.pulg.347\\\">Louis Remacle</a>.",
                 "rty_TitleMask": "[1244] ([1090.term])",
                 "rty_ReferenceURL": null
             },
@@ -4050,7 +4050,7 @@
             "metadata": {
                 "rty_ID": 125,
                 "rty_Name": "part",
-                "rty_Description": "A sequence of leafs or pages in a document, on which is inscribed all or part of the witness of a text.",
+                "rty_Description": "An undivided subdivision of a witness\\'s text, such as a fragment, an uninterrupted sequence of pages, or a volume. The subdivision must have an order within the witness. If a witness\\'s text is not subdivided, its only div is given the ordinal of 1.",
                 "rty_TitleMask": "[[[1322]]] [1315.rectitle]",
                 "rty_ReferenceURL": null
             },
@@ -4346,7 +4346,7 @@
                             "trm_Label": null,
                             "trm_Description": null,
                             "rst_RequirementType": "required",
-                            "rst_MaxValues": 1,
+                            "rst_MaxValues": 0,
                             "vocabTerms": null
                         }
                     ]
@@ -4392,7 +4392,7 @@
                 "rty_ID": 127,
                 "rty_Name": "images",
                 "rty_Description": "A range of images from a digitization, which correspond to a discrete, uninterrupted series of pages or leafs of a part of a document.",
-                "rty_TitleMask": "[1323.rectitle] -- files [1324]",
+                "rty_TitleMask": "[1314.1315.rectitle]\\n ([1322])",
                 "rty_ReferenceURL": null
             },
             "sections": [
@@ -4437,10 +4437,24 @@
                     "sectionName": "Description",
                     "fields": [
                         {
-                            "rst_DisplayName": "file_range",
-                            "rst_DisplayHelpText": "A formatted string that represents the index of the first and last image file in the series of images. <br>When multiple files, separate the first and last with two colons, i.e. \\\"4::725\\\". <br>When a single file, do not include the separator, i.e. \\\"725\\\".",
-                            "dty_ID": 1324,
-                            "dty_Type": "freetext",
+                            "rst_DisplayName": "first_image",
+                            "rst_DisplayHelpText": "The number of the first image in the series of images of the document\\'s digitization.",
+                            "dty_ID": 1197,
+                            "dty_Type": "float",
+                            "dty_PtrTargetRectypeIDs": [],
+                            "dty_SemanticReferenceURL": null,
+                            "trm_TreeID": null,
+                            "trm_Label": null,
+                            "trm_Description": null,
+                            "rst_RequirementType": "required",
+                            "rst_MaxValues": 1,
+                            "vocabTerms": null
+                        },
+                        {
+                            "rst_DisplayName": "last_image",
+                            "rst_DisplayHelpText": "Within the series of related document\\'s digital images, the last image that contains the text.",
+                            "dty_ID": 1198,
+                            "dty_Type": "float",
                             "dty_PtrTargetRectypeIDs": [],
                             "dty_SemanticReferenceURL": null,
                             "trm_TreeID": null,
@@ -4846,7 +4860,7 @@
                     ]
                 },
                 {
-                    "sectionName": "Layout",
+                    "sectionName": "writing_surface_area_reference",
                     "fields": [
                         {
                             "rst_DisplayName": "writing_surface_area_height",
