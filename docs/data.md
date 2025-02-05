@@ -20,7 +20,7 @@ Jump to the keys you're looking for:
 
 ## News Item
 
-News items are listed in an array in the `data/news.json` file. They are ordered chronologically when the website is generated, so you can add new items to the array in any order you want.
+News items are listed in an array in the [`data/news.json`](../data/news.json) file. They are ordered chronologically when the website is generated, so you can add new items to the array in any order you want.
 
 Each news item is a dictionary, meaning it is a series of key-value pairs. The keys and the types of values they take are listed below:
 
@@ -36,8 +36,7 @@ Date in ISO format (YYYY-MM-DD).
 
 ```json
 {
-    "start": "2024-05-28",
-    ...
+    "start": "2024-05-28"
 }
 ```
 
@@ -50,8 +49,7 @@ Either the value `"Publication"`, `"Event"`, or `"Other"`.
 ```json
 {
     "start": "2024-05-28",
-    "category": "Event",
-    ...
+    "category": "Event"
 }
 ```
 
@@ -65,8 +63,7 @@ A brief title or, in the case of publication, the title of the article.
 {
     "start": "2024-05-28",
     "category": "Event",
-    "title": "Kickoff Conference",
-    ...
+    "title": "Kickoff Conference"
 }
 ```
     
@@ -81,8 +78,7 @@ The meaning of the detail changes depends on the category of news. Carefully rea
     "start": "2024-05-28",
     "category": "Event",
     "title": "Kickoff Conference",
-    "detail": "28-29 May, 2024",
-    ...
+    "detail": "28-29 May, 2024"
 }
 ```
 
@@ -93,8 +89,7 @@ The meaning of the detail changes depends on the category of news. Carefully rea
     "start": "2022-10-26",
     "category": "Publication",
     "title": "Lost Manuscripts and Extinct Texts : A Dynamic Model of Cultural Transmission", 
-    "detail": ["Jean-Baptiste Camps", "Julien Randon-Furling"],
-    ...
+    "detail": ["Jean-Baptiste Camps", "Julien Randon-Furling"]
 }
 ```
     
@@ -110,8 +105,7 @@ A brief description or, in the case of publication, the abstract of the article.
     "category": "Publication",
     "title": "Lost Manuscripts and Extinct Texts : A Dynamic Model of Cultural Transmission", 
     "detail": ["Jean-Baptiste Camps", "Julien Randon-Furling"],
-    "description": "How did written works evolve...",
-    ...
+    "description": "How did written works evolve..."
 }
 ```
 
@@ -134,8 +128,7 @@ A set of 2 key-value pairs (`venue`, `city`) that provide geographical context.
     "location": {
         "venue": "École nationale des chartes",
         "city": "Paris, France"
-    },
-    ...
+    }
 },
 ```
 
@@ -153,7 +146,6 @@ A link to an external resource:
 {
     "start": "2024-05-24",
     "category": "Event",
-    ...
     "link": {
         "page": false,
         "label": "Video Recording",
@@ -168,7 +160,6 @@ A link to an internal web page:
 {
     "start": "2025-02-01",
     "category": "Event",
-    ...
     "link": {
         "page": true,
         "label": "Conference Website",

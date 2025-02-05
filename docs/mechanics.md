@@ -67,3 +67,7 @@ Read the log:
 - line 19: We can read part of the problematic description. We need to delete the "https://" link from the description (and move it to the `"link"` key).
 
 If your changes did not pass the formatting tests, fix the errors and make a new commit, following the steps already described above. The automated workflow will be triggered again and you can again watch to see your changes be approved and the website be redeployed with your changes.
+
+---
+
+[Next Page: Data formats](./data.md)

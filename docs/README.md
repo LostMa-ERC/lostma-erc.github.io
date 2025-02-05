@@ -19,6 +19,8 @@ With the overall process in mind, dig into the details of how to rewrite and for
     - [title](./data.md#3-title-text-required)
     - [detail](./data.md#4-detail-text-required)
     - [description](./data.md#5-description-text-required)
+    - [location](./data.md#6-location-object-optional)
+    - [link](./data.md#7-link-object-optional)
 - Person
     - [forename](./data.md#1-forename-text-required)
     - [surname](./data.md#2-surname-text-required)
