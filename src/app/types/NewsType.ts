@@ -6,7 +6,7 @@ type NewsType = {
     start: Date
     category: NewsCategory
     title: string
-    subtitle: string | string[]
+    detail: string | string[]
     description: string
     location: LocationType | null
     link: LinkButtonType | null

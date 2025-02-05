@@ -39,7 +39,7 @@ const NewsComponent = ({data, index}: {data:NewsType, index:number}) => {
   }
 
   return (
-    <div className="rounded md:rounded-lg border-solid border-2 h-full bg-white/50 overflow-y-scroll">
+    <article className="rounded md:rounded-lg border-solid border-2 h-full bg-white/50 overflow-y-scroll">
 
       <Link href={`/news#${index}`}>
         <HeaderContextData.Provider value={data}>
@@ -47,16 +47,16 @@ const NewsComponent = ({data, index}: {data:NewsType, index:number}) => {
         </HeaderContextData.Provider>
       </Link>
 
-      <div className="p-4 md:px-4 rounded md:rounded-lg">
+      <section className="p-4 md:px-4 rounded md:rounded-lg">
          <div className="flex font-light">
            <div className="flex-1 w-full h-full">
              {location}
              {description}
            </div>
          </div>
-       </div>
+       </section>
 
-    </div>
+    </article>
   )
 }
 

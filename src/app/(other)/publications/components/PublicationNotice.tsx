@@ -4,15 +4,15 @@ const PublicationNotice = ({data}: {data:NewsType}) => {
 
     const date = data.start.toString()
 
-    if (Array.isArray(data.subtitle)) {
-      var authors = data.subtitle.join(', ')
+    if (Array.isArray(data.detail)) {
+      var authors = data.detail.join(', ')
     }
     else {
-      var authors = data.subtitle
+      var authors = data.detail
     }
 
     return (
-        <div className="bg-white/50 rounded-md md:rounded-lg">
+        <article className="bg-white/50 rounded-md md:rounded-lg">
           <div className="bg-primary text-white rounded-md md:rounded-lg">
             <div className="p-4">
               <h2 className="md:text-2xl text-xl italic">
@@ -45,7 +45,7 @@ const PublicationNotice = ({data}: {data:NewsType}) => {
               </div>
             </div>
           </div>
-        </div>
+        </article>
     )
 };
 

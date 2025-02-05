@@ -1,7 +1,7 @@
 import { LinkButtonType } from "@/types/LinkButtonType";
 import Link from "next/link";
 
-const EventLink = ({data,}: {data: LinkButtonType | null}) => {
+const NewsLink = ({data,}: {data: LinkButtonType | null}) => {
 
     let button = <></>
 
@@ -28,4 +28,4 @@ const EventLink = ({data,}: {data: LinkButtonType | null}) => {
     return button
 }
 
-export default EventLink
+export default NewsLink

@@ -30,9 +30,9 @@ const News = () => {
       <div className="md:py-2 flex justify-center">
         <div className="grid md:grid-cols-3 gap-x-12 md:gap-y-8 md:space-y-0 space-y-8">
           {Object.values(news).map((event, idx) =>
-            <article className="max-w-96 max-h-80" id={`${idx}`} key={`event-${idx}`}>
+            <div className="max-w-96 max-h-80" id={`${idx}`} key={`event-${idx}`}>
               < NewsNotice data={event} index={idx} />
-            </article>
+            </div>
           )}
         </div>
       </div>

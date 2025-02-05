@@ -1,32 +1,48 @@
 import { assert, expect, describe, test } from 'vitest';
-import events from '@/data/news.json';
+import { render, screen, within } from '@testing-library/react';
+import data from '@/data/news.json';
 import '@testing-library/jest-dom/vitest';
 import { fetchChronologicalData } from '@/app/functions/fetchData';
 import { NewsCategory } from '@/app/types/NewsCategory';
+import NewsComponent from '@/app/(other)/news/components/NewsNotice';
+import { NewsType } from '@/app/types/NewsType';
 
-const array = await fetchChronologicalData({arrays: events, category: null})
+// Fetch the sorted event data and convert it to unknown / undo the generic fetch function's type
+const array:unknown = await fetchChronologicalData({arrays: data, category: null})
 
-describe.each(array)
+// Cast the sorted array's items to the event data type
+let news = array as Array<NewsType>;
+
+describe.each(news)
     ('Validate news.json array, index %#', (item) => {
+
+    
+    test('Successfully parse news component', () => {
+        render(<NewsComponent data={item} index={1} />);
+        const article = within(screen.getByRole('article'))
+        expect(
+            article.getByRole('heading', {level: 2, name: item.title})
+        )
+    })
     
     test('Title is valid string (<250 char).', () => {
       expect.soft(item.title).toBeTypeOf('string')
       expect.soft(item.title.length).lessThanOrEqual(250)
     })
 
-    if (Array.isArray(item.subtitle)) {
-        test('Subtitle is list of authors.', () => {
-            expect.soft(item.subtitle.length).greaterThanOrEqual(1)
+    if (Array.isArray(item.detail)) {
+        test('Detail a list of authors.', () => {
+            expect.soft(item.detail.length).greaterThanOrEqual(1)
         })
     }
     else {
-        test('Subtitle is valid string (<50 char).', () => {
-            expect.soft(item.subtitle).toBeTypeOf('string')
-            expect.soft(item.subtitle.length).lessThanOrEqual(50)
+        test('Detail is a valid string (<50 char).', () => {
+            expect.soft(item.detail).toBeTypeOf('string')
+            expect.soft(item.detail.length).lessThanOrEqual(50)
         })
     }
 
-    test('Description has no URL.', () => {
+    test('Description does not include a URL. (Put URL in link)', () => {
         assert.notInclude(item.description, 'https://')
         assert.notInclude(item.description, 'http://')
     })
@@ -38,26 +54,28 @@ describe.each(array)
         })
     }
 
-    if(item.link) {
+    if(item.link !== null) {
         if (item.link.page) {
             test('Link is valid', () => {
-                expect.soft(item.link.url).toBeTypeOf('string')
-                expect.soft(item.link.url).toMatch(RegExp('^/news/'))
+                expect.soft(item.link?.url).toBeTypeOf('string')
+                expect.soft(item.link?.url).toMatch(RegExp('^/news/'))
             })
         }
         else {
             test('Link is valid.', () => {
-                expect.soft(item.link.url).toBeTypeOf('string')
+                expect.soft(item.link?.url).toBeTypeOf('string')
                 const protocol = RegExp('^http://|^https://')
-                expect.soft(item.link.url).toMatch(protocol)
+                expect.soft(item.link?.url).toMatch(protocol)
             })
         }
         test(('Link label is valid.'), () => {
-            expect.soft(item.link.label).toBeTypeOf('string')
-            const labelWordArray = item.link.label.split(/\s+/)
-            expect.soft(labelWordArray.length).lessThanOrEqual(3)
-            for (let word of labelWordArray) {
-                expect.soft(word[0]).toEqual(word[0].toUpperCase())
+            expect.soft(item.link?.label).toBeTypeOf('string')
+            const labelWordArray = item.link?.label.split(/\s+/)
+            if (labelWordArray) {
+                expect.soft(labelWordArray.length).lessThanOrEqual(3)
+                for (let word of labelWordArray) {
+                    expect.soft(word[0]).toEqual(word[0].toUpperCase())
+                }
             }
         })
     }

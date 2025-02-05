@@ -6,17 +6,17 @@ const HeaderText = () => {
     const data = useContext(HeaderContextData);
 
     if (data) {
-        if (Array.isArray(data.subtitle)) {
-            var subtitle = data.subtitle.join(", ")
+        if (Array.isArray(data.detail)) {
+            var detail = data.detail.join(", ")
         }
         else {
-            var subtitle = data.subtitle
+            var detail = data.detail
         }
         return (
         <>
             <div className="p-4 ">
                 <div className="font-light tracking-wide text-sm pb-2 truncate">
-                    {subtitle}
+                    {detail}
                 </div>
             <h2 className="w-fit text-xl">
                     {data.title}
@@ -32,19 +32,19 @@ const HeaderContainer = () => {
     let container = <></>
     if (data) {
         if (data.category === NewsCategory.Event) {
-            container = <div className="bg-secondary rounded">
+            container = <section className="bg-secondary rounded">
                 < HeaderText />
-            </div>
+            </section>
         }
         else if (data.category === NewsCategory.Publication) {
-            container = <div className="bg-highlight rounded">
+            container = <section className="bg-highlight rounded">
                 < HeaderText />
-            </div>
+            </section>
         }
         else if (data.category === NewsCategory.Other) {
-            container = <div className="bg-info rounded">
+            container = <section className="bg-info rounded">
                 < HeaderText />
-            </div>
+            </section>
         }
     }
     return container
