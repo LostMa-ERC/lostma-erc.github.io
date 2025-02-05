@@ -1,0 +1,53 @@
+name: Update badge
+
+on:
+    push:
+        branches:
+            - main
+#   schedule:
+#     - cron: "00 12 * * *"
+
+jobs:
+  update:
+    name: Update in-progress database stats
+    runs-on: ubuntu-latest
+    env:
+      HEURIST_USER: ${{ secrets.HEURISTUSER }}
+      HEURIST_PASS: ${{ secrets.HEURISTPASS }}
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.11
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip setuptools wheel
+          pip install git+https://github.com/LostMa-ERC/heurist-api
+
+      - name: Update database stats
+        run: |
+            heurist dump -f public/data/heurist.db
+            python public/sql/run.py -q wits_per_lang
+            python public/sql/run.py -q text_per_lang
+        
+      - name: Update database schema
+        run: |
+            heurist doc -t json -o public/data
+
+      - name: Commit data
+        run: |
+          if git diff public/data | grep . > /dev/null ; then
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
+            git pull
+            git add public/data/*.json
+            git commit -m "update database stats"
+            git push
+          fi
