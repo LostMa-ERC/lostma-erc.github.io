@@ -9,7 +9,7 @@ run-name: '[Automated] Deployment 🚀'
 on:
   push:
     paths:
-      - 'src/**'
+      - 'src/app/**'
       - 'public/**'
       - 'data/**/*.json'
       - 'package.*'
@@ -31,15 +31,9 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Call the unit test workflow
-  test:
-    name: Unit tests
-    uses: ./.github/workflows/tests.yml
-
   # Call the build workflow
   build:
-    needs: test
-    name: Static site generation
+    name: Test & Build
     uses: ./.github/workflows/build.yml
 
   # Deployment job

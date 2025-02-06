@@ -103,18 +103,28 @@ const Zenodo = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=
     <path d="M12 7.875a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z" />
 </svg>
 
+const ArrowRightSVG = <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-inherit">
+  <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+</svg>
+
+const ArrowLeftSVG = <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-inherit">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+</svg>
+
 export { 
+  ArrowRightSVG,
+  ArrowLeftSVG,
   PeopleSVG,
   DatabaseSVG,
   NewspaperSVG,
   LockSVG,
   UnlockSVG,
   RepeatableSVG,
-  BeakerSVG as PublicationIcon,
-  MicrophoneSVG as ConferenceIcon,
-  ChatBubbleSVG as MeetingIcon,
-  ChartSVG as PresentationIcon,
-  BellSVG as OtherIcon,
+  BeakerSVG,
+  MicrophoneSVG,
+  ChatBubbleSVG,
+  ChartSVG,
+  BellSVG,
   LinkSVG,
   ShareSVG,
   QuestionMarkSVG,

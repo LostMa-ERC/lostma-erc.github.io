@@ -135,24 +135,26 @@ export default function Corpus() {
 
       </div>
 
-      <div className="mt-4">
-        <h2 className="font-bold p-1 w-fit md:text-xl text-2xl">
-          In-progress stats
-        </h2>
+      <div className="mt-4" id="stats">
+        <Link href="/corpus#stats">
+          <h2 className="font-bold p-1 w-fit md:text-xl text-2xl">
+            In-progress stats
+          </h2>
+        </Link>
         <p className="font-light tracking-wide mt-2">
           As our specialist contributors assemble the corpus, you can observe some key indicators about its evolving composition.
           These indicators are updated at regular intervals and represent neither real-time information nor the composition of the finished corpus.
           This is collaborative work in progress.
         </p>
         <div id="dashboard" key="dashboard" className="grid justify-center md:grid-cols-2">
-        <div className="w-fit border p-1 md:p-2">
-          <div className="p-4 font-light">
-            <h3 className="md:text-lg text-xl">Texts</h3>
-            <h4 className="text-sm">Distribution by language of Text records currently in database<br/>(<em>last updated {witData.lastModified}</em>)</h4>
-          </div>
-          <div className="overflow-scroll">
-            <BarChart data={textData.items} />
-          </div>
+          <div className="w-fit border p-1 md:p-2">
+            <div className="p-4 font-light">
+              <h3 className="md:text-lg text-xl">Texts</h3>
+              <h4 className="text-sm">Distribution by language of Text records currently in database<br/>(<em>last updated {witData.lastModified}</em>)</h4>
+            </div>
+            <div className="overflow-scroll">
+              <BarChart data={textData.items} />
+            </div>
           </div>
           <div className="w-fit border p-1 md:p-2">
             <div className="p-4 font-light">

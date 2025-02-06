@@ -2,21 +2,15 @@ import { assert, expect, describe, test } from 'vitest';
 import { render, screen, within } from '@testing-library/react';
 import data from '@/data/news.json';
 import '@testing-library/jest-dom/vitest';
-import { fetchChronologicalData } from '@/app/functions/fetchData';
 import { NewsCategory } from '@/app/types/NewsCategory';
+import {fetchAllNews} from '@/app/functions/fetchNews';
 import NewsComponent from '@/app/(other)/news/components/NewsNotice';
-import { NewsType } from '@/app/types/NewsType';
 
-// Fetch the sorted event data and convert it to unknown / undo the generic fetch function's type
-const array:unknown = await fetchChronologicalData({arrays: data, category: null})
-
-// Cast the sorted array's items to the event data type
-let news = array as Array<NewsType>;
+const news = await fetchAllNews({arrays: data})
 
 describe.each(news)
     ('Validate news.json array, index %#', (item) => {
 
-    
     test('Successfully parse news component', () => {
         render(<NewsComponent data={item} index={1} />);
         const article = within(screen.getByRole('article'))

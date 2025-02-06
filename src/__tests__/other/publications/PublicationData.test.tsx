@@ -2,18 +2,12 @@ import { expect, describe, test, assert } from 'vitest';
 import { render, screen, within } from '@testing-library/react';
 import data from '@/data/news.json';
 import '@testing-library/jest-dom/vitest';
-import { fetchChronologicalData } from '@/app/functions/fetchData';
-import { NewsCategory } from '@/app/types/NewsCategory';
-import { NewsType } from '@/app/types/NewsType';
+import { fetchPublications } from '@/app/functions/fetchNews';
 import PublicationNotice from '@/app/(other)/publications/components/PublicationNotice';
 
-// Fetch the sorted event data and convert it to unknown / undo the generic fetch function's type
-const array:unknown = await fetchChronologicalData({arrays: data, category: NewsCategory.Publication})
+const publications = await fetchPublications({arrays: data})
 
-// Cast the sorted array's items to the event data type
-let news = array as Array<NewsType>;
-
-describe.each(news)
+describe.each(publications)
     ('Validate Publications in news.json array, index %#', (item) => {
 
     test('Author or authors are in an array.', () => {

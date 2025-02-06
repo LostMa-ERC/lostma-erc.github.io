@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { InboxSVG, DownloadSVG, PresentationIcon, ToolsSVG, DatabaseSVG, PublicationIcon, QuestionMarkSVG as What, MailSVG as How, ClockSVG as When, GlobeSVG as Where } from "@/public/svgs";
+import { InboxSVG, DownloadSVG, ChartSVG, ToolsSVG, DatabaseSVG, BeakerSVG } from "@/public/svgs";
 
 export default function Links() {
     return (
@@ -62,7 +62,7 @@ export default function Links() {
                 <h2 className="text-xl w-fit shadow-md border-solid border-2 hover:bg-gray-300 hover:border-dark rounded-xl p-1 bg-white/50">
                     <Link className="flex items-center gap-4 px-4" href='/publications'>
                     <div className="md:size-8 size-6">
-                        {PublicationIcon}
+                        {BeakerSVG}
                     </div>
                     Publications
                     </Link>
@@ -90,7 +90,7 @@ export default function Links() {
                 <h2 className="text-xl w-fit shadow-md border-solid border-2 hover:bg-gray-300 hover:border-dark rounded-xl p-1 bg-white/50">
                     <Link className="flex items-center gap-4 px-4" href='/events'>
                     <div className="md:size-8 size-6">
-                        {PresentationIcon}
+                        {ChartSVG}
                     </div>
                     Events
                     </Link>

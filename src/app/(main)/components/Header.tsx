@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <header
       className="
-        h-[640px]
+        h-[540px]
         flex 
         flex-col 
         justify-center
@@ -14,7 +14,7 @@ export default function Header() {
           <Image 
           src={Hero}
           className="
-            h-[640px]
+            h-[540px]
             absolute
             object-cover 
             z-0

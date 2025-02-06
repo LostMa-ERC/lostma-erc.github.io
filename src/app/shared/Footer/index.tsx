@@ -104,7 +104,7 @@ const Bottom = () => {
 
 export default function Footer() {
     return (
-        <footer className="pb-16 text-sm leading-6 w-screen md:px-6">
+        <footer className="pb-16 text-sm leading-6 md:px-6">
             <div className="overflow-hidden mx-auto divide-y divide-slate-200 dark:divide-slate-700">
 
                 <div className='md:flex gap-4 justify-center grid'>

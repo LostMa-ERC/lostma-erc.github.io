@@ -1,12 +1,8 @@
 import NewsNotice from "./components/NewsNotice";
 import jsonData from "@/data/news.json";
-import { fetchChronologicalData } from "@/app/functions/fetchData";
-import { NewsType } from "@/app/types/NewsType";
+import { fetchAllNews } from "@/app/functions/fetchNews";
 
-// Fetch the sorted event data and convert it to unknown / undo the generic fetch function's type
-const array:unknown = await fetchChronologicalData({arrays: jsonData, category: null})
-// Cast the sorted array's items to the event data type
-let news = array as Array<NewsType>;
+const news = await fetchAllNews({arrays:jsonData})
 
 const News = () => {
   return (

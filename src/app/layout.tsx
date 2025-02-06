@@ -27,11 +27,7 @@ export default function RootLayout({
     <meta name="twitter:description" content="ERC Research Project, 2024-2020"/>
     <meta name="twitter:image" content="https://i.postimg.cc/0ykFJ18s/lostma-logo.png"/>
   </head>
-  <body className="
-    prefers-color-scheme 
-    bg-gradient-to-r 
-    from-gray-200 via-[var(--background)] to-gray-200 
-  ">
+  <body className="prefers-color-scheme ">
     {children}
     <Footer />
   </body>
