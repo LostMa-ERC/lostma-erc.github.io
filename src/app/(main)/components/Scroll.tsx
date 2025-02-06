@@ -19,7 +19,7 @@ const Carousel = () => {
 
   return (
     <div className='mx-auto grid justify-center items-center'>
-      <div className='h-96 overflow-y-scroll'>
+      <div className='h-96 overflow-y-scroll pb-2'>
         {getCarouselImage({index:currentIndex})}
       </div>
       <div className='flex justify-center'>

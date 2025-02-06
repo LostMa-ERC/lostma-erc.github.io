@@ -1,5 +1,6 @@
 'use client'
 import Scroll from "./components/Scroll";
+import Link from "next/link";
 
 export default function HomePage() {
 
@@ -32,9 +33,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      <div className="flex w-fit py-6 md:py-4" key="newsCarousel">
-        <div className="md:min-w-96 max-w-96">
-          <Scroll />
+      <div className="flex w-fit justify-center py-6 md:py-4" key="newsCarousel">
+        <div className="">
+          <div className="md:min-w-96 max-w-96">
+            <Scroll />
+          </div>
+          <div className="p-2">
+            <Link className="link font-light text-base tracking-wide w-full" href="/news">See all news . . .</Link>
+          </div>
         </div>
       </div>
 

@@ -1,4 +1,4 @@
-[![automated deployment](https://github.com/LostMa-ERC/lostma-erc.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/LostMa-ERC/lostma-erc.github.io/actions/workflows/deploy.yml) 
+[![deploy](https://github.com/LostMa-ERC/lostma-erc.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/LostMa-ERC/lostma-erc.github.io/actions/workflows/deploy.yml) 
 [![continuous data integration](https://github.com/LostMa-ERC/lostma-erc.github.io/actions/workflows/data-ci.yml/badge.svg)](https://github.com/LostMa-ERC/lostma-erc.github.io/actions/workflows/data-ci.yml)
 [![test coverage](docs/coverage.svg)](docs/coverage.svg)
 
