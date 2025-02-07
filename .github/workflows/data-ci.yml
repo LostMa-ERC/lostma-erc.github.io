@@ -2,6 +2,7 @@ name: data integration
 
 on:
   push:
+    # Trigger on changes to this workflow
     paths: ./.github/workflows/data-ci.yml
   schedule:
     # Run at 12:00 UTC (13:00 CET) on weekdays
