@@ -1,5 +1,5 @@
 {
-    "lastModified": "2025-02-06",
+    "lastModified": "2025-02-07",
     "items": [
         {
             "id": 101,
@@ -1354,7 +1354,7 @@
                     ]
                 },
                 {
-                    "sectionName": "review_status",
+                    "sectionName": "Review",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
