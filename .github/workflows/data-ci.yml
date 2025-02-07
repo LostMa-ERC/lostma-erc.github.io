@@ -8,6 +8,13 @@ on:
     # Run at 12:00 UTC (13:00 CET) on weekdays
     #- cron: "00 12 * * 1-5"
 
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   update:
     name: Update database info
@@ -37,7 +44,7 @@ jobs:
             heurist -l $HEURIST_USER -p $HEURIST_PASS -d jbcamps_gestes dump -f public/data/heurist.db
             python public/sql/run.py -q wits_per_lang
             python public/sql/run.py -q text_per_lang
-        
+
       - name: Update database schema
         run: |
             heurist -l $HEURIST_USER -p $HEURIST_PASS -d jbcamps_gestes schema -t json -o public/data
