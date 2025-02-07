@@ -2,8 +2,8 @@ name: data integration
 
 on:
   push:
-    # Trigger on changes to this workflow
-    paths: ./.github/workflows/data-ci.yml
+    paths:
+      - './.github/workflows/data-ci.yml'
   schedule:
     # Run at 12:00 UTC (13:00 CET) on weekdays
     - cron: "00 12 * * 1-5"
