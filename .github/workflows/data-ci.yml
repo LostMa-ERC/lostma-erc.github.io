@@ -1,8 +1,10 @@
 name: data integration
 
 on:
+  push:
+    paths: "./.github/workflows/data-ci.yml"
   schedule:
-    # Run at 12:00 UTC (13:00 CET) on Mondays
+    # Run at 12:00 UTC (13:00 CET) on weekdays
     - cron: "00 12 * * 1-5"
 
 jobs:
@@ -37,7 +39,7 @@ jobs:
         
       - name: Update database schema
         run: |
-            heurist -l $HEURIST_USER -p $HEURIST_PASS -d jbcamps_gestes doc -t json -o public/data
+            heurist -l $HEURIST_USER -p $HEURIST_PASS -d jbcamps_gestes schema -t json -o public/data
 
       - name: Commit data
         run: |
@@ -49,3 +51,7 @@ jobs:
             git commit -m "update database stats"
             git push
           fi
+  deploy:
+    name: Deploy with updated data
+    needs: update
+    uses: ./.github/workflows/deploy.yml
