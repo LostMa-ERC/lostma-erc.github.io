@@ -17,7 +17,7 @@ export default function EntityProfile({data}: {data:EntityDetail}) {
                     <div className="grid md:grid-cols-3 gap-2 py-2">
                         <div className="flex">
                             <div className="size-6">{RepeatableSVG}</div>
-                            <label className="font-light tracking-tight">Repeatable</label> 
+                            <label className="font-light tracking-tight">Repeatable</label>
                         </div>
                         <div className="flex">
                             <div className="size-6">{LockSVG}</div>
@@ -49,13 +49,13 @@ export default function EntityProfile({data}: {data:EntityDetail}) {
                     </thead>
                     <tbody>
                         {
-                            Object.values(data.sections).map((section, index) => 
+                            Object.values(data.sections).map((section, index) =>
                                 <>
                                 <tr key={`section-${index}`}>
                                     <td colSpan={7} className="w-full left-0 bg-gray-100/50 p-2 -bottom-10 text-center">
                                         {section.sectionName}
                                     </td>
-                                </tr>                           
+                                </tr>
                                     {
                                     Object.values(section.fields).map((field, index) =>
                                         <tr key={`field-${field.dty_ID}-${index}`} className="font-light bg-white dark:bg-gray-100/75 border-b">
@@ -79,7 +79,7 @@ export default function EntityProfile({data}: {data:EntityDetail}) {
                                                 </div>
                                                 <ul className="list-disc">
                                                     {field.vocabTerms && (
-                                                        Object.values(field.vocabTerms).map((obj, index) => 
+                                                        Object.values(field.vocabTerms).map((obj, index) =>
                                                             <li key={`term-${obj.id}-${index}`}>
                                                                 <VocabURL data={obj}/>
                                                             </li>
@@ -87,10 +87,10 @@ export default function EntityProfile({data}: {data:EntityDetail}) {
                                                 </ul>
                                             </td>
                                         </tr>
-                                
+
                                     )
                                 }
-                        </>
+                            </>
                         )}
                     </tbody>
                 </table>

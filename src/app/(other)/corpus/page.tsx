@@ -6,7 +6,10 @@ import witData from "@/public/data/wits_per_lang.json";
 import textData from "@/public/data/text_per_lang.json";
 
 export default function Corpus() {
-  
+
+  const textsModifiedDate = new Date(textData.lastModified)
+  const witsModifiedDate = new Date(witData.lastModified)
+
   return (
     <div>
       <header>
@@ -43,7 +46,7 @@ export default function Corpus() {
               First circulated in manuscript form.
             </p>
           </dt>
-  
+
           <dt className="rounded shadow-lg border-solid border-2 p-2">
             <h2 className="flex gap-4 items-center text-lg">
               <div className="md:size-8 size-6">
@@ -69,7 +72,7 @@ export default function Corpus() {
           </dt>
 
         </dl>
-      
+
       </header>
 
       <div className="pt-6 md:pt-8">
@@ -150,7 +153,8 @@ export default function Corpus() {
           <div className="w-fit border p-1 md:p-2">
             <div className="p-4 font-light">
               <h3 className="md:text-lg text-xl">Texts</h3>
-              <h4 className="text-sm">Distribution by language of Text records currently in database<br/>(<em>last updated {witData.lastModified}</em>)</h4>
+              <h4 className="text-sm">Distribution by language of Text records currently in database<br/>
+              (<em>last updated {textsModifiedDate.toDateString()}</em>)</h4>
             </div>
             <div className="overflow-scroll">
               <BarChart data={textData.items} />
@@ -159,7 +163,8 @@ export default function Corpus() {
           <div className="w-fit border p-1 md:p-2">
             <div className="p-4 font-light">
               <h3 className="md:text-lg text-xl">Witnesses</h3>
-              <h4 className="text-sm">Distribution by language of Witness records currently in database<br/>(<em>last updated {witData.lastModified}</em>)</h4>
+              <h4 className="text-sm">Distribution by language of Witness records currently in database<br/>
+              (<em>last updated {witsModifiedDate.toDateString()}</em>)</h4>
             </div>
             <div className="overflow-scroll">
               <BarChart data={witData.items} />
