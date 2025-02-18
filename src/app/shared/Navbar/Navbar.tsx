@@ -80,9 +80,9 @@ const Navbar = ({links}: {links: LinkItem[]}) => {
             </div>
 
             {/* <!-- Expanded Navbar Links --> */}
-            <div>
+            <div className="w-full">
                 <div className="hidden sm:ml-6 sm:block">
-                    <div className="flex space-x-4 container">
+                    <div className="flex space-x-4">
 
                         <div className="flex items-center me-2">
                             <Link 
@@ -133,6 +133,17 @@ const Navbar = ({links}: {links: LinkItem[]}) => {
                             )}
                             </ul>
                         </div>
+                        <div className="flex w-full justify-end pe-2 opacity-50">
+                            <Link 
+                                className={`
+                                    text-white 
+                                    rounded-md px-3 py-2 
+                                    text-md font-medium 
+                                    hover:bg-gray-700 hover:text-white`}
+                                target="_blank" rel="noreferrer" href="https://github.com/LostMa-ERC/lostma-erc.github.io">
+                                Source Code
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -179,6 +190,15 @@ const Navbar = ({links}: {links: LinkItem[]}) => {
                     }
 
                     )}
+                    <Link 
+                        className={`
+                            text-white
+                            opacity-50
+                            block rounded-md px-3 py-2 text-base font-medium
+                            hover:bg-gray-700 hover:text-white`}
+                        target="_blank" rel="noreferrer" href="https://github.com/LostMa-ERC/lostma-erc.github.io">
+                        Source Code
+                    </Link>
                 </div>
             </div>
         )
