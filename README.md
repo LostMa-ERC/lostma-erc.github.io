@@ -1,6 +1,9 @@
 [![deploy](https://github.com/LostMa-ERC/lostma-erc.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/LostMa-ERC/lostma-erc.github.io/actions/workflows/deploy.yml) 
 [![continuous data integration](https://github.com/LostMa-ERC/lostma-erc.github.io/actions/workflows/data-ci.yml/badge.svg)](https://github.com/LostMa-ERC/lostma-erc.github.io/actions/workflows/data-ci.yml)
-[![test coverage](docs/coverage.svg)](docs/coverage.svg)
+[![test coverage](docs/coverage.svg)](docs/coverage.svg) 
+
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
 
 # Static Site Generator (SSG) Codebase
 
