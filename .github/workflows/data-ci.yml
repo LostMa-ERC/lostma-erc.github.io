@@ -31,7 +31,7 @@ jobs:
 
       - name: Update database stats
         run: |
-            heurist -l $HEURIST_USER -p $HEURIST_PASS -d jbcamps_gestes dump -f public/data/heurist.db
+            heurist -l $HEURIST_USER -p $HEURIST_PASS -d jbcamps_gestes load -f public/data/heurist.db
             python public/sql/run.py -q wits_per_lang
             python public/sql/run.py -q text_per_lang
 
