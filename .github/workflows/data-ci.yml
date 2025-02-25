@@ -36,9 +36,9 @@ jobs:
             python public/sql/run.py -q wits_per_lang
             python public/sql/run.py -q text_per_lang
 
-      - name: Update database schema
-        run: |
-            heurist -l $HEURIST_USER -p $HEURIST_PASS -d jbcamps_gestes schema -t json -o public/data
+      # - name: Update database schema
+      #   run: |
+      #       heurist -l $HEURIST_USER -p $HEURIST_PASS -d jbcamps_gestes schema -t json -o public/data
 
       - name: Commit data
         run: |
