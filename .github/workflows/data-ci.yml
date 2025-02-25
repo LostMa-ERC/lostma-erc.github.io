@@ -28,7 +28,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip setuptools wheel
-          pip install git+https://github.com/LostMa-ERC/heurist-api
+          pip install git+https://github.com/LostMa-ERC/heurist-etl-pipeline
 
       - name: Update database stats
         run: |
