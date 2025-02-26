@@ -1,5 +1,5 @@
 {
-    "lastModified": "2025-02-20",
+    "lastModified": "2025-02-26",
     "items": [
         {
             "id": 101,
@@ -184,6 +184,12 @@
                                     "description": "Middle Welsh",
                                     "url": "https://iso639-3.sil.org/code/wlm",
                                     "id": 9746
+                                },
+                                {
+                                    "label": "frp",
+                                    "description": "franco-provençal",
+                                    "url": null,
+                                    "id": 9838
                                 }
                             ]
                         },
@@ -316,7 +322,7 @@
                             "trm_Label": null,
                             "trm_Description": null,
                             "rst_RequirementType": "recommended",
-                            "rst_MaxValues": 1,
+                            "rst_MaxValues": 0,
                             "vocabTerms": null
                         },
                         {
@@ -450,6 +456,12 @@
                                     "description": null,
                                     "url": null,
                                     "id": 9780
+                                },
+                                {
+                                    "label": "Hendecasyllable",
+                                    "description": "11-syllable verse, frequent in franco-italian epics, based on Old French decasyllabic verse",
+                                    "url": null,
+                                    "id": 9834
                                 }
                             ]
                         },
@@ -479,12 +491,6 @@
                                     "id": 9560
                                 },
                                 {
-                                    "label": "monorhyme",
-                                    "description": "All lines have the same end-rhyme.",
-                                    "url": null,
-                                    "id": 9771
-                                },
-                                {
                                     "label": "alliteration",
                                     "description": null,
                                     "url": null,
@@ -495,6 +501,33 @@
                                     "description": null,
                                     "url": null,
                                     "id": 9779
+                                }
+                            ]
+                        },
+                        {
+                            "rst_DisplayName": "Stanza_type",
+                            "rst_DisplayHelpText": "The type of stanza",
+                            "dty_ID": 1364,
+                            "dty_Type": "enum",
+                            "dty_PtrTargetRectypeIDs": [],
+                            "dty_SemanticReferenceURL": null,
+                            "trm_TreeID": 9835,
+                            "trm_Label": "Stanza type vocab",
+                            "trm_Description": null,
+                            "rst_RequirementType": "recommended",
+                            "rst_MaxValues": 1,
+                            "vocabTerms": [
+                                {
+                                    "label": "monorhyme \\'laisse\\'",
+                                    "description": "stanza with single rhyme or assonance, etc.",
+                                    "url": null,
+                                    "id": 9836
+                                },
+                                {
+                                    "label": "couplets",
+                                    "description": "couplets of verse, with flat rhyme (AABB)",
+                                    "url": null,
+                                    "id": 9837
                                 }
                             ]
                         }
@@ -1122,7 +1155,7 @@
                     ]
                 },
                 {
-                    "sectionName": "Review",
+                    "sectionName": "review_note",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
@@ -3648,7 +3681,7 @@
                     ]
                 },
                 {
-                    "sectionName": "review_note",
+                    "sectionName": "Review",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
@@ -3903,6 +3936,12 @@
                                     "description": "Middle Welsh",
                                     "url": "https://iso639-3.sil.org/code/wlm",
                                     "id": 9746
+                                },
+                                {
+                                    "label": "frp",
+                                    "description": "franco-provençal",
+                                    "url": null,
+                                    "id": 9838
                                 }
                             ]
                         },
@@ -3992,7 +4031,7 @@
                     ]
                 },
                 {
-                    "sectionName": "Review",
+                    "sectionName": "review_status",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
