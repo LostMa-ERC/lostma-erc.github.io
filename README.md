@@ -1,8 +1,8 @@
-[![deploy](https://github.com/LostMa-ERC/lostma-erc.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/LostMa-ERC/lostma-erc.github.io/actions/workflows/deploy.yml) 
+[![deploy](https://github.com/LostMa-ERC/lostma-erc.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/LostMa-ERC/lostma-erc.github.io/actions/workflows/deploy.yml)
 [![continuous data integration](https://github.com/LostMa-ERC/lostma-erc.github.io/actions/workflows/data-ci.yml/badge.svg)](https://github.com/LostMa-ERC/lostma-erc.github.io/actions/workflows/data-ci.yml)
-[![test coverage](docs/coverage.svg)](docs/coverage.svg) 
+[![test coverage](docs/coverage.svg)](docs/coverage.svg)
 
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 
 # Static Site Generator (SSG) Codebase
@@ -15,7 +15,7 @@ This is the codebase for the LostMa ERC project's static [website](https://lostm
 
 Our website's codebase is publicly available in order to promote all aspects of open science, including the accessible distribution of research goals, methodologies, and outputs to the larger public.
 
-Under the [GNU GPL license](LICENSE), this repository also serves the open-source developpers' community as another example of how to build and generate a static website using NextJS and GitHub Actions.
+Under the [Creative Commons' ShareAlike](LICENSE), this repository also serves the open-source developpers' community as another example of how to build and generate a static website using NextJS and GitHub Actions.
 
 https://lostma-erc.github.io/ &rarr;
 [deployment](https://lostma-erc.github.io/)
@@ -34,7 +34,7 @@ This application requires Node.js, a JavaScript runtime environment, as well as 
 
 ```shell
 $ node --version
-``` 
+```
 
 2. Check that you have Node's Package Manager `npm`, version 10 or greater. If you don't have a good version, [install `npm`](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm?ref=meilisearch-blog) globally on your computer.
 
@@ -92,7 +92,7 @@ $ npm run dev
 
 ## Credits
 
-- [Kelly Christensen](https://github.com/kat-kel/): 
+- [Kelly Christensen](https://github.com/kat-kel/):
 development, documentation, CI/CD workflows, content
 - [Jean-Baptiste Camps](https://github.com/Jean-Baptiste-Camps):
 project leader, content
