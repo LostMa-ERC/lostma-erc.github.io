@@ -1,5 +1,5 @@
 {
-    "lastModified": "2025-03-04",
+    "lastModified": "2025-03-05",
     "items": [
         {
             "id": 101,
@@ -186,10 +186,16 @@
                                     "id": 9746
                                 },
                                 {
-                                    "label": "frp",
+                                    "label": "frp (Franco-Provençal)",
                                     "description": "franco-provençal",
                                     "url": null,
                                     "id": 9838
+                                },
+                                {
+                                    "label": "lat (Latin)",
+                                    "description": "Latin",
+                                    "url": "https://iso639-3.sil.org/code/lat",
+                                    "id": 9839
                                 }
                             ]
                         },
@@ -1214,7 +1220,7 @@
                 "rty_ID": 103,
                 "rty_Name": "story",
                 "rty_Description": "An abstract \\'work\\', as an entity of superior level to  a given text. Typically, it can be a \\'geste\\' known by several major versions or independent texts, like the Story of Guillaume or Vivien, or Perceval for that matter.",
-                "rty_TitleMask": "[1244] ([1263.term])",
+                "rty_TitleMask": "[1244] ({\\\\[1263.term]})",
                 "rty_ReferenceURL": null
             },
             "sections": [
@@ -1312,6 +1318,39 @@
                                     "description": null,
                                     "url": null,
                                     "id": 9766
+                                }
+                            ]
+                        },
+                        {
+                            "rst_DisplayName": "peripheral",
+                            "rst_DisplayHelpText": "Not part of the main corpus\\'s scope.",
+                            "dty_ID": 1331,
+                            "dty_Type": "enum",
+                            "dty_PtrTargetRectypeIDs": [],
+                            "dty_SemanticReferenceURL": null,
+                            "trm_TreeID": 9496,
+                            "trm_Label": "yes/no vocab",
+                            "trm_Description": null,
+                            "rst_RequirementType": "recommended",
+                            "rst_MaxValues": 1,
+                            "vocabTerms": [
+                                {
+                                    "label": "Yes",
+                                    "description": null,
+                                    "url": null,
+                                    "id": 9497
+                                },
+                                {
+                                    "label": "No",
+                                    "description": null,
+                                    "url": null,
+                                    "id": 9498
+                                },
+                                {
+                                    "label": "unknown",
+                                    "description": "The information is not ready for input.",
+                                    "url": null,
+                                    "id": 9535
                                 }
                             ]
                         },
@@ -2684,7 +2723,7 @@
                     ]
                 },
                 {
-                    "sectionName": "described_at_URL",
+                    "sectionName": "References",
                     "fields": [
                         {
                             "rst_DisplayName": "described_by_source",
@@ -3482,7 +3521,7 @@
                     ]
                 },
                 {
-                    "sectionName": "Review",
+                    "sectionName": "review_status",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
@@ -3938,10 +3977,16 @@
                                     "id": 9746
                                 },
                                 {
-                                    "label": "frp",
+                                    "label": "frp (Franco-Provençal)",
                                     "description": "franco-provençal",
                                     "url": null,
                                     "id": 9838
+                                },
+                                {
+                                    "label": "lat (Latin)",
+                                    "description": "Latin",
+                                    "url": "https://iso639-3.sil.org/code/lat",
+                                    "id": 9839
                                 }
                             ]
                         },
