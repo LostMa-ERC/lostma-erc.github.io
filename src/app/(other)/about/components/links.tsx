@@ -20,7 +20,7 @@ export default function Links() {
             </p>
         </div>
 
-        <div id="methods-header" className="py-8 md:py-4">
+        {/* <div id="methods-header" className="py-8 md:py-4">
 
             <h2 className="p-1 w-fit md:text-xl text-2xl">
                 <div className="flex items-center gap-2">
@@ -37,7 +37,7 @@ export default function Links() {
                 ...
             </p>
 
-        </div>
+        </div> */}
 
         <div id="output-header" className="md:py-4 py-8">
 
