@@ -851,7 +851,7 @@
                     ]
                 },
                 {
-                    "sectionName": "People",
+                    "sectionName": "author_freetext",
                     "fields": [
                         {
                             "rst_DisplayName": "is_written_by",
@@ -3720,7 +3720,7 @@
                     ]
                 },
                 {
-                    "sectionName": "Review",
+                    "sectionName": "review_note",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
