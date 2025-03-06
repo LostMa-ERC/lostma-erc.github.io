@@ -10,7 +10,7 @@ export default function Page() {
         What is LostMa?
       </h1>
     </div>
-  
+
     <div>
       <p className="font-light mt-2 tracking-wide">
           A digital humanities research project that blends AI, complexity science, and philological expertise to unravel the mysteries behind the deviation from pure chance of a text&apos;s transmission.
@@ -19,13 +19,13 @@ export default function Page() {
           We are funded by the European Research Council (ERC) for five years, 2024-2029. Our offices are in the Campus Condorcet&apos;s Hôtel à projets and we are hosted by the École nationale des chartes in Paris, France.
       </p>
     </div>
-      
+
     <Links />
 
     <div className="py-2" id="people">
       <Team />
     </div>
-    
+
     </div>
   );
 }
