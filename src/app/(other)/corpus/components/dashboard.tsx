@@ -17,20 +17,21 @@ export const options = {
   indexAxis: 'y' as const,
   elements: {
     bar: {
-      borderWidth: 2,
+      borderWidth: 0.25,
+      borderColor: "black"
     },
   },
+  maintainAspectRation: false,
   responsive: true,
   plugins: {
     legend: {
-      position: 'right' as const,
+      position: 'bottom' as const,
     },
     title: {
       display: true,
       text: textsModifiedDate.toDateString(),
     },
   },
-  maintainAspectRation: true
 };
 
 const labels = TextData.map((data) => data.lang_label)
@@ -42,15 +43,11 @@ export const data = {
       label: 'Text records',
       data: TextData.map((i) => i.n),
       backgroundColor: "#912200",
-      borderColor: 'black',
-      borderWidth: 0.25,
     },
     {
       label: 'Witness records',
       data: WitData.map((i) => i.n),
       backgroundColor: "#e1d67d",
-      borderColor: 'black',
-      borderWidth: 0.25,
     }
   ]
 
@@ -58,8 +55,12 @@ export const data = {
 
 export default class LanguageDistributionBarChart extends React.Component {
   render() {
-  return (
-      <Bar data-testid="langDashboard" options={options} data={data}/>
-  )
+  return <Bar
+        data-testid="langDashboard"
+        options={options}
+        data={data}
+        // width={1000}
+        // height={600}
+      />
 }
 };

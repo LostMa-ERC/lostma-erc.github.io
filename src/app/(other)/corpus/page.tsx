@@ -144,23 +144,27 @@ export default function Corpus() {
           These indicators are updated at regular intervals and represent neither real-time information nor the composition of the finished corpus.
           This is collaborative work in progress.
         </p>
-        <div id="dashboard" key="dashboard" className="grid grid-cols-1 space-y-4">
+        <div id="dashboard" key="dashboard" className="
+          relative flex flex-col min-w-0 break-words w-full mb-6 shadlow-lg rounded
+        ">
 
           <div className="rounded-t mb-0 px-4 py-3">
             <div className="flex flex-wrap items-center">
               <div className="relative w-full max-w-full flex-grow flex-1">
-                <h3 className="text-xl">
+                <h3 className="text-lg md:text-xl tracking-tight md:tracking-wide">
                 Languages of records currently in database
                 </h3>
-                <h4 className="text-xs uppercase">Excluding: draft text records entered without language</h4>
+                <h4 className="text-[0.65rem] md:text-xs uppercase">Excluding: draft text records entered without language</h4>
               </div>
             </div>
           </div>
 
-          <div className="p-4 auto">
-            <div className="relative min-h-48">
+          <div className="p-4 flex-auto">
+            <div className="relative m-auto">
               <LanguageDistributionBarChart />
             </div>
+            <p className="text-xs text-center">Built with <Link className="link" target="_blank" rel="noreferrer" href={"https://www.chartjs.org/"}>Chart.js</Link></p>
+            <p className="text-xs md:hidden">Mobile view of chart under development.</p>
           </div>
 
         </div>
