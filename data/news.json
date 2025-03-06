@@ -1,4 +1,20 @@
-[ 
+[
+    {
+        "start": "2025-03-01",
+        "category": "Other",
+        "title": "PhD Contract Offer 🎓",
+        "detail": "Deadline: 23 March 2025",
+        "description": "Hiring 2 PhDs in Computational Philology.",
+        "location": {
+            "venue": "École nationale des chartes",
+            "city": "Paris, France"
+        },
+        "link": {
+            "page": false,
+            "label": "Job Description",
+            "url": "https://euraxess.ec.europa.eu/jobs/320469"
+        }
+    },
     {
         "start": "2025-02-01",
         "category": "Event",
@@ -124,9 +140,9 @@
         }
     },
     {
-        "start": "2022-10-26", 
+        "start": "2022-10-26",
         "category": "Publication",
-        "title": "Lost Manuscripts and Extinct Texts : A Dynamic Model of Cultural Transmission", 
+        "title": "Lost Manuscripts and Extinct Texts : A Dynamic Model of Cultural Transmission",
         "detail": ["Jean-Baptiste Camps", "Julien Randon-Furling"],
         "description": "How did written works evolve, disappear or survive down through the ages? In this paper, we propose a unified, formal framework for two fundamental questions in the study of the transmission of texts: how much was lost or preserved from all works of the past, and why do their genealogies (their \"phylogenetic trees\") present the very peculiar shapes that we observe or, more precisely, reconstruct? We argue here that these questions share similarities to those encountered in evolutionary biology, and can be described in terms of \"genetic\" drift and \"natural\" selection. Through agent-based models, we show that such properties as have been observed by philologists since the 1800s can be simulated, and confronted to data gathered for ancient and medieval texts across Europe, in order to obtain plausible estimations of the number of works and manuscripts that existed and were lost.",
         "link": {
