@@ -1,14 +1,9 @@
 'use client';
 import Link from "next/link";
 import { XMLFileSVG, ShareSVG, QuestionMarkSVG as What, MailSVG as How, ClockSVG as When, GlobeSVG as Where } from "@/public/svgs";
-import { BarChart } from "./components/dashboard";
-import witData from "@/public/data/wits_per_lang.json";
-import textData from "@/public/data/text_per_lang.json";
+import LanguageDistributionBarChart from "./components/dashboard";
 
 export default function Corpus() {
-
-  const textsModifiedDate = new Date(textData.lastModified)
-  const witsModifiedDate = new Date(witData.lastModified)
 
   return (
     <div>
@@ -149,27 +144,25 @@ export default function Corpus() {
           These indicators are updated at regular intervals and represent neither real-time information nor the composition of the finished corpus.
           This is collaborative work in progress.
         </p>
-        <div id="dashboard" key="dashboard" className="grid justify-center md:grid-cols-2">
-          <div className="w-fit border p-1 md:p-2">
-            <div className="p-4 font-light">
-              <h3 className="md:text-lg text-xl">Texts</h3>
-              <h4 className="text-sm">Distribution by language of Text records currently in database<br/>
-              (<em>last updated {textsModifiedDate.toDateString()}</em>)</h4>
-            </div>
-            <div className="overflow-scroll">
-              <BarChart data={textData.items} />
-            </div>
-          </div>
-          <div className="w-fit border p-1 md:p-2">
-            <div className="p-4 font-light">
-              <h3 className="md:text-lg text-xl">Witnesses</h3>
-              <h4 className="text-sm">Distribution by language of Witness records currently in database<br/>
-              (<em>last updated {witsModifiedDate.toDateString()}</em>)</h4>
-            </div>
-            <div className="overflow-scroll">
-              <BarChart data={witData.items} />
+        <div id="dashboard" key="dashboard" className="grid grid-cols-1 space-y-4">
+
+          <div className="rounded-t mb-0 px-4 py-3">
+            <div className="flex flex-wrap items-center">
+              <div className="relative w-full max-w-full flex-grow flex-1">
+                <h3 className="text-xl">
+                Languages of records currently in database
+                </h3>
+                <h4 className="text-xs uppercase">Excluding: draft text records entered without language</h4>
+              </div>
             </div>
           </div>
+
+          <div className="p-4 auto">
+            <div className="relative min-h-48">
+              <LanguageDistributionBarChart />
+            </div>
+          </div>
+
         </div>
       </div>
 
