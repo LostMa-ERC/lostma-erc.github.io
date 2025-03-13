@@ -1,5 +1,5 @@
 {
-    "lastModified": "2025-03-12",
+    "lastModified": "2025-03-13",
     "items": [
         {
             "id": 101,
@@ -7,7 +7,7 @@
                 "rty_ID": 101,
                 "rty_Name": "text",
                 "rty_Description": "Formulation of a work in human language, whose literary form and style can be detected and whose creation can be attributed to one or more individuals.",
-                "rty_TitleMask": "[[[1101.term]]] [1090] [1288.2-18] [1288.2-1], \\n \\\"[1244]\\\" ([1265], [1285])",
+                "rty_TitleMask": "[[[1101.term]]] [1090] [1288.2-18] [1288.2-1], \\n \\\"[1244]\\\" ([1265],[1165.term], [1285])",
                 "rty_ReferenceURL": null
             },
             "sections": [
@@ -3521,7 +3521,7 @@
                     ]
                 },
                 {
-                    "sectionName": "Review",
+                    "sectionName": "review_status",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
@@ -3720,7 +3720,7 @@
                     ]
                 },
                 {
-                    "sectionName": "Review",
+                    "sectionName": "review_note",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
@@ -4944,7 +4944,7 @@
                     ]
                 },
                 {
-                    "sectionName": "Layout",
+                    "sectionName": "writing_surface_area_reference",
                     "fields": [
                         {
                             "rst_DisplayName": "writing_surface_area_height",
