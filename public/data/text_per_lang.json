@@ -1,5 +1,5 @@
 {
-  "lastModified": "2025-03-26",
+  "lastModified": "2025-03-27",
   "items": [
     {
       "n": 78,
@@ -7,17 +7,17 @@
       "lang_label": "Middle Dutch"
     },
     {
-      "n": 42,
+      "n": 54,
       "lang": "frm",
       "lang_label": "Middle French"
     },
     {
-      "n": 162,
+      "n": 166,
       "lang": "fro",
       "lang_label": "Old French"
     },
     {
-      "n": 14,
+      "n": 15,
       "lang": "fro_ENG",
       "lang_label": "Anglo-Norman"
     },
@@ -47,7 +47,7 @@
       "lang_label": "Italian"
     },
     {
-      "n": 1,
+      "n": 2,
       "lang": "lat",
       "lang_label": "Latin"
     },
@@ -62,7 +62,7 @@
       "lang_label": "Occitan"
     },
     {
-      "n": 102,
+      "n": 97,
       "lang": null,
       "lang_label": null
     }
