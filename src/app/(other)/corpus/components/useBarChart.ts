@@ -26,8 +26,13 @@ export default function makeSVG({d3svg, data, title, barColor}:
       let svg = d3.select(d3svg.current)
 
       // scales
-      const xMax = d3.max(data, d => d.n)
-
+      let xMax = d3.max(data, d => d.n)
+      if (xMax === null || xMax === undefined) {
+        xMax = 200
+      }
+      else {
+        xMax = xMax+10
+      }
       const xScale = d3.scaleLinear()
         .domain([0, xMax])
         .range([0, BarChartDimensions.width])
