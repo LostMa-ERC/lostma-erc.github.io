@@ -2,6 +2,8 @@ name: data integration
 
 on:
   push:
+    paths:
+      - "data/**"
   schedule:
     # Run at 12:00 UTC (13:00 CET) on weekdays
     - cron: "00 12 * * 1-5"
@@ -32,13 +34,13 @@ jobs:
 
       - name: Update database stats
         run: |
-            heurist -l $HEURIST_USER -p $HEURIST_PASS -d jbcamps_gestes download -f public/data/heurist.db
+            READTIMEOUT=30 heurist -l $HEURIST_USER -p $HEURIST_PASS -d jbcamps_gestes download -f public/data/heurist.db
             python public/sql/run.py -q wits_per_lang
             python public/sql/run.py -q text_per_lang
 
       - name: Update database schema
         run: |
-            heurist -l $HEURIST_USER -p $HEURIST_PASS -d jbcamps_gestes schema -t json -o public/data
+            READTIMEOUT=30 heurist -l $HEURIST_USER -p $HEURIST_PASS -d jbcamps_gestes schema -t json -o public/data
 
       - name: Commit data
         run: |
