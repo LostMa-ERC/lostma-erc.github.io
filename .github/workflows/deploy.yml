@@ -7,13 +7,6 @@ name: deploy
 run-name: '[Automated] Deployment 🚀'
 
 on:
-  push:
-    paths:
-      - 'src/app/**'
-      - 'public/**'
-      - 'data/**/*.json'
-      - 'package.*'
-      - '*.ts'
   pull_request:
     branches:
       - main
