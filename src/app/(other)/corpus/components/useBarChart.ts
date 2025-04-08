@@ -1,12 +1,13 @@
-import { useEffect, useRef } from 'react';
+import { RefObject } from 'react';
 import * as d3 from 'd3';
 
-// margin convention often used with D3
 const margin = { top: 80, right: 60, bottom: 80, left: 80 }
-const width = 800 - margin.left - margin.right
-const height = 600 - margin.top - margin.bottom
 
-const color_options = ["#001f54", "#9fc490"]
+const BarChartDimensions = {
+  margin: margin,
+  width : 800 - margin.left - margin.right,
+  height : 600 - margin.top - margin.bottom
+}
 
 interface LangCategorisationData {
   n: number
@@ -14,13 +15,14 @@ interface LangCategorisationData {
   lang_label: string
 }
 
-const HorizontalBarChart = ({ data, title, color_idx }: {data: LangCategorisationData[], title: string, color_idx: number}) => {
-  const d3svg = useRef(null)
+export default function makeSVG({d3svg, data, title, barColor}:
+  {
+    d3svg: RefObject<null>,
+    data: LangCategorisationData[],
+    title: string,
+    barColor:string}
+) {
 
-  const color = color_options[color_idx]
-
-  useEffect(() => {
-    if (data && d3svg.current) {
       let svg = d3.select(d3svg.current)
 
       // scales
@@ -28,15 +30,18 @@ const HorizontalBarChart = ({ data, title, color_idx }: {data: LangCategorisatio
 
       const xScale = d3.scaleLinear()
         .domain([0, xMax])
-        .range([0, width])
+        .range([0, BarChartDimensions.width])
 
       const yScale = d3.scaleBand()
         .domain(data.map(d => d.lang))
-        .rangeRound([0, height])
+        .rangeRound([0, BarChartDimensions.height])
         .paddingInner(0.25)
 
       // append group translated to chart area
-      svg = svg.append('g').attr('transform', `translate(${margin.left}, ${margin.top})`)
+      svg = svg.append('g').attr(
+        'transform',
+        `translate(${margin.left}, ${margin.top})`
+      )
 
       // draw header
       svg
@@ -57,7 +62,7 @@ const HorizontalBarChart = ({ data, title, color_idx }: {data: LangCategorisatio
         .attr('y', d => yScale(d.lang))
         .attr('width', d => xScale(d.n))
         .attr('height', yScale.bandwidth())
-        .style('fill', color)
+        .style('fill', barColor)
         // .style('fill', function(d, i) {
         //   return color[i % 2] // use colors in sequence
         // })
@@ -67,29 +72,20 @@ const HorizontalBarChart = ({ data, title, color_idx }: {data: LangCategorisatio
       svg
         .append('g')
         .attr('class', 'x axis')
-        .attr('transform', `translate(0,${height + margin.bottom / 3})`)
+        .attr('transform', `translate(0,${BarChartDimensions.height + BarChartDimensions.margin.bottom / 3})`)
         .call(xAxis)
 
       const yAxis = d3.axisLeft(yScale).tickSize(0)
       svg
         .append('g')
         .attr('class', 'y axis')
-        .attr('transform', `translate(${-margin.left / 3},0)`)
+        .attr('transform', `translate(${-BarChartDimensions.margin.left / 3},0)`)
         .call(yAxis)
+
+      return svg
 
   }
 
-  }, [data])
 
-  return (
-    <svg
-      className="bar-chart-container"
-      width={width + margin.left + margin.right}
-      height={height + margin.top + margin.bottom}
-      role="img"
-      ref={d3svg}
-    ></svg>
-  )
-}
-
-export default HorizontalBarChart;
+export type { LangCategorisationData };
+export { BarChartDimensions };

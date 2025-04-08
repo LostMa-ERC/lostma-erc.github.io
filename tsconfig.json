@@ -44,8 +44,9 @@
     "next-env.d.ts",
     "public/*.jpg",
     "public/*.png",
-    "dist/types/**/*.ts"
-, "src/app/(other)/corpus/components/dashboard.tsx"  ],
+    "dist/types/**/*.ts",
+    // "src/app/(other)/corpus/components/HorizontalBarchart.tsx"
+  ],
   "exclude": [
     "node_modules"
   ]

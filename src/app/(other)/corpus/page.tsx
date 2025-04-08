@@ -1,7 +1,7 @@
 'use client';
 import Link from "next/link";
 import { XMLFileSVG, ShareSVG, QuestionMarkSVG as What, MailSVG as How, ClockSVG as When, GlobeSVG as Where } from "@/public/svgs";
-import HorizontalBarChart from "./components/dashboard";
+import HorizontalBarChart from "./components/HorizontalBarchart";
 import textData from "@/public/data/text_per_lang.json";
 import witData from "@/public/data/wits_per_lang.json";
 
