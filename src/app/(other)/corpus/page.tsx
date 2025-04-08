@@ -168,10 +168,10 @@ export default function Corpus() {
 
           <div className="flex justify-center">
             <div className="grid md:grid-cols-2">
-              <div className="overflow-x-scroll" id="#TextRecords">
+              <div className="overflow-x-scroll" id="#TextRecords" data-testid="textBarchart">
                 <HorizontalBarChart data={TextData} title={"Text Records"} color_idx={0}/>
               </div>
-              <div className="overflow-x-scroll" id="#WitnessRecords">
+              <div className="overflow-x-scroll" id="#WitnessRecords" data-testid="witnessBarchart">
                 <HorizontalBarChart data={WitData} title={"Witness Records"} color_idx={1}/>
               </div>
             </div>
