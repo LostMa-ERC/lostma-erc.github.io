@@ -45,7 +45,7 @@
     "public/*.jpg",
     "public/*.png",
     "dist/types/**/*.ts"
-  ],
+, "src/app/(other)/corpus/components/dashboard.tsx"  ],
   "exclude": [
     "node_modules"
   ]
