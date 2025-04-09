@@ -1,5 +1,5 @@
 {
-    "lastModified": "2025-04-08",
+    "lastModified": "2025-04-09",
     "items": [
         {
             "id": 101,
@@ -49,7 +49,7 @@
                                 },
                                 {
                                     "label": "pro (Occitan)",
-                                    "description": "Old Occitan, Provençal (to 1500)",
+                                    "description": "Old Occitan, Provençal",
                                     "url": "https://iso639-3.sil.org/code/pro",
                                     "id": 9471
                                 },
@@ -67,7 +67,7 @@
                                 },
                                 {
                                     "label": "fro_PRO (Franco-Occitan)",
-                                    "description": "Franco-Occitan (occitanised French or francised Occitan)",
+                                    "description": "Franco-Occitan",
                                     "url": null,
                                     "id": 9474
                                 },
@@ -91,7 +91,7 @@
                                 },
                                 {
                                     "label": "enm (Middle English)",
-                                    "description": "Middle English (1100-1500)",
+                                    "description": "Middle English",
                                     "url": "https://iso639-3.sil.org/code/enm",
                                     "id": 9729
                                 },
@@ -115,7 +115,7 @@
                                 },
                                 {
                                     "label": "gmh (Middle High German)",
-                                    "description": "Middle High German (1050-1500)",
+                                    "description": "Middle High German",
                                     "url": "https://iso639-3.sil.org/code/gmh",
                                     "id": 9735
                                 },
@@ -139,25 +139,25 @@
                                 },
                                 {
                                     "label": "mga (Middle Irish)",
-                                    "description": "Middle Irish (900-1200)",
+                                    "description": "Middle Irish",
                                     "url": "https://iso639-3.sil.org/code/mga",
                                     "id": 9739
                                 },
                                 {
                                     "label": "non (Old Norse)",
-                                    "description": "Old Norse denotes both Old Icelandic and Old Norwegian.",
+                                    "description": "Old Norse",
                                     "url": "https://iso639-3.sil.org/code/non",
                                     "id": 9740
                                 },
                                 {
                                     "label": "non_DAN (Old Danish)",
-                                    "description": "Old Danish (800-1100)",
+                                    "description": "Old Danish",
                                     "url": null,
                                     "id": 9741
                                 },
                                 {
                                     "label": "non_SWE (Old Swedish)",
-                                    "description": "Old Swedish (800-1500)",
+                                    "description": "Old Swedish",
                                     "url": null,
                                     "id": 9742
                                 },
@@ -187,7 +187,7 @@
                                 },
                                 {
                                     "label": "frp (Franco-Provençal)",
-                                    "description": "franco-provençal",
+                                    "description": "Franco-provençal",
                                     "url": null,
                                     "id": 9838
                                 },
@@ -3840,7 +3840,7 @@
                                 },
                                 {
                                     "label": "pro (Occitan)",
-                                    "description": "Old Occitan, Provençal (to 1500)",
+                                    "description": "Old Occitan, Provençal",
                                     "url": "https://iso639-3.sil.org/code/pro",
                                     "id": 9471
                                 },
@@ -3858,7 +3858,7 @@
                                 },
                                 {
                                     "label": "fro_PRO (Franco-Occitan)",
-                                    "description": "Franco-Occitan (occitanised French or francised Occitan)",
+                                    "description": "Franco-Occitan",
                                     "url": null,
                                     "id": 9474
                                 },
@@ -3882,7 +3882,7 @@
                                 },
                                 {
                                     "label": "enm (Middle English)",
-                                    "description": "Middle English (1100-1500)",
+                                    "description": "Middle English",
                                     "url": "https://iso639-3.sil.org/code/enm",
                                     "id": 9729
                                 },
@@ -3906,7 +3906,7 @@
                                 },
                                 {
                                     "label": "gmh (Middle High German)",
-                                    "description": "Middle High German (1050-1500)",
+                                    "description": "Middle High German",
                                     "url": "https://iso639-3.sil.org/code/gmh",
                                     "id": 9735
                                 },
@@ -3930,25 +3930,25 @@
                                 },
                                 {
                                     "label": "mga (Middle Irish)",
-                                    "description": "Middle Irish (900-1200)",
+                                    "description": "Middle Irish",
                                     "url": "https://iso639-3.sil.org/code/mga",
                                     "id": 9739
                                 },
                                 {
                                     "label": "non (Old Norse)",
-                                    "description": "Old Norse denotes both Old Icelandic and Old Norwegian.",
+                                    "description": "Old Norse",
                                     "url": "https://iso639-3.sil.org/code/non",
                                     "id": 9740
                                 },
                                 {
                                     "label": "non_DAN (Old Danish)",
-                                    "description": "Old Danish (800-1100)",
+                                    "description": "Old Danish",
                                     "url": null,
                                     "id": 9741
                                 },
                                 {
                                     "label": "non_SWE (Old Swedish)",
-                                    "description": "Old Swedish (800-1500)",
+                                    "description": "Old Swedish",
                                     "url": null,
                                     "id": 9742
                                 },
@@ -3978,7 +3978,7 @@
                                 },
                                 {
                                     "label": "frp (Franco-Provençal)",
-                                    "description": "franco-provençal",
+                                    "description": "Franco-provençal",
                                     "url": null,
                                     "id": 9838
                                 },
@@ -4076,7 +4076,7 @@
                     ]
                 },
                 {
-                    "sectionName": "review_status",
+                    "sectionName": "Review",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
