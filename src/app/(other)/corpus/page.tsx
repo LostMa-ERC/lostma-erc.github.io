@@ -1,9 +1,15 @@
 'use client';
 import Link from "next/link";
 import { XMLFileSVG, ShareSVG, QuestionMarkSVG as What, MailSVG as How, ClockSVG as When, GlobeSVG as Where } from "@/public/svgs";
+
 import HorizontalBarChart from "./components/HorizontalBarchart";
+import { getLangData, getLastModified } from "./components/fetchData";
+
 
 export default function Corpus() {
+
+  const data = getLangData()
+  const lastModified = `Last modified ${getLastModified().toDateString()}.`
 
   return (
     <div>
@@ -159,11 +165,11 @@ export default function Corpus() {
             </div>
           </div>
 
-          <div className="flex justify-center">
-            <div id="#TextRecords" data-testid="textBarchart" className="w-full h-full">
-              <HorizontalBarChart />
-            </div>
+          <div className="w-full" data-testid="HorizontalBarChart">
+            <HorizontalBarChart data={data}/>
           </div>
+
+          <p className="text-sm tracking-tight md:tracking-wide">{lastModified}</p>
 
         </div>
       </div>

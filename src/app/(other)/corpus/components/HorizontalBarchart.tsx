@@ -1,77 +1,54 @@
-import { useState } from "react";
-import { AgCharts } from 'ag-charts-react';
-
-import jsonData from "@/public/data/lang_aggregates.json";
-
-function getLangData() {
-
-  const items = jsonData.items.filter((i) => i.code != undefined)
-  const date = new Date(jsonData.lastModified)
-
-  return {
-    items: items,
-    date: date.toDateString()
-  }
-
-}
-
-const data = jsonData.items.filter((i) => i.code != undefined)
-const lastModifiedDate = new Date(jsonData.lastModified)
+import React from "react";
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
 
 const color_options = ["#001f54", "#9fc490"]
 
-const HorizontalBarChart = () => {
-  const data = getLangData()
-  // Chart Options: Control & configure the chart
-  const [chartOptions, setChartOptions] = useState({
-    // Data: Data to be displayed in the chart
-    data: data.items,
-    // Title
-    title: {
-      text: "Text and witness records",
-    },
-    // Footnote
-    footnote: {
-      text: `Last updated ${data.date}.`
-    },
-    // Series: Defines which chart type and data to use
-    series: [
-      { type: 'bar',
-        direction: "horizontal",
-        xKey: 'code',
-        yKey: 'texts',
-        yName: 'Texts',
-        angleKey: 'code',
-        radiusKey: 'code',
-      },
-      { type: 'bar',
-        direction: "horizontal",
-        xKey: 'code',
-        yKey: 'witnesses',
-        yName: 'Witnesses',
-        angleKey: 'code',
-        radiusKey: 'code',
-      }
-    ],
-    axes: [
-      {
-          type: 'bar',
-          position: 'left',
-          label: {
-              minSpacing: 20,
-              avoidCollisions: false, // enabled by default
-              autoRotate: false, // enabled by default
-          },
-      },
-  ]
-});
+interface BarChartProps {
+  data: object[]
+}
 
+const HorizontalBarChart: React.FC<BarChartProps> = ({data}) => {
   return (
-    // AgCharts component with options passed as prop
-    // Ignore type error in build
-    <AgCharts options={chartOptions} />
-  );
-};
+    <ResponsiveContainer width="100%" height={600}>
+      <BarChart
+        data={data}
+        layout="vertical"
+        margin={{ top: 20, right: 30, left: 30, bottom: 5}}
+      >
+        <CartesianGrid/>
+        <XAxis type="number"/>
+        <YAxis
+          dataKey="lang"
+          type="category"
+          style={{
+            fontSize: '0.65rem',
+        }}
+        />
+        <Tooltip />
+        <Legend />
+        <Bar
+          name="Texts"
+          dataKey="texts"
+          fill={color_options[0]}
+        />
+        <Bar
+          name="Witnesses"
+          dataKey="witnesses"
+          fill={color_options[1]}
+        />
+      </BarChart>
+    </ResponsiveContainer>
+  )
+}
 
 
 export default HorizontalBarChart;
