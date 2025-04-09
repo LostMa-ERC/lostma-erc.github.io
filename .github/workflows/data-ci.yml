@@ -35,8 +35,7 @@ jobs:
       - name: Update database stats
         run: |
             READTIMEOUT=30 heurist -l $HEURIST_USER -p $HEURIST_PASS -d jbcamps_gestes download -f public/data/heurist.db
-            python public/sql/run.py -q wits_per_lang
-            python public/sql/run.py -q text_per_lang
+            python public/sql/run.py
 
       - name: Update database schema
         run: |

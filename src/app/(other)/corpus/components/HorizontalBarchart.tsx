@@ -1,34 +1,77 @@
-import { useRef, useEffect } from "react";
-import makeSVG, { LangCategorisationData, BarChartDimensions } from "./useBarChart";
+import { useState } from "react";
+import { AgCharts } from 'ag-charts-react';
 
-const color_options = ["#001f54", "#9fc490"]
+import jsonData from "@/public/data/lang_aggregates.json";
 
-const HorizontalBarChart = ({ data, title, color_idx }: {data: LangCategorisationData[], title: string, color_idx: number}) => {
-    const barColor = color_options[color_idx]
-    const d3svg = useRef(null)
-    useEffect(() => {
-     if(data && d3svg.current) {
-        let svg = makeSVG({
-            d3svg:d3svg,
-            data:data,
-            title:title,
-            barColor:barColor
-        })
-     }
-    }, [data, title, barColor])
+function getLangData() {
 
-    return (
-        <svg
-          className="bar-chart-container"
-          width={BarChartDimensions.width + BarChartDimensions.margin.left + BarChartDimensions.margin.right}
-          height={BarChartDimensions.height + BarChartDimensions.margin.top + BarChartDimensions.margin.bottom}
-          role="img"
-          ref={d3svg}
-        ></svg>
-      )
+  const items = jsonData.items.filter((i) => i.code != undefined)
+  const date = new Date(jsonData.lastModified)
+
+  return {
+    items: items,
+    date: date.toDateString()
+  }
 
 }
 
-;
+const data = jsonData.items.filter((i) => i.code != undefined)
+const lastModifiedDate = new Date(jsonData.lastModified)
+
+const color_options = ["#001f54", "#9fc490"]
+
+const HorizontalBarChart = () => {
+  const data = getLangData()
+  // Chart Options: Control & configure the chart
+  const [chartOptions, setChartOptions] = useState({
+    // Data: Data to be displayed in the chart
+    data: data.items,
+    // Title
+    title: {
+      text: "Text and witness records",
+    },
+    // Footnote
+    footnote: {
+      text: `Last updated ${data.date}.`
+    },
+    // Series: Defines which chart type and data to use
+    series: [
+      { type: 'bar',
+        direction: "horizontal",
+        xKey: 'code',
+        yKey: 'texts',
+        yName: 'Texts',
+        angleKey: 'code',
+        radiusKey: 'code',
+      },
+      { type: 'bar',
+        direction: "horizontal",
+        xKey: 'code',
+        yKey: 'witnesses',
+        yName: 'Witnesses',
+        angleKey: 'code',
+        radiusKey: 'code',
+      }
+    ],
+    axes: [
+      {
+          type: 'bar',
+          position: 'left',
+          label: {
+              minSpacing: 20,
+              avoidCollisions: false, // enabled by default
+              autoRotate: false, // enabled by default
+          },
+      },
+  ]
+});
+
+  return (
+    // AgCharts component with options passed as prop
+    // Ignore type error in build
+    <AgCharts options={chartOptions} />
+  );
+};
+
 
 export default HorizontalBarChart;

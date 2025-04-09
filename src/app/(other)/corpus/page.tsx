@@ -2,12 +2,6 @@
 import Link from "next/link";
 import { XMLFileSVG, ShareSVG, QuestionMarkSVG as What, MailSVG as How, ClockSVG as When, GlobeSVG as Where } from "@/public/svgs";
 import HorizontalBarChart from "./components/HorizontalBarchart";
-import textData from "@/public/data/text_per_lang.json";
-import witData from "@/public/data/wits_per_lang.json";
-
-const TextData = textData.items.filter((i) => i.lang_label != undefined)
-const textsModifiedDate = new Date(textData.lastModified)
-const WitData = witData.items.filter((i) => i.lang_label != undefined)
 
 export default function Corpus() {
 
@@ -161,19 +155,13 @@ export default function Corpus() {
                 Languages of records currently in database
                 </h3>
                 <h4 className="text-[0.65rem] md:text-xs uppercase">Excluding: draft text records entered without language</h4>
-                <p>Last updated {textsModifiedDate.toDateString()}</p>
               </div>
             </div>
           </div>
 
           <div className="flex justify-center">
-            <div className="grid md:grid-cols-2">
-              <div className="overflow-x-scroll" id="#TextRecords" data-testid="textBarchart">
-                <HorizontalBarChart data={TextData} title={"Text Records"} color_idx={0}/>
-              </div>
-              <div className="overflow-x-scroll" id="#WitnessRecords" data-testid="witnessBarchart">
-                <HorizontalBarChart data={WitData} title={"Witness Records"} color_idx={1}/>
-              </div>
+            <div id="#TextRecords" data-testid="textBarchart" className="w-full h-full">
+              <HorizontalBarChart />
             </div>
           </div>
 

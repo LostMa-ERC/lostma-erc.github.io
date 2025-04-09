@@ -1,0 +1,83 @@
+{
+  "lastModified": "2025-04-09",
+  "items": [
+    {
+      "texts": 78,
+      "witnesses": 169,
+      "code": "dum",
+      "lang": "Middle Dutch"
+    },
+    {
+      "texts": 10,
+      "witnesses": 9,
+      "code": "enm",
+      "lang": "Middle English"
+    },
+    {
+      "texts": 67,
+      "witnesses": 0,
+      "code": "frm",
+      "lang": "Middle French"
+    },
+    {
+      "texts": 183,
+      "witnesses": 0,
+      "code": "fro",
+      "lang": "Old French"
+    },
+    {
+      "texts": 18,
+      "witnesses": 0,
+      "code": "fro_ENG",
+      "lang": "Anglo-Norman"
+    },
+    {
+      "texts": 19,
+      "witnesses": 0,
+      "code": "fro_ITA",
+      "lang": "Franco-italian"
+    },
+    {
+      "texts": 2,
+      "witnesses": 0,
+      "code": "fro_PRO",
+      "lang": "Franco-Occitan"
+    },
+    {
+      "texts": 1,
+      "witnesses": 0,
+      "code": "frp",
+      "lang": "Franco-provençal"
+    },
+    {
+      "texts": 4,
+      "witnesses": 0,
+      "code": "gmh",
+      "lang": "Middle High German"
+    },
+    {
+      "texts": 1,
+      "witnesses": 0,
+      "code": "ita",
+      "lang": "Italian"
+    },
+    {
+      "texts": 4,
+      "witnesses": 0,
+      "code": "lat",
+      "lang": "Latin"
+    },
+    {
+      "texts": 52,
+      "witnesses": 3,
+      "code": "non",
+      "lang": "Old Norse"
+    },
+    {
+      "texts": 14,
+      "witnesses": 0,
+      "code": "pro",
+      "lang": "Old Occitan, Provençal"
+    }
+  ]
+}
