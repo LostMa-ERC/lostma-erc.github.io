@@ -1,5 +1,5 @@
 {
-  "lastModified": "2025-04-23",
+  "lastModified": "2025-04-24",
   "items": [
     {
       "texts": 78,
@@ -8,19 +8,19 @@
       "lang": "Middle Dutch"
     },
     {
-      "texts": 30,
-      "witnesses": 69,
+      "texts": 31,
+      "witnesses": 70,
       "code": "enm",
       "lang": "Middle English"
     },
     {
-      "texts": 67,
+      "texts": 70,
       "witnesses": 0,
       "code": "frm",
       "lang": "Middle French"
     },
     {
-      "texts": 218,
+      "texts": 220,
       "witnesses": 0,
       "code": "fro",
       "lang": "Old French"
