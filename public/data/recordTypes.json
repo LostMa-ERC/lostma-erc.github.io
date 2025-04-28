@@ -1,5 +1,5 @@
 {
-    "lastModified": "2025-04-25",
+    "lastModified": "2025-04-28",
     "items": [
         {
             "id": 101,
@@ -851,7 +851,7 @@
                     ]
                 },
                 {
-                    "sectionName": "People",
+                    "sectionName": "author_freetext",
                     "fields": [
                         {
                             "rst_DisplayName": "is_written_by",
@@ -1161,7 +1161,7 @@
                     ]
                 },
                 {
-                    "sectionName": "review_note",
+                    "sectionName": "Review",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
