@@ -1,5 +1,5 @@
 {
-    "lastModified": "2025-05-06",
+    "lastModified": "2025-05-07",
     "items": [
         {
             "id": 101,
@@ -857,7 +857,7 @@
                     ]
                 },
                 {
-                    "sectionName": "author_freetext",
+                    "sectionName": "People",
                     "fields": [
                         {
                             "rst_DisplayName": "is_written_by",
@@ -1167,7 +1167,7 @@
                     ]
                 },
                 {
-                    "sectionName": "Review",
+                    "sectionName": "review_note",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
@@ -2251,7 +2251,7 @@
                 "rty_ID": 105,
                 "rty_Name": "witness",
                 "rty_Description": "a witness of a text, placed in a stemma or otherwise",
-                "rty_TitleMask": "[[[1301.term]]] \\\"[1295.1244]\\\" ([1285]) [1356.1315.rectitle]\\n[1190.rectitle]",
+                "rty_TitleMask": "[[[1301.term]]] \\\"[1295.1244]\\\" ([1285]) [1296]",
                 "rty_ReferenceURL": null
             },
             "sections": [
@@ -2729,7 +2729,7 @@
                     ]
                 },
                 {
-                    "sectionName": "References",
+                    "sectionName": "described_at_URL",
                     "fields": [
                         {
                             "rst_DisplayName": "described_by_source",
@@ -2841,7 +2841,7 @@
                 "rty_ID": 106,
                 "rty_Name": "document",
                 "rty_Description": "A physical entity: a book (manuscript, incunabula, fragment, printed copy…)",
-                "rty_TitleMask": "[1308.rectitle] [1309]{\\\\, \\\\} [1307]{\\\\, \\\\}[1310]",
+                "rty_TitleMask": "[1308.rectitle]\\n{\\\\, \\\\ [[location unknown]]}\\n[1309]{\\\\, \\\\} \\n[1307]{\\\\, \\\\ [[without shelfmark]] ([1367])}\\n[1310]",
                 "rty_ReferenceURL": null
             },
             "sections": [
@@ -2850,7 +2850,7 @@
                     "fields": [
                         {
                             "rst_DisplayName": "current_shelfmark",
-                            "rst_DisplayHelpText": "If this record is an extant (not hypothetical) document, the shelf mark by which it can be requested or, in the case of unavailable archives, by which it is known.<br>Query <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Q104842294\\\">Q104842294</a>",
+                            "rst_DisplayHelpText": "Shelf mark by which the document can be requested or, in the case of unavailable archives, by which it is known. If the institution has not provided a shelf mark, leave blank.",
                             "dty_ID": 1307,
                             "dty_Type": "freetext",
                             "dty_PtrTargetRectypeIDs": [],
@@ -2859,6 +2859,34 @@
                             "trm_Label": null,
                             "trm_Description": null,
                             "rst_RequirementType": "recommended",
+                            "rst_MaxValues": 1,
+                            "vocabTerms": null
+                        },
+                        {
+                            "rst_DisplayName": "contents_of_record_without_shelfmark",
+                            "rst_DisplayHelpText": "A distinguishing note about a record without a shelfmark, such as its contents.",
+                            "dty_ID": 1367,
+                            "dty_Type": "freetext",
+                            "dty_PtrTargetRectypeIDs": [],
+                            "dty_SemanticReferenceURL": null,
+                            "trm_TreeID": null,
+                            "trm_Label": null,
+                            "trm_Description": null,
+                            "rst_RequirementType": "optional",
+                            "rst_MaxValues": 1,
+                            "vocabTerms": null
+                        },
+                        {
+                            "rst_DisplayName": "collection",
+                            "rst_DisplayHelpText": "A single collection of materials with some unifying characteristic, housed in an archive.<br>Query <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Q9388534\\\">Q9388534</a>",
+                            "dty_ID": 1309,
+                            "dty_Type": "freetext",
+                            "dty_PtrTargetRectypeIDs": [],
+                            "dty_SemanticReferenceURL": null,
+                            "trm_TreeID": null,
+                            "trm_Label": null,
+                            "trm_Description": null,
+                            "rst_RequirementType": "optional",
                             "rst_MaxValues": 1,
                             "vocabTerms": null
                         },
@@ -2879,9 +2907,42 @@
                             "vocabTerms": null
                         },
                         {
-                            "rst_DisplayName": "collection",
-                            "rst_DisplayHelpText": "A single collection of materials with some unifying characteristic, housed in an archive.<br>Query <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Q9388534\\\">Q9388534</a>",
-                            "dty_ID": 1309,
+                            "rst_DisplayName": "location_known",
+                            "rst_DisplayHelpText": "The object\\'s current physical location is known. If the location is not known, describe what is known in the free-text field.",
+                            "dty_ID": 1365,
+                            "dty_Type": "enum",
+                            "dty_PtrTargetRectypeIDs": [],
+                            "dty_SemanticReferenceURL": null,
+                            "trm_TreeID": 9496,
+                            "trm_Label": "yes/no vocab",
+                            "trm_Description": null,
+                            "rst_RequirementType": "required",
+                            "rst_MaxValues": 1,
+                            "vocabTerms": [
+                                {
+                                    "label": "Yes",
+                                    "description": null,
+                                    "url": null,
+                                    "id": 9497
+                                },
+                                {
+                                    "label": "No",
+                                    "description": null,
+                                    "url": null,
+                                    "id": 9498
+                                },
+                                {
+                                    "label": "unknown",
+                                    "description": "The information is not ready for input.",
+                                    "url": null,
+                                    "id": 9535
+                                }
+                            ]
+                        },
+                        {
+                            "rst_DisplayName": "location_notes",
+                            "rst_DisplayHelpText": "If the current physical location is unknown, describe what is known about the object\\'s location.",
+                            "dty_ID": 1366,
                             "dty_Type": "freetext",
                             "dty_PtrTargetRectypeIDs": [],
                             "dty_SemanticReferenceURL": null,
@@ -3140,7 +3201,7 @@
                     ]
                 },
                 {
-                    "sectionName": "References",
+                    "sectionName": "reference_notes",
                     "fields": [
                         {
                             "rst_DisplayName": "described_by_source",
@@ -3527,7 +3588,7 @@
                     ]
                 },
                 {
-                    "sectionName": "review_status",
+                    "sectionName": "Review",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
@@ -3726,7 +3787,7 @@
                     ]
                 },
                 {
-                    "sectionName": "review_note",
+                    "sectionName": "Review",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
@@ -4082,7 +4143,7 @@
                     ]
                 },
                 {
-                    "sectionName": "review_status",
+                    "sectionName": "Review",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
