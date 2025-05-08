@@ -1,9 +1,9 @@
 {
-  "lastModified": "2025-05-07",
+  "lastModified": "2025-05-08",
   "items": [
     {
-      "texts": 78,
-      "witnesses": 169,
+      "texts": 76,
+      "witnesses": 166,
       "code": "dum",
       "lang": "Middle Dutch"
     },
@@ -14,13 +14,13 @@
       "lang": "Middle English"
     },
     {
-      "texts": 80,
+      "texts": 82,
       "witnesses": 6,
       "code": "frm",
       "lang": "Middle French"
     },
     {
-      "texts": 249,
+      "texts": 252,
       "witnesses": 7,
       "code": "fro",
       "lang": "Old French"
@@ -32,7 +32,7 @@
       "lang": "Anglo-Norman"
     },
     {
-      "texts": 19,
+      "texts": 20,
       "witnesses": 0,
       "code": "fro_ITA",
       "lang": "Franco-italian"
@@ -62,14 +62,14 @@
       "lang": "Italian"
     },
     {
-      "texts": 9,
+      "texts": 10,
       "witnesses": 0,
       "code": "lat",
       "lang": "Latin"
     },
     {
       "texts": 52,
-      "witnesses": 60,
+      "witnesses": 58,
       "code": "non",
       "lang": "Old Norse"
     },
