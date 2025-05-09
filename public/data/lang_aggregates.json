@@ -1,5 +1,5 @@
 {
-  "lastModified": "2025-05-08",
+  "lastModified": "2025-05-09",
   "items": [
     {
       "texts": 76,
@@ -14,19 +14,19 @@
       "lang": "Middle English"
     },
     {
-      "texts": 82,
+      "texts": 83,
       "witnesses": 6,
       "code": "frm",
       "lang": "Middle French"
     },
     {
-      "texts": 252,
+      "texts": 254,
       "witnesses": 7,
       "code": "fro",
       "lang": "Old French"
     },
     {
-      "texts": 23,
+      "texts": 24,
       "witnesses": 0,
       "code": "fro_ENG",
       "lang": "Anglo-Norman"
@@ -50,7 +50,7 @@
       "lang": "Franco-provençal"
     },
     {
-      "texts": 5,
+      "texts": 6,
       "witnesses": 0,
       "code": "gmh",
       "lang": "Middle High German"
