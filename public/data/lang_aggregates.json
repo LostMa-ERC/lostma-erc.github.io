@@ -1,5 +1,5 @@
 {
-  "lastModified": "2025-05-12",
+  "lastModified": "2025-05-13",
   "items": [
     {
       "texts": 76,
@@ -14,13 +14,13 @@
       "lang": "Middle English"
     },
     {
-      "texts": 83,
+      "texts": 87,
       "witnesses": 6,
       "code": "frm",
       "lang": "Middle French"
     },
     {
-      "texts": 255,
+      "texts": 260,
       "witnesses": 7,
       "code": "fro",
       "lang": "Old French"
@@ -62,7 +62,7 @@
       "lang": "Italian"
     },
     {
-      "texts": 10,
+      "texts": 11,
       "witnesses": 0,
       "code": "lat",
       "lang": "Latin"

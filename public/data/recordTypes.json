@@ -1,5 +1,5 @@
 {
-    "lastModified": "2025-05-12",
+    "lastModified": "2025-05-13",
     "items": [
         {
             "id": 101,
@@ -2729,7 +2729,7 @@
                     ]
                 },
                 {
-                    "sectionName": "described_at_URL",
+                    "sectionName": "References",
                     "fields": [
                         {
                             "rst_DisplayName": "described_by_source",
@@ -3201,7 +3201,7 @@
                     ]
                 },
                 {
-                    "sectionName": "reference_notes",
+                    "sectionName": "References",
                     "fields": [
                         {
                             "rst_DisplayName": "described_by_source",
@@ -3588,7 +3588,7 @@
                     ]
                 },
                 {
-                    "sectionName": "review_status",
+                    "sectionName": "Review",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
@@ -4143,7 +4143,7 @@
                     ]
                 },
                 {
-                    "sectionName": "Review",
+                    "sectionName": "review_status",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
@@ -5011,7 +5011,7 @@
                     ]
                 },
                 {
-                    "sectionName": "writing_surface_area_reference",
+                    "sectionName": "number_of_lines_in_writing_area",
                     "fields": [
                         {
                             "rst_DisplayName": "writing_surface_area_height",
@@ -5252,6 +5252,58 @@
                                     "id": 9828
                                 }
                             ]
+                        }
+                    ]
+                },
+                {
+                    "sectionName": "Review",
+                    "fields": [
+                        {
+                            "rst_DisplayName": "review_status",
+                            "rst_DisplayHelpText": "Status of record\\'s preparation for public view.",
+                            "dty_ID": 1183,
+                            "dty_Type": "enum",
+                            "dty_PtrTargetRectypeIDs": [],
+                            "dty_SemanticReferenceURL": null,
+                            "trm_TreeID": 9696,
+                            "trm_Label": "_record review vocab",
+                            "trm_Description": "Terms about records\\' quality check / review status.",
+                            "rst_RequirementType": "recommended",
+                            "rst_MaxValues": 1,
+                            "vocabTerms": [
+                                {
+                                    "label": "Action required",
+                                    "description": "The record contains information that requires a review.",
+                                    "url": null,
+                                    "id": 9697
+                                },
+                                {
+                                    "label": "Open",
+                                    "description": "The record is newly created and/or in process.",
+                                    "url": null,
+                                    "id": 9698
+                                },
+                                {
+                                    "label": "Publish",
+                                    "description": "The record has been approved for publication. It\\'s accuracy has been verified.",
+                                    "url": null,
+                                    "id": 9699
+                                }
+                            ]
+                        },
+                        {
+                            "rst_DisplayName": "review_note",
+                            "rst_DisplayHelpText": "Information to help with review of this entity.",
+                            "dty_ID": 1248,
+                            "dty_Type": "blocktext",
+                            "dty_PtrTargetRectypeIDs": [],
+                            "dty_SemanticReferenceURL": null,
+                            "trm_TreeID": null,
+                            "trm_Label": null,
+                            "trm_Description": null,
+                            "rst_RequirementType": "recommended",
+                            "rst_MaxValues": 1,
+                            "vocabTerms": null
                         }
                     ]
                 }
