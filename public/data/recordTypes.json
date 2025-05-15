@@ -1,5 +1,5 @@
 {
-    "lastModified": "2025-05-14",
+    "lastModified": "2025-05-15",
     "items": [
         {
             "id": 101,
@@ -1167,7 +1167,7 @@
                     ]
                 },
                 {
-                    "sectionName": "Review",
+                    "sectionName": "review_note",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
@@ -2841,7 +2841,7 @@
                 "rty_ID": 106,
                 "rty_Name": "document",
                 "rty_Description": "A physical entity: a book (manuscript, incunabula, fragment, printed copy…)",
-                "rty_TitleMask": "[1308.rectitle]\\n{\\\\, \\\\ [[location unknown]]}\\n[1309]{\\\\, \\\\} \\n[1307]{\\\\, \\\\ [[without shelfmark]] ([1367])}\\n[1310]",
+                "rty_TitleMask": "[1308.rectitle]\\n{\\\\, \\\\ [[location unknown]]}\\n[1309]{\\\\, \\\\} \\n[1307]{\\\\, \\\\ [[without shelfmark]] ([1367])}\\n[1310]{\\\\ hypothetical \\\\}",
                 "rty_ReferenceURL": null
             },
             "sections": [
@@ -2952,20 +2952,6 @@
                             "rst_RequirementType": "optional",
                             "rst_MaxValues": 1,
                             "vocabTerms": null
-                        },
-                        {
-                            "rst_DisplayName": "invented_label",
-                            "rst_DisplayHelpText": "If this record is a hypothetical document, a useful label by which to recognize and refer to the document.",
-                            "dty_ID": 1310,
-                            "dty_Type": "freetext",
-                            "dty_PtrTargetRectypeIDs": [],
-                            "dty_SemanticReferenceURL": null,
-                            "trm_TreeID": null,
-                            "trm_Label": null,
-                            "trm_Description": null,
-                            "rst_RequirementType": "optional",
-                            "rst_MaxValues": 1,
-                            "vocabTerms": null
                         }
                     ]
                 },
@@ -3010,6 +2996,20 @@
                                     "id": 9770
                                 }
                             ]
+                        },
+                        {
+                            "rst_DisplayName": "invented_label",
+                            "rst_DisplayHelpText": "<b>**Required if document is hypothetical**</b><br/>\\nIf this record is a hypothetical document, a useful label by which to recognize and refer to the document.",
+                            "dty_ID": 1310,
+                            "dty_Type": "freetext",
+                            "dty_PtrTargetRectypeIDs": [],
+                            "dty_SemanticReferenceURL": null,
+                            "trm_TreeID": null,
+                            "trm_Label": null,
+                            "trm_Description": null,
+                            "rst_RequirementType": "recommended",
+                            "rst_MaxValues": 1,
+                            "vocabTerms": null
                         },
                         {
                             "rst_DisplayName": "claim_freetext",
@@ -3201,7 +3201,7 @@
                     ]
                 },
                 {
-                    "sectionName": "reference_notes",
+                    "sectionName": "References",
                     "fields": [
                         {
                             "rst_DisplayName": "described_by_source",
@@ -3588,7 +3588,7 @@
                     ]
                 },
                 {
-                    "sectionName": "review_status",
+                    "sectionName": "Review",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
@@ -4718,7 +4718,7 @@
                 "rty_ID": 129,
                 "rty_Name": "physDesc",
                 "rty_Description": "Physical description of a witness\\'s material support.",
-                "rty_TitleMask": "[1359.rectitle]",
+                "rty_TitleMask": "[1359.rectitle]\\n([1360] \\n[1361] {\\\\ x \\\\}\\n[1351]{\\\\ , col.\\\\})",
                 "rty_ReferenceURL": null
             },
             "sections": [
@@ -4834,7 +4834,7 @@
                             "trm_TreeID": null,
                             "trm_Label": null,
                             "trm_Description": null,
-                            "rst_RequirementType": "required",
+                            "rst_RequirementType": "recommended",
                             "rst_MaxValues": 1,
                             "vocabTerms": null
                         },
@@ -4848,7 +4848,7 @@
                             "trm_TreeID": null,
                             "trm_Label": null,
                             "trm_Description": null,
-                            "rst_RequirementType": "required",
+                            "rst_RequirementType": "recommended",
                             "rst_MaxValues": 1,
                             "vocabTerms": null
                         },
@@ -4862,7 +4862,7 @@
                             "trm_TreeID": null,
                             "trm_Label": null,
                             "trm_Description": null,
-                            "rst_RequirementType": "required",
+                            "rst_RequirementType": "recommended",
                             "rst_MaxValues": 1,
                             "vocabTerms": null
                         }
@@ -5011,7 +5011,7 @@
                     ]
                 },
                 {
-                    "sectionName": "Layout",
+                    "sectionName": "number_of_lines_in_writing_area",
                     "fields": [
                         {
                             "rst_DisplayName": "writing_surface_area_height",
@@ -5023,7 +5023,7 @@
                             "trm_TreeID": null,
                             "trm_Label": null,
                             "trm_Description": null,
-                            "rst_RequirementType": "optional",
+                            "rst_RequirementType": "recommended",
                             "rst_MaxValues": 1,
                             "vocabTerms": null
                         },
@@ -5037,7 +5037,7 @@
                             "trm_TreeID": null,
                             "trm_Label": null,
                             "trm_Description": null,
-                            "rst_RequirementType": "optional",
+                            "rst_RequirementType": "recommended",
                             "rst_MaxValues": 1,
                             "vocabTerms": null
                         },
@@ -5051,7 +5051,7 @@
                             "trm_TreeID": null,
                             "trm_Label": null,
                             "trm_Description": null,
-                            "rst_RequirementType": "optional",
+                            "rst_RequirementType": "recommended",
                             "rst_MaxValues": 1,
                             "vocabTerms": null
                         },
@@ -5065,7 +5065,7 @@
                             "trm_TreeID": null,
                             "trm_Label": null,
                             "trm_Description": null,
-                            "rst_RequirementType": "optional",
+                            "rst_RequirementType": "recommended",
                             "rst_MaxValues": 1,
                             "vocabTerms": null
                         },
@@ -5079,7 +5079,7 @@
                             "trm_TreeID": null,
                             "trm_Label": null,
                             "trm_Description": null,
-                            "rst_RequirementType": "optional",
+                            "rst_RequirementType": "recommended",
                             "rst_MaxValues": 1,
                             "vocabTerms": null
                         },
@@ -5093,7 +5093,7 @@
                             "trm_TreeID": 9496,
                             "trm_Label": "yes/no vocab",
                             "trm_Description": null,
-                            "rst_RequirementType": "optional",
+                            "rst_RequirementType": "recommended",
                             "rst_MaxValues": 1,
                             "vocabTerms": [
                                 {
