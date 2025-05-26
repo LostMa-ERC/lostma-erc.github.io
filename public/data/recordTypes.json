@@ -3588,7 +3588,7 @@
                     ]
                 },
                 {
-                    "sectionName": "review_status",
+                    "sectionName": "Review",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
@@ -5011,7 +5011,7 @@
                     ]
                 },
                 {
-                    "sectionName": "Layout",
+                    "sectionName": "number_of_lines_in_writing_area",
                     "fields": [
                         {
                             "rst_DisplayName": "writing_surface_area_height",
