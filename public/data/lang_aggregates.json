@@ -15,37 +15,37 @@
     },
     {
       "texts": 91,
-      "witnesses": 6,
+      "witnesses": 229,
       "code": "frm",
       "lang": "Middle French"
     },
     {
       "texts": 278,
-      "witnesses": 13,
+      "witnesses": 1720,
       "code": "fro",
       "lang": "Old French"
     },
     {
       "texts": 25,
-      "witnesses": 0,
+      "witnesses": 63,
       "code": "fro_ENG",
       "lang": "Anglo-Norman"
     },
     {
       "texts": 20,
-      "witnesses": 0,
+      "witnesses": 31,
       "code": "fro_ITA",
       "lang": "Franco-italian"
     },
     {
       "texts": 2,
-      "witnesses": 0,
+      "witnesses": 6,
       "code": "fro_PRO",
       "lang": "Franco-Occitan"
     },
     {
       "texts": 2,
-      "witnesses": 0,
+      "witnesses": 2,
       "code": "frp",
       "lang": "Franco-provençal"
     },
@@ -75,7 +75,7 @@
     },
     {
       "texts": 17,
-      "witnesses": 0,
+      "witnesses": 16,
       "code": "pro",
       "lang": "Old Occitan, Provençal"
     }
