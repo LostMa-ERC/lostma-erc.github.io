@@ -1,5 +1,5 @@
 {
-    "lastModified": "2025-05-26",
+    "lastModified": "2025-05-27",
     "items": [
         {
             "id": 101,
@@ -857,7 +857,7 @@
                     ]
                 },
                 {
-                    "sectionName": "People",
+                    "sectionName": "author_freetext",
                     "fields": [
                         {
                             "rst_DisplayName": "is_written_by",
@@ -2776,7 +2776,7 @@
                             "trm_Label": null,
                             "trm_Description": null,
                             "rst_RequirementType": "optional",
-                            "rst_MaxValues": 1,
+                            "rst_MaxValues": 0,
                             "vocabTerms": null
                         }
                     ]
@@ -3588,7 +3588,7 @@
                     ]
                 },
                 {
-                    "sectionName": "Review",
+                    "sectionName": "review_status",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
@@ -4143,7 +4143,7 @@
                     ]
                 },
                 {
-                    "sectionName": "review_status",
+                    "sectionName": "Review",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
