@@ -169,7 +169,7 @@ export default function Corpus() {
             <HorizontalBarChart/>
           </div>
 
-          <div className="w-full" data-testid="HorizontalBarChart">
+          <div className="w-full" data-testid="AreaChart">
             <LinePlot/>
           </div>
 
