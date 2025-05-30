@@ -11,21 +11,21 @@ export default function ContributorPopup(entityDetail:EntityDetail) {
     const toggleDropdown = () => {
           setIsOpen(!isOpen);
     };
-    
+
     return (
         <div className="">
             <div className="row flex justify-center max-h-12">
-                <button 
+                <button
                     id="contributor-popup-button"
-                    type="button" 
-                    className="button" 
-                    aria-controls="contributor-popup" 
+                    type="button"
+                    className="button"
+                    aria-controls="contributor-popup"
                     aria-expanded="false"
                     aria-label="contributor-popup"
                     aria-haspopup="true"
                     onClick={toggleDropdown}
                 >
-                    Click for Contributor Information
+                    CSV Templates
                 </button>
             </div>
             {isOpen && (
@@ -34,7 +34,7 @@ export default function ContributorPopup(entityDetail:EntityDetail) {
                     <div className="grid">
                     <p>Do you want to upload instances of this record type? Download a template for organising each record&apos;s information, wherein each row will be 1 new record of this type.</p>
                     <div className="flex justify-center py-2">
-                        <button 
+                        <button
                             className="button"
                             onClick={() => GenerateFullTemplate({entity:entityDetail})}
                         >
@@ -42,7 +42,7 @@ export default function ContributorPopup(entityDetail:EntityDetail) {
                         </button>
                     </div>
                     <div className="flex justify-center py-2">
-                        <button 
+                        <button
                             className="button"
                             onClick={() => GenerateReqTemplate({entity:entityDetail})}
                         >
