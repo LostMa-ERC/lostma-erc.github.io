@@ -10,9 +10,6 @@ on:
   push:
     paths:
       - "src/app/**"
-  pull_request:
-    branches:
-      - main
   workflow_call:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
