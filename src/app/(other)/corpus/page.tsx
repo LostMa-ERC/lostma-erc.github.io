@@ -3,13 +3,12 @@ import Link from "next/link";
 import { XMLFileSVG, ShareSVG, QuestionMarkSVG as What, MailSVG as How, ClockSVG as When, GlobeSVG as Where } from "@/public/svgs";
 
 import HorizontalBarChart from "./components/HorizontalBarchart";
-import RadialChart from "./components/RadialChart";
-import { getLangData, getLastModified } from "./components/fetchData";
+import LinePlot from "./components/LinePlot";
+import { getLastModified } from "./components/fetchData";
 
 
 export default function Corpus() {
 
-  const lang_data = getLangData()
   const lastModified = `Last modified ${getLastModified().toDateString()}.`
 
   return (
@@ -167,7 +166,11 @@ export default function Corpus() {
           </div>
 
           <div className="w-full" data-testid="HorizontalBarChart">
-            <HorizontalBarChart data={lang_data}/>
+            <HorizontalBarChart/>
+          </div>
+
+          <div className="w-full" data-testid="HorizontalBarChart">
+            <LinePlot/>
           </div>
 
           <p className="text-sm tracking-tight md:tracking-wide">{lastModified}</p>

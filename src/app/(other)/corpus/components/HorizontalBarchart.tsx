@@ -9,14 +9,13 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
+import { getLangData } from "./fetchData";
+
 
 const color_options = ["#001f54", "#9fc490"]
 
-interface BarChartProps {
-  data: object[]
-}
-
-const HorizontalBarChart: React.FC<BarChartProps> = ({data}) => {
+const HorizontalBarChart: React.FC = () => {
+  const data = getLangData()
   return (
     <ResponsiveContainer width="100%" height={600}>
       <BarChart
@@ -37,7 +36,7 @@ const HorizontalBarChart: React.FC<BarChartProps> = ({data}) => {
         }}
         />
         <Tooltip />
-        <Legend />
+        <Legend verticalAlign="top" align="center" />
         <Bar
           name="texts"
           dataKey="texts"
