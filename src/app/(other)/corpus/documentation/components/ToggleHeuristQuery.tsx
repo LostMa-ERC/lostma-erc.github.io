@@ -10,17 +10,17 @@ export default function ToggleHeuristQuery({id}: {id:number}) {
 
     return (
         <>
-        <button 
+        <button
                 id="contributor-popup-button"
-                type="button" 
-                className="button" 
-                aria-controls="contributor-popup" 
+                type="button"
+                className="button"
+                aria-controls="contributor-popup"
                 aria-expanded="false"
                 aria-label="contributor-popup"
                 aria-haspopup="true"
                 onClick={toggleDropdown}
             >
-                Click for Contributor Information
+                Heurist Search Queries
             </button>
             {isOpen && (
             <div className="p-2">
