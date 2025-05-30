@@ -6,6 +6,16 @@ import LOSTMA_LOGO from "@/public/images/lostma_logo.png";
 import ENC_LOGO from "@/public/images/enc_logo.png";
 import { faGithub, faLinkedin, faBluesky } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Zenodo } from '@/public/svgs';
+
+function Tooltip({ message, children }: {message: string, children: React.ReactElement}) {
+    return (
+    <div className="group relative flex w-full justify-center">
+        {children}
+        <span className="absolute bottom-10 scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100">{message}</span>
+    </div>
+    )
+}
 
 const Socials = () => {
     return (
@@ -14,21 +24,26 @@ const Socials = () => {
             Community
         </h2>
         <div className="grid grid-cols-3 md:grid-cols-1 md:grid-rows-3 gap-1">
-            <div className='flex w-full justify-center'>
+            <Tooltip message='Zenodo'>
+                <Link className='link w-fit' target="_blank" rel="noreferrer" href="https://zenodo.org/communities/lostma">
+                    <div className="w-[18px]">{Zenodo}</div>
+                </Link>
+            </Tooltip>
+            <Tooltip message='Bluesky'>
                 <Link className='link w-fit' target="_blank" rel="noreferrer" href="https://bsky.app/profile/lostma.bsky.social">
                     <FontAwesomeIcon className='w-[18px]' icon={faBluesky} />
                 </Link>
-            </div>
-            <div className='flex w-full justify-center'>
+            </Tooltip>
+            <Tooltip message='LinkedIn'>
                 <div className='link w-fit h-full'>
                     <FontAwesomeIcon className='w-[18px]' icon={faLinkedin} />
                 </div>
-            </div>
-            <div className='flex w-full justify-center'>
+            </Tooltip>
+            <Tooltip message='GitHub'>
                 <Link className='link w-fit' target="_blank" rel="noreferrer" href="https://github.com/LostMa-ERC">
                     <FontAwesomeIcon className='w-[18px]' icon={faGithub} />
                 </Link>
-            </div>
+            </Tooltip>
         </div>
         </>
     )
@@ -92,7 +107,7 @@ const Partners = () => {
 const Bottom = () => {
     return (
         <div className="flex px-6 mt-16 pt-10 gap-4">
-            <Image className='flex-none w-fit h-[48px] object-contain' 
+            <Image className='flex-none w-fit h-[48px] object-contain'
                 src={LOSTMA_LOGO} alt='LostMa logo' />
             <p className='grow my-0 text-[10px] font-normal md:text-[12px]'>
                 &copy; 2025 LostMa-ERC | All rights reserved.<br/>
@@ -112,7 +127,7 @@ export default function Footer() {
                     <div className='md:min-w-24 w-fit px-4 md:px-0 md:order-4'>
                         <Pages />
                     </div>
-                    
+
                     <div className='md:w-24 px-4 md:px-0 md:order-3'>
                         <Socials />
                     </div>

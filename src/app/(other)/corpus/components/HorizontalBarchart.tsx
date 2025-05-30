@@ -25,7 +25,10 @@ const HorizontalBarChart: React.FC<BarChartProps> = ({data}) => {
         margin={{ top: 20, right: 30, left: 30, bottom: 5}}
       >
         <CartesianGrid/>
-        <XAxis type="number"/>
+        <XAxis
+          type="number"
+          scale="symlog"
+        />
         <YAxis
           dataKey="lang"
           type="category"
@@ -36,12 +39,12 @@ const HorizontalBarChart: React.FC<BarChartProps> = ({data}) => {
         <Tooltip />
         <Legend />
         <Bar
-          name="Texts"
+          name="texts"
           dataKey="texts"
           fill={color_options[0]}
         />
         <Bar
-          name="Witnesses"
+          name="witnesses"
           dataKey="witnesses"
           fill={color_options[1]}
         />

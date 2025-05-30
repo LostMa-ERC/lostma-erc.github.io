@@ -1,7 +1,8 @@
-import jsonData from "@/public/data/lang_aggregates.json";
+import langJsonData from "@/public/data/lang_aggregates.json";
+// import decorJsonData from "@/public/data/wit_distribution.json";
 
 function getLastModified() : Date {
-    return new Date(jsonData.lastModified)
+    return new Date(langJsonData.lastModified)
 };
 
 type LangData = {
@@ -12,7 +13,7 @@ type LangData = {
 }
 
 function getLangData() : LangData[] {
-  return jsonData.items.filter((i) => i.code != undefined)
+  return langJsonData.items.filter((i) => i.code != undefined)
 }
 
 export { getLangData, getLastModified }
