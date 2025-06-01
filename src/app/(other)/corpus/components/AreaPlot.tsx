@@ -2,9 +2,9 @@ import React from 'react';
 import { AreaChart, Area, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { getDistData } from "./fetchData";
 
-const color_options = ["#9E82ED", "#82EDAA"]
+const color_options = ["#ae1a18", "#018ad3"]
 
-const LinePlot: React.FC = () => {
+const AreaPlot: React.FC = () => {
   const data = getDistData()
   return (
     <ResponsiveContainer width="100%" height={600}>
@@ -25,4 +25,4 @@ const LinePlot: React.FC = () => {
     );
   }
 
-export default LinePlot;
+export default AreaPlot;

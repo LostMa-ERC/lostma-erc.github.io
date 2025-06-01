@@ -3,7 +3,7 @@ import Link from "next/link";
 import { XMLFileSVG, ShareSVG, QuestionMarkSVG as What, MailSVG as How, ClockSVG as When, GlobeSVG as Where } from "@/public/svgs";
 
 import HorizontalBarChart from "./components/HorizontalBarchart";
-import LinePlot from "./components/LinePlot";
+import LinePlot from "./components/AreaPlot";
 import { getLastModified } from "./components/fetchData";
 
 

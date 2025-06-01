@@ -1,7 +1,7 @@
 'use client'
 import Scroll from "./components/Scroll";
 import Link from "next/link";
-import LinePlot from "@/app/(other)/corpus/components/LinePlot"
+import AreaPlot from "@/app/(other)/corpus/components/AreaPlot"
 
 export default function HomePage() {
 
@@ -20,7 +20,7 @@ export default function HomePage() {
             <h2 className="inline-block text-2xl text-primary tracking-tight">
               Distribution of witnesses (X) per text (Y)
             </h2>
-            <LinePlot />
+            <AreaPlot />
           </div>
           <div className="w-fit order-1 md:p-4 text-sm md:text-base tracking-wide font-light">
             <p className="mt-2">
