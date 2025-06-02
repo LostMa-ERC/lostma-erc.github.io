@@ -3,13 +3,13 @@ import Link from "next/link";
 import { XMLFileSVG, ShareSVG, QuestionMarkSVG as What, MailSVG as How, ClockSVG as When, GlobeSVG as Where } from "@/public/svgs";
 
 import HorizontalBarChart from "./components/HorizontalBarchart";
-import LinePlot from "./components/AreaPlot";
+import AreaChart from "./components/AreaPlot";
 import { getLastModified } from "./components/fetchData";
 
 
 export default function Corpus() {
 
-  const lastModified = `Last modified ${getLastModified().toDateString()}.`
+  const lastModified = `Data last updated ${getLastModified().toDateString()}.`
 
   return (
     <div>
@@ -154,23 +154,41 @@ export default function Corpus() {
           relative flex flex-col min-w-0 break-words w-full mb-6 shadlow-lg rounded
         ">
 
-          <div className="rounded-t mb-0 px-4 py-3">
-            <div className="flex flex-wrap items-center">
-              <div className="relative w-full max-w-full flex-grow flex-1">
-                <h3 className="text-lg md:text-xl tracking-tight md:tracking-wide">
-                Languages of records currently in database
-                </h3>
-                <h4 className="text-[0.65rem] md:text-xs uppercase">Excluding: draft text records entered without language</h4>
+          <div id="languages">
+            <Link href="#languages">
+              <div className="rounded-t mb-0 px-4 py-3">
+                <div className="flex flex-wrap items-center">
+                  <div className="relative w-full max-w-full flex-grow flex-1">
+
+                    <h3 className="text-lg md:text-xl tracking-tight md:tracking-wide">
+                    Languages of records currently in database
+                    </h3>
+                    <h4 className="text-[0.65rem] md:text-xs uppercase">Excluding: draft text records entered without language</h4>
+
+                  </div>
+                </div>
               </div>
-            </div>
+              <div className="w-full" data-testid="HorizontalBarChart">
+                <HorizontalBarChart/>
+              </div>
+            </Link>
           </div>
 
-          <div className="w-full" data-testid="HorizontalBarChart">
-            <HorizontalBarChart/>
-          </div>
-
-          <div className="w-full" data-testid="AreaChart">
-            <LinePlot/>
+          <div id="witnesses">
+            <Link href="#witnesses">
+              <div className="rounded-t mb-0 px-4 py-3">
+                <div className="flex flex-wrap items-center">
+                  <div className="relative w-full max-w-full flex-grow flex-1">
+                    <h3 className="text-lg md:text-xl tracking-tight md:tracking-wide">
+                    Distribution of witnesses per text
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full" data-testid="AreaChart">
+                <AreaChart/>
+              </div>
+            </Link>
           </div>
 
           <p className="text-sm tracking-tight md:tracking-wide">{lastModified}</p>

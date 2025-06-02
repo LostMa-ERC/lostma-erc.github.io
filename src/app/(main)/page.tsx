@@ -2,8 +2,11 @@
 import Scroll from "./components/Scroll";
 import Link from "next/link";
 import AreaPlot from "@/app/(other)/corpus/components/AreaPlot"
+import { getLastModified } from "../(other)/corpus/components/fetchData";
 
 export default function HomePage() {
+
+  const lastModified = `Data last updated ${getLastModified().toDateString()}.`
 
   return (
     <>
@@ -17,10 +20,15 @@ export default function HomePage() {
         </div>
         <div className="grid md:grid-cols-2 m-4">
           <div className="order-2 grid">
-            <h2 className="inline-block text-2xl text-primary tracking-tight">
-              Distribution of witnesses (X) per text (Y)
-            </h2>
-            <AreaPlot />
+            <div id="witnesses">
+              <Link href="#witnesses">
+                <h2 className="inline-block text-2xl text-primary tracking-tight">
+                  Distribution of witnesses (X) per text (Y)
+                </h2>
+                <AreaPlot />
+                <p className="text-sm tracking-tight md:tracking-wide">{lastModified}</p>
+              </Link>
+            </div>
           </div>
           <div className="w-fit order-1 md:p-4 text-sm md:text-base tracking-wide font-light">
             <p className="mt-2">
