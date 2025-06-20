@@ -40,6 +40,7 @@ export default function EntityProfile({data}: {data:EntityDetail}) {
                         <tr>
                             <th scope="col" className="px-6 py-3 w-12"></th>
                             <th scope="col" className="px-6 py-3 w-12"></th>
+                            <th scope="col" className="px-6 py-3 w-14">FID</th>
                             <th scope="col" className="px-6 py-3">Name</th>
                             <th scope="col" className="px-6 py-3">Type</th>
                             <th scope="col" className="px-6 py-3">Description</th>
@@ -52,7 +53,7 @@ export default function EntityProfile({data}: {data:EntityDetail}) {
                             Object.values(data.sections).map((section, index) =>
                                 <>
                                 <tr key={`section-${index}`}>
-                                    <td colSpan={7} className="w-full left-0 bg-gray-100/50 p-2 -bottom-10 text-center">
+                                    <td colSpan={8} className="w-full left-0 bg-gray-100/50 p-2 -bottom-10 text-center">
                                         {section.sectionName}
                                     </td>
                                 </tr>
@@ -61,6 +62,7 @@ export default function EntityProfile({data}: {data:EntityDetail}) {
                                         <tr key={`field-${field.dty_ID}-${index}`} className="font-light bg-white dark:bg-gray-100/75 border-b">
                                             <td scope="row" className="px-6 py-4"><IsRepeatable data={field.rst_MaxValues}/></td>
                                             <td scope="row" className="px-6 py-4"><IsRequired data={field.rst_RequirementType} /></td>
+                                            <td scope="row" className="text-xs px-6 py-4">{field.dty_ID}</td>
                                             <th scope="row" className="px-6 py-4 text-gray-900">
                                                 {field.rst_DisplayName}
                                             </th>

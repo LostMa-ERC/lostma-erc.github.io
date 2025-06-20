@@ -1,5 +1,6 @@
 'use client';
 import { useState } from "react";
+import Link from "next/link";
 
 export default function ToggleHeuristQuery({id}: {id:number}) {
     const [isOpen, setIsOpen] = useState(false);
@@ -27,21 +28,39 @@ export default function ToggleHeuristQuery({id}: {id:number}) {
                 <p>To view all the records of this type in the Heurist database, enter the following filter in the search bar:
                     <code className="px-2 py-1 bg-gray-50 text-gray-700">t:{id}</code>.
                 </p>
-                <p>To view all the records of this type that you created, replace <code>&quot;USER&quot;</code> with your user ID (an integer) and enter the following filter:<br/>
-                    <code className="px-2 py-1 bg-gray-50 text-gray-700">
-                        &#91;&#123;&quot;t&quot;:&quot;{id}&quot;&#125;,&#123;&quot;addedby&quot;:&quot;USER&quot;&#125;,&#123;&quot;sortby&quot;:&quot;m&quot;&#125;&#93;
-                    </code>.
-                </p>
-                <p>To view all the records of this type that were created within a specific time frame, replace <code>&quot;START/END&quot;</code> with dates in the format YYYY-MM-DD (i.e. &quot;2024-11-01/2024-12-01&quot;) and enter the following filter:<br/>
-                    <code className="px-2 py-1 bg-gray-50 text-gray-700">
-                        &#91;&#123;&quot;t&quot;:&quot;{id}&quot;&#125;,&#123;&quot;added&quot;:&quot;START/END&quot;&#125;,&#123;&quot;sortby&quot;:&quot;m&quot;&#125;&#93;
-                    </code>.
-                </p>
-                <p>To view all the records of this type that have a phrase in the label, replace <code>&quot;PHRASE&quot;</code> and enter the following filter:<br/>
-                    <code className="px-2 py-1 bg-gray-50 text-gray-700">
-                    &#91;&#123;&quot;t&quot;:&quot;{id}&quot;&#125;,&#123;&quot;f&quot;:&quot;PHRASE&quot;&#125;,&#123;&quot;sortby&quot;:&quot;m&quot;&#125;&#93;
-                    </code>.
-                </p>
+                <br className="py-2"/>
+                <h2 className="text-lg">General Query Tips</h2>
+                <ul className="list-disc px-8">
+                    <li className="py-4">
+                        Find entities whose field (&lt;FID&gt;) has a certain search keyword (&lt;KEYWORD&gt;).
+                        <br className="py-2"/>
+                        <code className="px-2 py-1 bg-gray-50 text-gray-700">
+                        &#91; &#123; &quot;t&quot; : &quot;{id}&quot; &#125; , &#123;&quot;f:&lt;FID&gt;&quot; : &quot;&lt;KEYWORD&gt;&quot;&#125; &#93;
+                        </code>
+                    </li>
+                    <li className="py-4">
+                        Find entities whose controlled field (&lt;FID&gt;) has a certain vocabulary term (&lt;VID&gt;). For the VID, see the <Link className="link" href="/corpus/documentation">vocabulary&apos;s page</Link>.
+                        <br className="py-2"/>
+                        <code className="px-2 py-1 bg-gray-50 text-gray-700">
+                        &#91; &#123; &quot;t&quot; : &quot;{id}&quot; &#125; , &#123;&quot;f:&lt;FID&gt;&quot; : &quot;&lt;VID&gt;&quot;&#125; &#93;
+                        </code>
+                    </li>
+                    <li className="py-4">
+                        Find entities whose foreign key field (&lt;FID&gt;) links to a certain entity type (&lt;ID&gt;).
+                        <br className="py-2"/>
+                        <code className="px-2 py-1 bg-gray-50 text-gray-700">
+                        &#91; &#123; &quot;t&quot; : &quot;{id}&quot; &#125; , &#123;&quot;linked_to:&lt;FID&gt;&quot; : [ &#123; &quot;t&quot; : &quot;ID&quot; &#125; ] &#125; &#93;
+                        </code>
+                    </li>
+                    <li className="py-4">
+                        Find entities whose foreign key field (&lt;FID&gt;) links to a certain entity type (&lt;ID&gt;), whose controlled field (&lt;2FID&gt;) has a certain vocabulary term (&lt;2VID&gt;).
+                        <br className="py-2"/>
+                        <code className="px-2 py-1 bg-gray-50 text-gray-700">
+                        &#91; &#123; &quot;t&quot; : &quot;{id}&quot; &#125; , &#123;&quot;linked_to:&lt;FID&gt;&quot; :
+                        [ &#123; &quot;t&quot; : &quot;ID&quot; &#125; , &#123;&quot;f:&lt;2FID&gt;&quot; : &quot;&lt;2VID&gt;&quot;&#125; ] &#125; &#93;
+                        </code>
+                    </li>
+                </ul>
             </div>
             )}
             </>

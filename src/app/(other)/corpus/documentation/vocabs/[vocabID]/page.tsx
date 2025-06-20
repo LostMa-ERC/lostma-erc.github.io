@@ -17,7 +17,7 @@ export async function generateStaticParams(): Promise<object[]> {
     const slugs = Object.values(arr).flatMap(({id}) => id ? {vocabID:id.toString()}: []);
     return slugs;
 }
- 
+
 export default async function Page({params, }: {params: Promise<{ vocabID: string }>}) {
   const { vocabID } = await params;
   const data = await fetchVocab(vocabID);
@@ -48,11 +48,12 @@ export default async function Page({params, }: {params: Promise<{ vocabID: strin
             < InnerHTMLParagraph content={data.description} />
           </div>
       </header>
-      
+
       <div className="relative overflow-x">
-        <table className="md:w-full min-w-fit overflow-scroll table-fixed text-sm text-left rtl:text-right text-gray-500">
-          <thead className="text-xs text-gray-700 uppercase bg-gray-500">
+        <table className="md:w-full min-w-fit table-fixed text-sm text-left rtl:text-right text-gray-500">
+          <thead className="text-xs text-gray-700 uppercase bg-gray-200">
             <tr>
+              <th scope="col" className="px-6 py-3 w-14">VID</th>
               <th scope="col" className="px-6 py-3">Label</th>
               <th scope="col" className="px-6 py-3">Description</th>
               <th scope="col" className="px-6 py-3">Reference URL</th>
@@ -60,8 +61,9 @@ export default async function Page({params, }: {params: Promise<{ vocabID: strin
           </thead>
           <tbody>
             {
-              Object.values(data.terms).map((term) => 
+              Object.values(data.terms).map((term) =>
                 <tr className="font-light tracking-tight bg-white border-b" key={`field-${term.id}`}>
+                  <td className="px-6 py-4">{term.id}</td>
                   <td className="font-normal tracking-wide px-6 py-4">{term.label}</td>
                   <td className="px-6 py-4">
                     < InnerHTMLParagraph content={term.description} />
