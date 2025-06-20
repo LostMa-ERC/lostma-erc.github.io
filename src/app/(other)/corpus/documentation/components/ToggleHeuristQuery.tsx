@@ -49,15 +49,15 @@ export default function ToggleHeuristQuery({id}: {id:number}) {
                         Find entities whose foreign key field (&lt;FID&gt;) links to a certain entity type (&lt;ID&gt;).
                         <br className="py-2"/>
                         <code className="px-2 py-1 bg-gray-50 text-gray-700">
-                        &#91; &#123; &quot;t&quot; : &quot;{id}&quot; &#125; , &#123;&quot;linked_to:&lt;FID&gt;&quot; : [ &#123; &quot;t&quot; : &quot;ID&quot; &#125; ] &#125; &#93;
+                        &#91; &#123; &quot;t&quot; : &quot;{id}&quot; &#125; , &#123;&quot;linked_to:&lt;FID&gt;&quot; : [ &#123; &quot;t&quot; : &quot;&lt;ID&gt;&quot; &#125; ] &#125; &#93;
                         </code>
                     </li>
                     <li className="py-4">
-                        Find entities whose foreign key field (&lt;FID&gt;) links to a certain entity type (&lt;ID&gt;), whose controlled field (&lt;2FID&gt;) has a certain vocabulary term (&lt;2VID&gt;).
+                        Find entities whose foreign key field (&lt;FID&gt;) links to a certain entity type (&lt;2ID&gt;), whose controlled field (&lt;2FID&gt;) has a certain vocabulary term (&lt;2VID&gt;).
                         <br className="py-2"/>
                         <code className="px-2 py-1 bg-gray-50 text-gray-700">
                         &#91; &#123; &quot;t&quot; : &quot;{id}&quot; &#125; , &#123;&quot;linked_to:&lt;FID&gt;&quot; :
-                        [ &#123; &quot;t&quot; : &quot;ID&quot; &#125; , &#123;&quot;f:&lt;2FID&gt;&quot; : &quot;&lt;2VID&gt;&quot;&#125; ] &#125; &#93;
+                        [ &#123; &quot;t&quot; : &quot;&lt;2ID&gt;&quot; &#125; , &#123;&quot;f:&lt;2FID&gt;&quot; : &quot;&lt;2VID&gt;&quot;&#125; ] &#125; &#93;
                         </code>
                     </li>
                 </ul>
