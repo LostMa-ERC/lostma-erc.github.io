@@ -1,5 +1,5 @@
 {
-    "lastModified": "2025-06-23",
+    "lastModified": "2025-06-24",
     "items": [
         {
             "id": 101,
@@ -857,7 +857,7 @@
                     ]
                 },
                 {
-                    "sectionName": "People",
+                    "sectionName": "author_freetext",
                     "fields": [
                         {
                             "rst_DisplayName": "is_written_by",
@@ -1167,7 +1167,7 @@
                     ]
                 },
                 {
-                    "sectionName": "Review",
+                    "sectionName": "review_note",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
@@ -2729,7 +2729,7 @@
                     ]
                 },
                 {
-                    "sectionName": "References",
+                    "sectionName": "described_at_URL",
                     "fields": [
                         {
                             "rst_DisplayName": "described_by_source",
@@ -3201,7 +3201,7 @@
                     ]
                 },
                 {
-                    "sectionName": "References",
+                    "sectionName": "reference_notes",
                     "fields": [
                         {
                             "rst_DisplayName": "described_by_source",
@@ -3464,176 +3464,6 @@
                             "trm_Label": null,
                             "trm_Description": null,
                             "rst_RequirementType": "optional",
-                            "rst_MaxValues": 1,
-                            "vocabTerms": null
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 116,
-            "metadata": {
-                "rty_ID": 116,
-                "rty_Name": "hypothesis",
-                "rty_Description": "A claim that attests to the existence of an entity, which is lost or suffers from a dearth of archival evidence.",
-                "rty_TitleMask": "Hypothesis about [1256.rectitle]",
-                "rty_ReferenceURL": null
-            },
-            "sections": [
-                {
-                    "sectionName": "Label Components",
-                    "fields": [
-                        {
-                            "rst_DisplayName": "attested_object",
-                            "rst_DisplayHelpText": "The entity whose existence is attested in the hypothesis.",
-                            "dty_ID": 1256,
-                            "dty_Type": "resource",
-                            "dty_PtrTargetRectypeIDs": [
-                                101,
-                                105,
-                                106
-                            ],
-                            "dty_SemanticReferenceURL": null,
-                            "trm_TreeID": null,
-                            "trm_Label": null,
-                            "trm_Description": null,
-                            "rst_RequirementType": "required",
-                            "rst_MaxValues": 1,
-                            "vocabTerms": null
-                        }
-                    ]
-                },
-                {
-                    "sectionName": "Description",
-                    "fields": [
-                        {
-                            "rst_DisplayName": "claim",
-                            "rst_DisplayHelpText": "Brief summary of the hypothesis.",
-                            "dty_ID": 1257,
-                            "dty_Type": "blocktext",
-                            "dty_PtrTargetRectypeIDs": [],
-                            "dty_SemanticReferenceURL": null,
-                            "trm_TreeID": null,
-                            "trm_Label": null,
-                            "trm_Description": null,
-                            "rst_RequirementType": "required",
-                            "rst_MaxValues": 1,
-                            "vocabTerms": null
-                        },
-                        {
-                            "rst_DisplayName": "certainty",
-                            "rst_DisplayHelpText": "Degree of certainty applied to the claim.",
-                            "dty_ID": 1258,
-                            "dty_Type": "enum",
-                            "dty_PtrTargetRectypeIDs": [],
-                            "dty_SemanticReferenceURL": null,
-                            "trm_TreeID": 9759,
-                            "trm_Label": "certainty vocab",
-                            "trm_Description": "Degree of certainty",
-                            "rst_RequirementType": "required",
-                            "rst_MaxValues": 1,
-                            "vocabTerms": [
-                                {
-                                    "label": "4. Certain (100%)",
-                                    "description": null,
-                                    "url": null,
-                                    "id": 9760
-                                },
-                                {
-                                    "label": "3. Very likely (66%-99%)",
-                                    "description": null,
-                                    "url": null,
-                                    "id": 9762
-                                },
-                                {
-                                    "label": "2. Probable (33%-66%)",
-                                    "description": null,
-                                    "url": null,
-                                    "id": 9763
-                                },
-                                {
-                                    "label": "0. Unlikely (1%-33%)",
-                                    "description": null,
-                                    "url": null,
-                                    "id": 9765
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "sectionName": "References",
-                    "fields": [
-                        {
-                            "rst_DisplayName": "described_by_source",
-                            "rst_DisplayHelpText": "Work where the item is described.<br>Property <a target=\\\"_blank\\\" href=\\\"https://www.wikidata.org/wiki/Property:P1343\\\">P1343</a><br>\\nDescribed in source / written about in / described by encyclopedia / described by reference work",
-                            "dty_ID": 1255,
-                            "dty_Type": "resource",
-                            "dty_PtrTargetRectypeIDs": [
-                                73,
-                                77,
-                                128,
-                                69,
-                                70
-                            ],
-                            "dty_SemanticReferenceURL": "https://www.wikidata.org/wiki/Property:P1343",
-                            "trm_TreeID": null,
-                            "trm_Label": null,
-                            "trm_Description": null,
-                            "rst_RequirementType": "recommended",
-                            "rst_MaxValues": 0,
-                            "vocabTerms": null
-                        }
-                    ]
-                },
-                {
-                    "sectionName": "Review",
-                    "fields": [
-                        {
-                            "rst_DisplayName": "review_status",
-                            "rst_DisplayHelpText": "Status of record\\'s preparation for public view.",
-                            "dty_ID": 1183,
-                            "dty_Type": "enum",
-                            "dty_PtrTargetRectypeIDs": [],
-                            "dty_SemanticReferenceURL": null,
-                            "trm_TreeID": 9696,
-                            "trm_Label": "_record review vocab",
-                            "trm_Description": "Terms about records\\' quality check / review status.",
-                            "rst_RequirementType": "required",
-                            "rst_MaxValues": 1,
-                            "vocabTerms": [
-                                {
-                                    "label": "Action required",
-                                    "description": "The record contains information that requires a review.",
-                                    "url": null,
-                                    "id": 9697
-                                },
-                                {
-                                    "label": "Open",
-                                    "description": "The record is newly created and/or in process.",
-                                    "url": null,
-                                    "id": 9698
-                                },
-                                {
-                                    "label": "Publish",
-                                    "description": "The record has been approved for publication. It\\'s accuracy has been verified.",
-                                    "url": null,
-                                    "id": 9699
-                                }
-                            ]
-                        },
-                        {
-                            "rst_DisplayName": "review_note",
-                            "rst_DisplayHelpText": "Information to help with review of this entity.",
-                            "dty_ID": 1248,
-                            "dty_Type": "blocktext",
-                            "dty_PtrTargetRectypeIDs": [],
-                            "dty_SemanticReferenceURL": null,
-                            "trm_TreeID": null,
-                            "trm_Label": null,
-                            "trm_Description": null,
-                            "rst_RequirementType": "recommended",
                             "rst_MaxValues": 1,
                             "vocabTerms": null
                         }
