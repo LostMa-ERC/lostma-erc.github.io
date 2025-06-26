@@ -1,5 +1,5 @@
 {
-    "lastModified": "2025-06-25",
+    "lastModified": "2025-06-26",
     "items": [
         {
             "id": 101,
@@ -857,7 +857,7 @@
                     ]
                 },
                 {
-                    "sectionName": "author_freetext",
+                    "sectionName": "People",
                     "fields": [
                         {
                             "rst_DisplayName": "is_written_by",
@@ -3617,7 +3617,7 @@
                     ]
                 },
                 {
-                    "sectionName": "Review",
+                    "sectionName": "review_note",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
@@ -3973,7 +3973,7 @@
                     ]
                 },
                 {
-                    "sectionName": "Review",
+                    "sectionName": "review_status",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
@@ -4841,7 +4841,7 @@
                     ]
                 },
                 {
-                    "sectionName": "number_of_lines_in_writing_area",
+                    "sectionName": "Layout",
                     "fields": [
                         {
                             "rst_DisplayName": "writing_surface_area_height",
