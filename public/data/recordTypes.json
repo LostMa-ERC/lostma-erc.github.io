@@ -1,5 +1,5 @@
 {
-    "lastModified": "2025-07-10",
+    "lastModified": "2025-07-11",
     "items": [
         {
             "id": 101,
@@ -3201,7 +3201,7 @@
                     ]
                 },
                 {
-                    "sectionName": "References",
+                    "sectionName": "reference_notes",
                     "fields": [
                         {
                             "rst_DisplayName": "described_by_source",
@@ -3973,7 +3973,7 @@
                     ]
                 },
                 {
-                    "sectionName": "review_status",
+                    "sectionName": "Review",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
@@ -4841,7 +4841,7 @@
                     ]
                 },
                 {
-                    "sectionName": "number_of_lines_in_writing_area",
+                    "sectionName": "Layout",
                     "fields": [
                         {
                             "rst_DisplayName": "writing_surface_area_height",
