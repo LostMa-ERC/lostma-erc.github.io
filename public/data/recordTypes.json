@@ -1,5 +1,5 @@
 {
-    "lastModified": "2025-08-01",
+    "lastModified": "2025-08-04",
     "items": [
         {
             "id": 101,
@@ -3201,7 +3201,7 @@
                     ]
                 },
                 {
-                    "sectionName": "References",
+                    "sectionName": "reference_notes",
                     "fields": [
                         {
                             "rst_DisplayName": "described_by_source",
