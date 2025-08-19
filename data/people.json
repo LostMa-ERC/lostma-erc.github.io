@@ -8,11 +8,16 @@
         {
             "forename": "Beatriz",
             "surname": "Tadeo Fuica",
-            "role": "Administrator"
+            "role": "Administrator (former)"
         },
         {
             "forename": "Kelly",
             "surname": "Christensen",
+            "role": "Data Architect (former)"
+        },
+        {
+            "forename": "Virgile",
+            "surname": "Reignier",
             "role": "Data Architect"
         },
         {
@@ -24,7 +29,17 @@
             "forename": "Théo",
             "surname": "Moins",
             "role": "AI Engineer"
-        }
+        },
+        {
+            "forename": "Émilie",
+            "surname": "Guidi",
+            "role": "PhD Candidate"
+        },
+        {
+            "forename": "Cecile",
+            "surname": "Vermaas",
+            "role": "PhD Candidate"
+        },
     ],
     "Collaborators": [
         {
@@ -45,7 +60,7 @@
         {
             "forename": "Cecile",
             "surname": "Vermaas",
-            "role": "Middle Dutch Corpus"
+            "role": "Middle Dutch Corpus, Middle English Corpus"
         },
         {
             "forename": "Katarzyna",
@@ -56,11 +71,6 @@
             "forename": "Carolina",
             "surname": "Macedo",
             "role": "Iberian Corpus"
-        },
-        {
-            "forename": "Émilie",
-            "surname": "Guidi",
-            "role": "French Corpus"
         }
     ]
 }
