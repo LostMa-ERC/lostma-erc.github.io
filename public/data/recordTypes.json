@@ -1,5 +1,5 @@
 {
-    "lastModified": "2025-08-22",
+    "lastModified": "2025-08-25",
     "items": [
         {
             "id": 101,
@@ -1167,7 +1167,7 @@
                     ]
                 },
                 {
-                    "sectionName": "Review",
+                    "sectionName": "review_note",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
@@ -2729,7 +2729,7 @@
                     ]
                 },
                 {
-                    "sectionName": "References",
+                    "sectionName": "described_at_URL",
                     "fields": [
                         {
                             "rst_DisplayName": "described_by_source",
@@ -3201,7 +3201,7 @@
                     ]
                 },
                 {
-                    "sectionName": "References",
+                    "sectionName": "reference_notes",
                     "fields": [
                         {
                             "rst_DisplayName": "described_by_source",
@@ -3617,7 +3617,7 @@
                     ]
                 },
                 {
-                    "sectionName": "Review",
+                    "sectionName": "review_note",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
@@ -4841,7 +4841,7 @@
                     ]
                 },
                 {
-                    "sectionName": "number_of_lines_in_writing_area",
+                    "sectionName": "Layout",
                     "fields": [
                         {
                             "rst_DisplayName": "writing_surface_area_height",
