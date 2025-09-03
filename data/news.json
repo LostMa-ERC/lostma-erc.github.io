@@ -1,5 +1,4 @@
 [
-    ,
     {
         "start": "2025-09-01",
         "category": "Other",
@@ -12,7 +11,7 @@
             "url": "https://github.com/virgile-reignier"
         },
         "location": null
-    }
+    },
     {
         "start": "2025-03-01",
         "category": "Other",
