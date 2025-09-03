@@ -1,4 +1,18 @@
 [
+    ,
+    {
+        "start": "2025-09-01",
+        "category": "Other",
+        "title": "New team member 🤝",
+        "detail": "1 September, 2025",
+        "description": "Virgile Reignier joins as a Data Architect, replacing Kelly Christensen.",
+        "link": {
+            "page": false,
+            "label": "GitHub",
+            "url": "https://github.com/virgile-reignier"
+        },
+        "location": null
+    }
     {
         "start": "2025-03-01",
         "category": "Other",
