@@ -1,54 +1,54 @@
 {
-  "lastModified": "2025-09-04",
+  "lastModified": "2025-09-05",
   "items": [
     {
       "prose_texts": 47,
-      "verse_texts": 197,
+      "verse_texts": 196,
       "wit_count": 1
     },
     {
-      "prose_texts": 23,
-      "verse_texts": 59,
+      "prose_texts": 21,
+      "verse_texts": 60,
       "wit_count": 2
     },
     {
-      "prose_texts": 6,
-      "verse_texts": 28,
+      "prose_texts": 8,
+      "verse_texts": 26,
       "wit_count": 3
     },
     {
-      "prose_texts": 6,
-      "verse_texts": 18,
+      "prose_texts": 4,
+      "verse_texts": 20,
       "wit_count": 4
     },
     {
       "prose_texts": 11,
-      "verse_texts": 21,
+      "verse_texts": 20,
       "wit_count": 5
     },
     {
-      "prose_texts": 6,
-      "verse_texts": 14,
+      "prose_texts": 5,
+      "verse_texts": 12,
       "wit_count": 6
     },
     {
-      "prose_texts": 0,
-      "verse_texts": 9,
+      "prose_texts": 2,
+      "verse_texts": 11,
       "wit_count": 7
     },
     {
-      "prose_texts": 2,
-      "verse_texts": 4,
+      "prose_texts": 4,
+      "verse_texts": 5,
       "wit_count": 8
     },
     {
-      "prose_texts": 3,
+      "prose_texts": 1,
       "verse_texts": 10,
       "wit_count": 9
     },
     {
-      "prose_texts": 1,
-      "verse_texts": 3,
+      "prose_texts": 2,
+      "verse_texts": 4,
       "wit_count": 10
     },
     {
@@ -58,22 +58,22 @@
     },
     {
       "prose_texts": 1,
-      "verse_texts": 7,
+      "verse_texts": 5,
       "wit_count": 12
     },
     {
-      "prose_texts": 1,
-      "verse_texts": 1,
+      "prose_texts": 2,
+      "verse_texts": 2,
       "wit_count": 13
     },
     {
       "prose_texts": 2,
-      "verse_texts": 3,
+      "verse_texts": 2,
       "wit_count": 14
     },
     {
       "prose_texts": 0,
-      "verse_texts": 2,
+      "verse_texts": 4,
       "wit_count": 15
     },
     {
@@ -88,12 +88,12 @@
     },
     {
       "prose_texts": 1,
-      "verse_texts": 4,
+      "verse_texts": 3,
       "wit_count": 18
     },
     {
       "prose_texts": 1,
-      "verse_texts": 0,
+      "verse_texts": 1,
       "wit_count": 19
     },
     {
@@ -107,9 +107,14 @@
       "wit_count": 22
     },
     {
-      "prose_texts": 3,
+      "prose_texts": 1,
       "verse_texts": 0,
       "wit_count": 26
+    },
+    {
+      "prose_texts": 1,
+      "verse_texts": 0,
+      "wit_count": 27
     },
     {
       "prose_texts": 1,
@@ -119,17 +124,22 @@
     {
       "prose_texts": 0,
       "verse_texts": 1,
-      "wit_count": 32
+      "wit_count": 33
     },
     {
       "prose_texts": 1,
       "verse_texts": 0,
-      "wit_count": 37
+      "wit_count": 36
+    },
+    {
+      "prose_texts": 1,
+      "verse_texts": 0,
+      "wit_count": 39
     },
     {
       "prose_texts": 0,
       "verse_texts": 1,
-      "wit_count": 39
+      "wit_count": 40
     },
     {
       "prose_texts": 1,
@@ -139,27 +149,32 @@
     {
       "prose_texts": 1,
       "verse_texts": 0,
-      "wit_count": 58
+      "wit_count": 59
     },
     {
-      "prose_texts": 2,
+      "prose_texts": 1,
       "verse_texts": 0,
       "wit_count": 65
     },
     {
-      "prose_texts": 0,
-      "verse_texts": 1,
+      "prose_texts": 1,
+      "verse_texts": 0,
       "wit_count": 66
     },
     {
-      "prose_texts": 1,
-      "verse_texts": 0,
-      "wit_count": 87
+      "prose_texts": 0,
+      "verse_texts": 1,
+      "wit_count": 67
     },
     {
       "prose_texts": 1,
       "verse_texts": 0,
-      "wit_count": 112
+      "wit_count": 93
+    },
+    {
+      "prose_texts": 1,
+      "verse_texts": 0,
+      "wit_count": 122
     }
   ]
 }
