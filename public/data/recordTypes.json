@@ -857,7 +857,7 @@
                     ]
                 },
                 {
-                    "sectionName": "author_freetext",
+                    "sectionName": "People",
                     "fields": [
                         {
                             "rst_DisplayName": "is_written_by",
@@ -1167,7 +1167,7 @@
                     ]
                 },
                 {
-                    "sectionName": "review_note",
+                    "sectionName": "Review",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
@@ -2729,7 +2729,7 @@
                     ]
                 },
                 {
-                    "sectionName": "References",
+                    "sectionName": "described_at_URL",
                     "fields": [
                         {
                             "rst_DisplayName": "described_by_source",
@@ -3973,7 +3973,7 @@
                     ]
                 },
                 {
-                    "sectionName": "Review",
+                    "sectionName": "review_status",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
@@ -4841,7 +4841,7 @@
                     ]
                 },
                 {
-                    "sectionName": "number_of_lines_in_writing_area",
+                    "sectionName": "Layout",
                     "fields": [
                         {
                             "rst_DisplayName": "writing_surface_area_height",
