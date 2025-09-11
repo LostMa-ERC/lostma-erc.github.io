@@ -1,5 +1,17 @@
 [
     {
+        "start": "2025-05-25",
+        "category": "Publication",
+        "title": "On the transmission of texts: written cultures as complex systems",
+        "detail": ["Jean-Baptiste Camps", "Julien Randon-Furling", "Ulysse Godreau"],
+        "description": "Our knowledge of past cultures relies considerably on written material. For centuries, texts have been copied, altered, then transmitted or lost - eventually, from surviving documents, philologists attempt to reconstruct text phylogenies ("stemmata"), and past written cultures. Nonetheless, fundamental questions on the extent of losses, representativeness of surviving artefacts, and the dynamics of text genealogies have remained open since the earliest days of philology. To address these, we radically rethink the study of text transmission through a complexity science approach, integrating stochastic modelling, computer simulations, and data analysis, in a parsimonious mindset akin to statistical physics and evolutionary biology. Thus, we design models that are simple and general, while accounting for diachrony and other key aspects of the dynamical process underlying text phylogenies, such as the extinction of entire branches or trees. On the well-known case study of Medieval French chivalric literature, we find that up to 60% of texts and 99% of manuscripts were lost (consistent with recent synchronic "biodiversity" analyses). We also settle a hundred-year-old controversy on the bifidity of stemmata. Further, our null model suggests that pure chance ("drift") is not the only mechanism at play, and we provide a theoretical and empirical framework for future investigation.",
+        "link": {
+            "page": false,
+            "label": "Preprint",
+            "url": "https://arxiv.org/abs/2505.19246"
+        }
+    },
+    {
         "start": "2025-09-01",
         "category": "Other",
         "title": "New team member 🤝",
@@ -11,6 +23,42 @@
             "url": "https://github.com/virgile-reignier"
         },
         "location": null
+    },
+    {
+        "start": "2025-07-17",
+        "category": "Publication",
+        "title": "Greening your database of literary works: How to avoid reinventing vocabularies, in favor of sustainable, reusable models",
+        "detail": ["Kelly Christensen", "Jean-Baptiste Camps"],
+        "link": {
+            "page": false,
+            "label": "Communication",
+            "url": "https://zenodo.org/records/11516758"
+        }
+    },
+            {
+        "start": "2025-06-27",
+        "category": "Publication",
+        "title": "“Bifidité” et évolution: philologie computationnelle des textes en langue d’oïl",
+        "detail": ["Jean-Baptiste Camps"],
+        "detail": "Medioevo romanzo, fasc. 1/2024, p. 33–56"
+        "description": "Plus qu’une simple poursuite des questionnaires philologiques actuels par d’autres moyens, la philologie computationnelle peut, dans certains contextes, amener des déplacements ou des transformations dans les paradigmes de recherche en sciences des textes. Sans sortir du paradigme évolutionniste qui remonte aux origines de la discipline, la philologie peut ainsi reprendre à son compte des approches méthodologiques articulant démarche de test d’hypothèse, modèles et analyse de données. La massification des données permise par l’intelligence artificielle ouvre des perspectives d’analyse nouvelles, propice aux études macrostructurelles, comparatistes ou de longue durée.",
+        "link": {
+            "page": false,
+            "label": "Article",
+            "url": "https://www.rivisteweb.it/doi/10.60998/116401"
+        }
+    },
+        {
+        "start": "2025-06-05",
+        "category": "Publication",
+        "title": "Style in Eight Syllables: Metric Annotation and Stylometry of Chrétien de Troyes and Contemporaries",
+        "detail": ["Jean-Baptiste Camps", "Florian Cafiero", "Philippe Chaumet-Riffaud", "Damien Conceicao", "Ulysse Godreau", "Émilie Guidi", "Alexandre Lionnet", "Théo Moins", "Pierre-Alexandre Nistor", "Benedetta Salvati"],
+        "description": "Authorship attribution for medieval texts such as those of Chrétien de Troyes poses unique challenges due to textual transmission, language variation, and limited reference corpora. In this context, it might be useful to draw as much stylistic information as possible from the texts, beyond most common features such as function words. This paper presents an ongoing project to include metrical annotation (with a focus on prosody) in the stylometric analysis of Medieval French, to enhance support vector machine (SVM)-based authorship attribution. The case at hand focuses on the attribution of the works of Chrétien de Troyes and his contemporaries.",
+        "link": {
+            "page": false,
+            "label": "Communication",
+            "url": "https://zenodo.org/records/15600258"
+        }
     },
     {
         "start": "2025-03-01",
@@ -42,6 +90,18 @@
             "page": true,
             "label": "Conference Website",
             "url": "/news/hackathon2025"
+        }
+    },
+    {
+        "start": "2024-12-06",
+        "category": "Publication",
+        "title": "Textual Transmission without Borders: Multiple Multilingual Alignment and Stemmatology of the “Lancelot en prose” (Medieval French, Castilian, Italian)",
+        "detail": ["Matthias Gille Levenson", "Lucence Ing", "Jean-Baptiste Camps"],
+        "description": "This study focuses on the problem of multilingual medieval text alignment, which presents specific challenges, due to the absence of modern punctuation in the texts and the non-standard forms of medieval languages. In order to perform the alignment of several witnesses from the multilingual tradition of the prose Lancelot, we first develop an automatic text segmenter based on BERT and then align the produced segments using Bertalign. This alignment is then used to produce stemmatological hypotheses, using phylogenetic methods. The aligned sequences are clustered independently by two human annotators and a clustering algorithm (DBScan), and the resulting variant tables submitted to maximum parsimony analysis, in order to produce trees. The trees are then compared and discussed in light of philological knowledge. Results tend to show that automatically clustered sequences can provide results comparable to those of human annotation.",
+        "link": {
+            "page": false,
+            "label": "Conference Proceedings",
+            "url": "https://ceur-ws.org/Vol-3834/paper104.pdf"
         }
     },
     {
@@ -93,6 +153,18 @@
             "city": "Brussels, Belgium"
         },
         "link": null
+    },
+    {
+        "start": "2024-06-06",
+        "category": "Publication",
+        "title": "The Authorship of the Works of Chrétien de Troyes A Stylometric Examination",
+        "detail": ["Jean-Baptiste Camps", "Benedetta Salvati", "Gonzalo Freijedo Aduna", "Donghan Bian", "Gaëtan Drouet", "Eglantine Gaglione", "Emilie Guidi", "Carolina Macedo", "Yaelle Zribi", "Florian Cafiero"],
+        "description": "Numerous controversies have emerged about the exact delimitations of the works written by the hand of Chrétien de Troyes, the founder of French roman and introductor of the theme of the Holy Grail in medieval literature. In this paper, we collect a corpus made of previous digital editions and of texts OCRed and post-corrected by ourselves, to analyse it through authorship attribution techniques. Our results seem to broadly confirm expected results, such as the way Chrétien's Lancelot was finished by Godefroy de Laigny. But our analyses also add new insights. Our rolling SVM suggest the possibility that the poorly esteemed and very disputed Guillaume d'Angleterre would have been written by multiple authors, indicating a possible completion of passages previously written by Chrétien. They also highlight the fact that Perceval's ending could have been completed the same way the Lancelot was, by someone who is not Chrétien. Further analyses will be needed to confirm these new findings.",
+        "link": {
+            "page": false,
+            "label": "Communication",
+            "url": "https://zenodo.org/records/11516758"
+        }
     },
     {
         "start": "2024-05-28",
