@@ -17,7 +17,7 @@
         "category": "Publication",
         "title": "Greening your database of literary works: How to avoid reinventing vocabularies, in favor of sustainable, reusable models",
         "detail": ["Kelly Christensen", "Jean-Baptiste Camps"],
-        "description": " ",
+        "description": "In a multilingual database of literary works, users will want to find a story's various versions. Therefore, we must conceptualize the threshold between narrative content (story) and its expression in language. While specially designed for evolving narrative traditions, our solution is grounded in the Functional Requirements for Bibliographic Records model.",
         "link": {
             "page": false,
             "label": "Communication",
