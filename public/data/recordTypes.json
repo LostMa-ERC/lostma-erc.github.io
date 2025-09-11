@@ -857,7 +857,7 @@
                     ]
                 },
                 {
-                    "sectionName": "author_freetext",
+                    "sectionName": "People",
                     "fields": [
                         {
                             "rst_DisplayName": "is_written_by",
@@ -2729,7 +2729,7 @@
                     ]
                 },
                 {
-                    "sectionName": "described_at_URL",
+                    "sectionName": "References",
                     "fields": [
                         {
                             "rst_DisplayName": "described_by_source",
