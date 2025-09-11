@@ -857,7 +857,7 @@
                     ]
                 },
                 {
-                    "sectionName": "People",
+                    "sectionName": "author_freetext",
                     "fields": [
                         {
                             "rst_DisplayName": "is_written_by",
@@ -4841,7 +4841,7 @@
                     ]
                 },
                 {
-                    "sectionName": "Layout",
+                    "sectionName": "number_of_lines_in_writing_area",
                     "fields": [
                         {
                             "rst_DisplayName": "writing_surface_area_height",
