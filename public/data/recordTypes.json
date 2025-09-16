@@ -1,5 +1,5 @@
 {
-    "lastModified": "2025-09-15",
+    "lastModified": "2025-09-16",
     "items": [
         {
             "id": 101,
@@ -857,7 +857,7 @@
                     ]
                 },
                 {
-                    "sectionName": "author_freetext",
+                    "sectionName": "People",
                     "fields": [
                         {
                             "rst_DisplayName": "is_written_by",
@@ -2251,7 +2251,7 @@
                 "rty_ID": 105,
                 "rty_Name": "witness",
                 "rty_Description": "a witness of a text, placed in a stemma or otherwise",
-                "rty_TitleMask": "[[[1301.term]]] \\\"[1295.1244]\\\" ([1285]) [1296]",
+                "rty_TitleMask": "[[[1301.term]]] \\\"[1295.1244]\\\" ([1285]) [1296] [1356.1315.1307]{\\\\, in ms }",
                 "rty_ReferenceURL": null
             },
             "sections": [
@@ -2729,7 +2729,7 @@
                     ]
                 },
                 {
-                    "sectionName": "described_at_URL",
+                    "sectionName": "References",
                     "fields": [
                         {
                             "rst_DisplayName": "described_by_source",
@@ -3201,7 +3201,7 @@
                     ]
                 },
                 {
-                    "sectionName": "reference_notes",
+                    "sectionName": "References",
                     "fields": [
                         {
                             "rst_DisplayName": "described_by_source",
@@ -3617,7 +3617,7 @@
                     ]
                 },
                 {
-                    "sectionName": "review_note",
+                    "sectionName": "Review",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
@@ -3973,7 +3973,7 @@
                     ]
                 },
                 {
-                    "sectionName": "review_status",
+                    "sectionName": "Review",
                     "fields": [
                         {
                             "rst_DisplayName": "review_status",
@@ -4841,7 +4841,7 @@
                     ]
                 },
                 {
-                    "sectionName": "number_of_lines_in_writing_area",
+                    "sectionName": "Layout",
                     "fields": [
                         {
                             "rst_DisplayName": "writing_surface_area_height",
