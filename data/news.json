@@ -1,4 +1,12 @@
 [
+  {
+        "start": "2025-09-17",
+        "category": "Other",
+        "title": "New team member 🤝",
+        "detail": "17 September, 2025",
+        "description": "Elise Charrel joins as an Administrator, replacing Beatriz Tadeo Fuica.",
+        "location": null
+    },
     {
         "start": "2025-09-01",
         "category": "Other",
@@ -20,9 +28,11 @@
         "description": "In a multilingual database of literary works, users will want to find a story's various versions. Therefore, we must conceptualize the threshold between narrative content (story) and its expression in language. While specially designed for evolving narrative traditions, our solution is grounded in the Functional Requirements for Bibliographic Records model.",
         "link": {
             "page": false,
-            "label": "Communication",
+            "label": "Read online",
             "url": "https://enc.hal.science/hal-05059049v1"
-        }
+        },
+        "image": "/images/christensen_2025.png",
+        "pub_category": "Communication"
     },
             {
         "start": "2025-06-27",
@@ -32,9 +42,11 @@
         "description": "Plus qu’une simple poursuite des questionnaires philologiques actuels par d’autres moyens, la philologie computationnelle peut, dans certains contextes, amener des déplacements ou des transformations dans les paradigmes de recherche en sciences des textes. Sans sortir du paradigme évolutionniste qui remonte aux origines de la discipline, la philologie peut ainsi reprendre à son compte des approches méthodologiques articulant démarche de test d’hypothèse, modèles et analyse de données. La massification des données permise par l’intelligence artificielle ouvre des perspectives d’analyse nouvelles, propice aux études macrostructurelles, comparatistes ou de longue durée.",
         "link": {
             "page": false,
-            "label": "Article",
-            "url": "https://www.rivisteweb.it/doi/10.60998/116401"
-        }
+            "label": "Read online",
+            "url": "https://enc.hal.science/hal-05129826"
+        },
+        "image": "/images/camps_2025.png",
+        "pub_category": "Article"
     },
         {
         "start": "2025-06-05",
@@ -44,9 +56,11 @@
         "description": "Authorship attribution for medieval texts such as those of Chrétien de Troyes poses unique challenges due to textual transmission, language variation, and limited reference corpora. In this context, it might be useful to draw as much stylistic information as possible from the texts, beyond most common features such as function words. This paper presents an ongoing project to include metrical annotation (with a focus on prosody) in the stylometric analysis of Medieval French, to enhance support vector machine (SVM)-based authorship attribution. The case at hand focuses on the attribution of the works of Chrétien de Troyes and his contemporaries.",
         "link": {
             "page": false,
-            "label": "Communication",
+            "label": "Read online",
             "url": "https://zenodo.org/records/15600258"
-        }
+        },
+        "image": "/images/camps_cafiero_al_2025.png",
+        "pub_category": "Communication"
     },
         {
         "start": "2025-06-03",
@@ -56,9 +70,11 @@
         "description": "Our knowledge of past cultures relies considerably on written material. For centuries, texts have been copied, altered, then transmitted or lost - eventually, from surviving documents, philologists attempt to reconstruct text phylogenies (“stemmata”), and past written cultures. Nonetheless, fundamental questions on the extent of losses, representativeness of surviving artefacts, and the dynamics of text genealogies have remained open since the earliest days of philology. To address these, we radically rethink the study of text transmission through a complexity science approach, integrating stochastic modelling, computer simulations, and data analysis, in a parsimonious mindset akin to statistical physics and evolutionary biology. Thus, we design models that are simple and general, while accounting for diachrony and other key aspects of the dynamical process underlying text phylogenies, such as the extinction of entire branches or trees. On the well-known case study of Medieval French chivalric literature, we find that up to 60% of texts and 99% of manuscripts were lost (consistent with recent synchronic “biodiversity” analyses). We also settle a hundred-year-old controversy on the bifidity of stemmata. Further, our null model suggests that pure chance (“drift”) is not the only mechanism at play, and we provide a theoretical and empirical framework for future investigation.",
         "link": {
             "page": false,
-            "label": "Preprint",
+            "label": "Read online",
             "url": "https://arxiv.org/abs/2505.19246"
-        }
+        },
+        "image": "/images/camps_randon-furling_al_2025.png",
+        "pub_category": "Preprint"
     },
     {
         "start": "2025-03-01",
@@ -100,9 +116,11 @@
         "description": "This study focuses on the problem of multilingual medieval text alignment, which presents specific challenges, due to the absence of modern punctuation in the texts and the non-standard forms of medieval languages. In order to perform the alignment of several witnesses from the multilingual tradition of the prose Lancelot, we first develop an automatic text segmenter based on BERT and then align the produced segments using Bertalign. This alignment is then used to produce stemmatological hypotheses, using phylogenetic methods. The aligned sequences are clustered independently by two human annotators and a clustering algorithm (DBScan), and the resulting variant tables submitted to maximum parsimony analysis, in order to produce trees. The trees are then compared and discussed in light of philological knowledge. Results tend to show that automatically clustered sequences can provide results comparable to those of human annotation.",
         "link": {
             "page": false,
-            "label": "Conference Proceedings",
+            "label": "Read online",
             "url": "https://ceur-ws.org/Vol-3834/paper104.pdf"
-        }
+        },
+        "image": "/images/gille-levenson_ing_al_2024.png",
+        "pub_category": "Conference Proceedings"
     },
     {
         "start": "2024-10-01",
@@ -162,9 +180,11 @@
         "description": "Numerous controversies have emerged about the exact delimitations of the works written by the hand of Chrétien de Troyes, the founder of French roman and introductor of the theme of the Holy Grail in medieval literature. In this paper, we collect a corpus made of previous digital editions and of texts OCRed and post-corrected by ourselves, to analyse it through authorship attribution techniques. Our results seem to broadly confirm expected results, such as the way Chrétien’s Lancelot was finished by Godefroy de Laigny. But our analyses also add new insights. Our rolling SVM suggest the possibility that the poorly esteemed and very disputed Guillaume d’Angleterre would have been written by multiple authors, indicating a possible completion of passages previously written by Chrétien. They also highlight the fact that Perceval’s ending could have been completed the same way the Lancelot was, by someone who is not Chrétien. Further analyses will be needed to confirm these new findings.",
         "link": {
             "page": false,
-            "label": "Communication",
+            "label": "Read online",
             "url": "https://zenodo.org/records/11516758"
-        }
+        },
+        "image": "/images/camps_salvati_al_2024.png",
+        "pub_category": "Communication"
     },
     {
         "start": "2024-05-28",
@@ -232,8 +252,10 @@
         "description": "How did written works evolve, disappear or survive down through the ages? In this paper, we propose a unified, formal framework for two fundamental questions in the study of the transmission of texts: how much was lost or preserved from all works of the past, and why do their genealogies (their \"phylogenetic trees\") present the very peculiar shapes that we observe or, more precisely, reconstruct? We argue here that these questions share similarities to those encountered in evolutionary biology, and can be described in terms of \"genetic\" drift and \"natural\" selection. Through agent-based models, we show that such properties as have been observed by philologists since the 1800s can be simulated, and confronted to data gathered for ancient and medieval texts across Europe, in order to obtain plausible estimations of the number of works and manuscripts that existed and were lost.",
         "link": {
             "page": false,
-            "label": "Conference Proceedings",
+            "label": "Read online",
             "url": "https://shs.hal.science/halshs-03827975"
-        }
+        },
+        "image": "/images/camps_randon-furling_2022.png",
+        "pub_category": "Conference Proceedings"
     }
 ]

@@ -3,42 +3,56 @@
         {
             "forename": "Jean-Baptiste",
             "surname": "Camps",
-            "role": "Project Leader"
+            "role": "Project Leader",
+            "image": "/images/photo_jean_baptiste_camps.jpeg"
         },
         {
             "forename": "Beatriz",
             "surname": "Tadeo Fuica",
-            "role": "Administrator (former)"
+            "role": "Administrator (former)",
+            "image": "/images/photo_beatriz_tadeo_fuica.jpg"
         },
         {
             "forename": "Kelly",
             "surname": "Christensen",
-            "role": "Data Architect (former)"
+            "role": "Data Architect (former)",
+            "image": "/images/photo_kelly_christensen.jpeg"
         },
         {
             "forename": "Virgile",
             "surname": "Reignier",
-            "role": "Data Architect"
+            "role": "Data Architect",
+            "image": "/images/photo_virgile_reignier.png"
         },
         {
             "forename": "Ulysse",
             "surname": "Godreau",
-            "role": "Postdoc"
+            "role": "Postdoc",
+            "image": "/images/photo_ulysse_godreau.png"
         },
         {
             "forename": "Théo",
             "surname": "Moins",
-            "role": "AI Engineer"
+            "role": "AI Engineer",
+            "image": "/images/photo_theo_moins.jpg"
         },
         {
             "forename": "Émilie",
             "surname": "Guidi",
-            "role": "PhD Candidate"
+            "role": "PhD Candidate",
+            "image": "/images/photo_emilie_guidi.png"
         },
         {
             "forename": "Cecile",
             "surname": "Vermaas",
-            "role": "PhD Candidate"
+            "role": "PhD Candidate",
+            "image": "/images/photo_cecile_vermaas.jpg"
+        },
+        {
+            "forename": "Elise",
+            "surname": "Charrel",
+            "role": "Administrator",
+            "image": "/images/photo_elise_charrel.jpg"
         }
     ],
     "Collaborators": [

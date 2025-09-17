@@ -1,4 +1,5 @@
 import { NewsCategory } from "../types/NewsCategory"
+import { PubCategory } from "../types/PubCategory"
 
 interface ChronologicalData {
     start: string
@@ -7,7 +8,7 @@ interface ChronologicalData {
 
 type JsonArrayChrono = ChronologicalData[];
 
-export async function fetchChronologicalData({arrays, category}: {arrays: any[], category: NewsCategory | null}): Promise<JsonArrayChrono> {
+export async function fetchChronologicalData({arrays, category, pub_category, exclude_pub_category}: {arrays: any[], category: NewsCategory | null, pub_category: PubCategory | null, exclude_pub_category: PubCategory | null}): Promise<JsonArrayChrono> {
 
     // Concatenate the array or arrays to an empty array
     const arrayConcat: JsonArrayChrono = [].concat.apply([], arrays)
@@ -18,6 +19,12 @@ export async function fetchChronologicalData({arrays, category}: {arrays: any[],
     // If filtering on a category type, further refine the subset
     if (category) {
         var subsetFinal = subsetBasic.filter((i) => i.category === category)
+        if (pub_category) {
+            var subsetFinal = subsetFinal.filter((i) => i.pub_category === pub_category)
+            }
+        if (exclude_pub_category) {
+            var subsetFinal = subsetFinal.filter((i) => i.pub_category !== exclude_pub_category)
+            }
     }
     else {
         var subsetFinal = subsetBasic

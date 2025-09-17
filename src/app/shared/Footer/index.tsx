@@ -97,7 +97,7 @@ const Partners = () => {
                             <Image className='object-contain w-fit max-h-[100px]' src={ERC_LOGO} alt='ERC logo'/>
                         </Link>
                         <Link target="_blank" rel="noreferrer" href="https://www.chartes.psl.eu/">
-                                <Image className='object-contain w-fit' src={ENC_LOGO} alt='ENC logo' />
+                                <Image className='object-contain w-fit max-h-[100px]' src={ENC_LOGO} alt='ENC logo'/>
                         </Link>
             </div>
         </>

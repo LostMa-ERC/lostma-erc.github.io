@@ -33,9 +33,16 @@ export default async function Team() {
               <div className="order-last col-span-2 md:order-first">
                   <dl className="grid md:grid-cols-3 justify-items-center gap-8">
                       {
-                          Object.values(TeamMemberData).map((p, index) => 
+                          Object.values(TeamMemberData).map((p, index) =>
                               <dt key={`team-member-${index}`} className="w-full">
                                   <div className="md:w-full min-w-auto w-3/4 rounded shadow-lg border-solid border-2">
+                                      {p.image && (
+                                        <img
+                                          src={p.image}
+                                          alt={`${p.forename} ${p.surname}`}
+                                          className="w-full h-48 md:object-contain"
+                                        />
+                                      )}
                                       <div className="px-6 py-4">
                                           <div className="text-lg mb-2">
                                               {p.forename.concat(" ", p.surname)}

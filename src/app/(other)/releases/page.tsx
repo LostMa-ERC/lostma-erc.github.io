@@ -14,12 +14,11 @@ export default function News() {
         <h2 className="p-1 w-fit md:text-xl text-2xl">
           Code
         </h2>
-
-        {/* Heurist CLI */}
         <div className="rounded-md md:rounded-lg py-2">
           <div className="bg-light/30 text-white rounded-md md:rounded-lg">
             <div className="grid md:grid-cols-2 p-4">
               <div className="pt-4 md:pt-2 text-black">
+              <div className="border p-2 m-4 rounded">
                 <h2 className="flex space-x-1">
                   <div className="md:w-[32px] w-[28px]">{CLISVG}</div>
                   <a className="md:text-2xl text-xl italic" target="_blank" rel="noreferrer" href="https://pypi.org/project/heurist-api/">Heurist API</a>
@@ -31,20 +30,38 @@ export default function News() {
                   The Python packaged is published on the <a className="link" href="https://pypi.org/project/heurist-api/" target="_blank" rel="noreferrer">Python Package Index (PyPI)</a>.
                   Documentation is available <a className="link" href="https://lostma-erc.github.io/heurist-api/" target="_blank" rel="noreferrer">here</a>.
                   </p>
+                <a className="grid place-content-center" href="https://github.com/LostMa-ERC/heurist-api" target="_blank" rel="noreferrer">
+                  <p className="link font-light text-xs md:text-base tracking-wide md:px-8 w-fit">https://github.com/LostMa-ERC/heurist-api</p>
+                </a>
+              </div>
               </div>
               <div className="pt-4 md:pt-2">
                 <a href="https://lostma-erc.github.io/heurist-api/" target="_blank" rel="noreferrer">
                   <Image alt="Heurist API logo" width={800} height={300} src="https://raw.githubusercontent.com/LostMa-ERC/heurist-api/main/docs/assets/logo-transparent-1.png"/>
                 </a>
               </div>
+              <div className="pt-4 md:pt-2 text-black">
+              <div className="border p-2 m-4 rounded">
+                <h2 className="flex space-x-1">
+                  <div className="md:w-[32px] w-[28px]">{CLISVG}</div>
+                  <a className="md:text-2xl text-xl italic" target="_blank" rel="noreferrer" href="https://github.com/LostMa-ERC/simMAtree/">simMAtree</a>
+                </h2>
+                <p className="font-light text-xs md:text-base tracking-wide md:px-8 min-h-20">
+                  This Python package performs some Simulation Based Algorithm (SBI) on abundance distribution data. One application done for the LostMa project consist in modelling the transmission and survival of textual witnesses through time, enabling researchers to infer model parameters from observed data.
+                </p>
+                <a className="grid place-content-center" href="https://github.com/LostMa-ERC/simMAtree" target="_blank" rel="noreferrer">
+                  <p className="link font-light text-xs md:text-base tracking-wide md:px-8 w-fit">https://github.com/LostMa-ERC/simMAtree</p>
+                </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         {/* French scrapers */}
-        <div className="rounded-md md:rounded-lg py-2">
+        <div className="section-block py-2">
+          <h2 className="p-1 w-fit md:text-xl text-2xl">Scrapers for Cultural Heritage sites</h2>
           <div className="bg-light/30 pt-4 md:pt-2 text-black rounded-md md:rounded-lg">
-            <h3 className="text-lg md:text-xl p-4">Scrapers for Cultural Heritage sites</h3>
             <div className="grid lg:grid-cols-2">
               <div className="border p-2 m-4 rounded">
                 <h2 className="flex space-x-1">
@@ -91,6 +108,21 @@ export default function News() {
                   <p className="link font-light text-xs md:text-base tracking-wide md:px-8 w-fit">https://github.com/LostMa-ERC/search-archives-manuscrits</p>
                 </a>
               </div>
+              <div className="border p-2 m-4 rounded">
+                <h2 className="flex space-x-1">
+                  <div className="md:w-[32px] w-[28px]">{CLISVG}</div>
+                  <a className="md:text-2xl text-xl italic" href="https://github.com/LostMa-ERC/hsc-scraper" target="_blank" rel="noreferrer">Handschriftencensus</a>
+                </h2>
+                <p className="font-light text-xs md:text-base tracking-wide md:px-8">
+                  Scrape metadata about manuscripts and works from the <a className="link" href="https://www.handschriftencensus.de/" target="_blank" rel="noreferrer">Handschriftencensus</a> website, which is managed by the <a className="link" href="https://www.uni-marburg.de/" target="_blank" rel="noreferrer">Philipps-Universität Marburg</a> and the <a className="link" href="https://www.adwmainz.de" target="_blank" rel="noreferrer">kademie der Wissenschaften und der Literatur Mainz</a>.
+                </p>
+                <p className="font-light text-xs md:text-base tracking-wide md:px-8">
+                  Collect works and their witnesses, and create records for all the linked codicological units.
+                </p>
+                <a className="grid place-content-center" href="https://github.com/LostMa-ERC/hsc-scraper" target="_blank" rel="noreferrer">
+                  <p className="link font-light text-xs md:text-base tracking-wide md:px-8 w-fit">https://github.com/LostMa-ERC/hsc-scraper</p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -98,7 +130,7 @@ export default function News() {
       </div>
 
       {/* Block for dataset releases */}
-      <div className="section-block">
+      <div className="section-block py-2">
         <h2 className="p-1 w-fit md:text-xl text-2xl">
           Datasets
         </h2>
