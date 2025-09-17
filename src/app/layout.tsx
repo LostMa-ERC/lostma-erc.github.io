@@ -20,8 +20,8 @@ export default function RootLayout({
       }
     })}} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
     <title>LostMa</title>
     <meta name="description" content="ERC Project"/>
     {/* Open Graph meta tags */}
