@@ -12,12 +12,13 @@ export default function RootLayout({
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="shortcut icon" href="./favicon.ico" />
-    <title>LostMa project wibsite</title>
+    <title>LostMa</title>
     <meta name="description" content="ERC Project"/>
+    <meta name="author" content="LostMA">
     {/* Open Graph meta tags */}
     <meta property="og:url" content="https://lostma-erc.github.io/"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:title" content="LostMa"/>
+    <meta property="og:title" content="LostMa project website"/>
     <meta property="og:description" content="ERC Research Project, 2024-2029"/>
     <meta property="og:image" content="https://i.postimg.cc/0ykFJ18s/lostma-logo.png"/>
     {/* Twitter meta tags */}
