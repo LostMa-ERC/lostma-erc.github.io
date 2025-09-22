@@ -3,8 +3,8 @@
     "start": "2025-09-22",
     "category": "Event",
     "title": "Participation to an event",
-    "detail": ["Ulysse Godreau", "Kelly Christensen", "Théo Moins", "Virgile Reignier", "Jean-Baptiste Camps"],
-    "description": "`Modelling the transmission and survival of texts and manuscripts`: Communication at the CultureLab Kick-off conference",
+    "detail": "Communication at the CultureLab Kick-off conference",
+    "description": "`Modelling the transmission and survival of texts and manuscripts` by Ulysse Godreau, Kelly Christensen, Théo Moins, Virgile Reignier and Jean-Baptiste Camps",
     "location": {
             "venue": "Campus Condorcet",
             "city": "Aubervilliers, France"
