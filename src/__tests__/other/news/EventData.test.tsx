@@ -8,9 +8,9 @@ const events = await fetchEvents({arrays:news})
 describe.each(events)
     ('Validate Events in news.json array, index %#', (item) => {
 
-    test('Detail is valid string (<100 char).', () => {
+    test('Detail is valid string (<60 char).', () => {
         expect.soft(item.detail).toBeTypeOf('string')
-        expect.soft(item.detail.length).lessThanOrEqual(100)
+        expect.soft(item.detail.length).lessThanOrEqual(60)
     })
 
     test('Event has location.', () => {

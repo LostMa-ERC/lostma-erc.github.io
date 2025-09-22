@@ -30,9 +30,9 @@ describe.each(news)
         })
     }
     else {
-        test('Detail is a valid string (<100 char).', () => {
+        test('Detail is a valid string (<60 char).', () => {
             expect.soft(item.detail).toBeTypeOf('string')
-            expect.soft(item.detail.length).lessThanOrEqual(100)
+            expect.soft(item.detail.length).lessThanOrEqual(60)
         })
     }
 
