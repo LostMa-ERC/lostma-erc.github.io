@@ -1,5 +1,21 @@
 [
   {
+    "start": "2025-09-22",
+    "category": "Event",
+    "title": "Participation to an event"
+    "detail": ["Ulysse Godreau", "Kelly Christensen", "Théo Moins", "Virgile Reignier", "Jean-Baptiste Camps"],
+    "description": "`Modelling the transmission and survival of texts and manuscripts`: Communication at the CultureLab Kick-off conference",
+    "location": {
+            "venue": "Campus Condorcet",
+            "city": "Aubervilliers, France"
+        },
+        "link": {
+            "page": false,
+            "label": "Conference Program",
+            "url": "https://psl.eu/agenda/colloque-inaugural-du-grand-programme-de-recherche-culturelab"
+        }
+  },
+  {
         "start": "2025-09-17",
         "category": "Other",
         "title": "New team member 🤝",
