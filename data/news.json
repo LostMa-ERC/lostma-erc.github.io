@@ -1,4 +1,20 @@
 [
+   {
+    "start": "2025-10-15",
+    "category": "Event",
+    "title": "Participation to an event",
+    "detail": "15 October, 2025",
+    "description": "Communication at the Hôtel à projets event",
+    "location": {
+            "venue": "Campus Condorcet",
+            "city": "Aubervilliers, France"
+        },
+        "link": {
+            "page": false,
+            "label": "Conference Program",
+            "url": "https://www.campus-condorcet.fr/fr/agenda/lhotel-a-projets-vous-invite"
+        }
+  },
  {
         "start": "2025-10-01",
         "category": "Other",
