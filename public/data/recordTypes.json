@@ -1,5 +1,5 @@
 {
-    "lastModified": "2025-10-10",
+    "lastModified": "2025-10-13",
     "items": [
         {
             "id": 101,
@@ -2465,6 +2465,12 @@
                                     "description": "In the case of a hypothetical witness, whose existence is posited, no part of the witness survives.",
                                     "url": null,
                                     "id": 9758
+                                },
+                                {
+                                    "label": "citation",
+                                    "description": "Collection of quotations, which may be in a notebook, in a margin, in another text, in a treatise, or wherever.",
+                                    "url": null,
+                                    "id": 9841
                                 }
                             ]
                         },
