@@ -286,6 +286,20 @@
             "url": "https://doi.org/10.3030/101117408"
         }
     },
+       {
+        "start": "2023-12-08",
+        "category": "Publication",
+        "title": "Make Love or War? Monitoring the Thematic Evolution of Medieval French Narratives",
+        "detail": ["Jean-Baptiste Camps", "Nicolas Baumard", "Pierre-Carl Langlais", "Olivier Morin", "Thibault Clérice", "Jade Norindr"],
+        "description": "In this paper, we test a famous conjecture in literary history put forward by Seignobos and de Rougemont according to which the French central medieval period (12-13th centuries) is characterized by an important increase in the cultural importance of love. To do that, we focus on the large and culturally important body of manuscripts containing medieval French long narrative fictions, in particular epics (chansons de geste, of the Matter of France) and romances (chiefly romans on the Matters of Britain and of Rome), both in verse and in prose, from the 12th to the 15th century. We introduce the largest available corpus of these texts, the Corpus of Medieval French Epics and Romances, composed of digitised manuscripts drawn from Gallica, and processed through layout analysis and handwritten text recognition. We then use semantic representations based on embeddings to monitor the place given to love and violence in this corpus, through time. We observe that themes (such as the relation between love and death) and emblematic works well identified by literary history do indeed play a central part in the representation of love in the corpus, but our modelling also points to the characteristic nature of more overlooked works. Variation in time seems to show that there is indeed an phase of expansion of love in these fictions, in the 13th and early 14th century, followed by a period of contraction, that seem to correlate with the Crisis of the Late Middle Ages.",
+        "link": {
+            "page": false,
+            "label": "Read Online",
+            "url": "https://ceur-ws.org/Vol-3558/paper8175.pdf"
+        },
+        "image": "/images/camps_baumard_al_2023.png",
+        "pub_category": "Conference Proceedings"
+    },
     {
         "start": "2022-10-26",
         "category": "Publication",
