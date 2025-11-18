@@ -1,4 +1,20 @@
 [
+      {
+    "start": "2025-11-25",
+    "category": "Event",
+    "title": "Participation to an event",
+    "detail": "25 November, 2025",
+    "description": "Communication at the médialab seminar",
+    "location": {
+            "venue": "SciencesPo",
+            "city": "Paris, France"
+        },
+        "link": {
+            "page": false,
+            "label": "Conference Program",
+            "url": "https://medialab.sciencespo.fr/actu/modelling-the-transmission-and-survival-of-texts-and-manuscripts/"
+        }
+  },
    {
     "start": "2025-10-15",
     "category": "Event",
