@@ -1,5 +1,5 @@
 {
-    "lastModified": "2025-11-18",
+    "lastModified": "2025-11-19",
     "items": [
         {
             "id": 101,
@@ -3075,22 +3075,6 @@
                             "dty_ID": 1311,
                             "dty_Type": "freetext",
                             "dty_PtrTargetRectypeIDs": [],
-                            "dty_SemanticReferenceURL": null,
-                            "trm_TreeID": null,
-                            "trm_Label": null,
-                            "trm_Description": null,
-                            "rst_RequirementType": "recommended",
-                            "rst_MaxValues": 0,
-                            "vocabTerms": null
-                        },
-                        {
-                            "rst_DisplayName": "digitization",
-                            "rst_DisplayHelpText": "A digitization of the archival object, preferably in its entirety.",
-                            "dty_ID": 1313,
-                            "dty_Type": "resource",
-                            "dty_PtrTargetRectypeIDs": [
-                                126
-                            ],
                             "dty_SemanticReferenceURL": null,
                             "trm_TreeID": null,
                             "trm_Label": null,
