@@ -1,4 +1,20 @@
 [
+            {
+    "start": "2025-12-11",
+    "category": "Event",
+    "title": "Participation to an event",
+    "detail": "11 December, 2025",
+    "description": "2 communications at the CHR 2025 conference",
+    "location": {
+            "venue": "Centre for Contemporary and Digital History",
+            "city": "Esch-sur-Alzette, Luxembourg"
+        },
+        "link": {
+            "page": false,
+            "label": "Conference Program",
+            "url": "https://2025.computational-humanities-research.org/programme/"
+        }
+  },
       {
     "start": "2025-11-25",
     "category": "Event",
