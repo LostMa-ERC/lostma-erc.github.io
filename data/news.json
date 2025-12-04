@@ -15,6 +15,22 @@
             "url": "https://2025.computational-humanities-research.org/programme"
         }
   },
+                        {
+    "start": "2025-12-04",
+    "category": "Event",
+    "title": "Participation to an event",
+    "detail": "4 December, 2025",
+    "description": "Communication at the INSIGHT Kick-off conference",
+    "location": {
+            "venue": "Université de Lorraine",
+            "city": "Nancy, France"
+        },
+        "link": {
+            "page": false,
+            "label": "Conference Program",
+            "url": "https://members.loria.fr/MAmblard/insight/"
+        }
+  },
       {
     "start": "2025-11-25",
     "category": "Event",
