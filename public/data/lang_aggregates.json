@@ -1,5 +1,5 @@
 {
-  "lastModified": "2026-01-06",
+  "lastModified": "2026-01-07",
   "items": [
     {
       "texts": 78,
@@ -68,10 +68,10 @@
       "lang": "Latin"
     },
     {
-      "texts": 56,
+      "texts": 79,
       "witnesses": 58,
-      "code": "non",
-      "lang": "Old Norse"
+      "code": "non_WEST",
+      "lang": "West Old Norse"
     },
     {
       "texts": 17,

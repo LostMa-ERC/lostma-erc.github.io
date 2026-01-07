@@ -1,5 +1,5 @@
 {
-    "lastModified": "2026-01-06",
+    "lastModified": "2026-01-07",
     "items": [
         {
             "id": 101,
@@ -126,12 +126,6 @@
                                     "id": 9736
                                 },
                                 {
-                                    "label": "isl (Islandic)",
-                                    "description": "Islandic",
-                                    "url": "https://iso639-3.sil.org/code/isl",
-                                    "id": 9737
-                                },
-                                {
                                     "label": "ita (Italian)",
                                     "description": "Italian",
                                     "url": "https://iso639-3.sil.org/code/ita",
@@ -144,22 +138,16 @@
                                     "id": 9739
                                 },
                                 {
-                                    "label": "non (Old Norse)",
-                                    "description": "Old Norse",
+                                    "label": "non_WEST (West Old Norse)",
+                                    "description": "West Old Norse",
                                     "url": "https://iso639-3.sil.org/code/non",
                                     "id": 9740
                                 },
                                 {
-                                    "label": "non_DAN (Old Danish)",
-                                    "description": "Old Danish",
+                                    "label": "non_EAST (East Old Norse)",
+                                    "description": "East Old Norse",
                                     "url": null,
                                     "id": 9741
-                                },
-                                {
-                                    "label": "non_SWE (Old Swedish)",
-                                    "description": "Old Swedish",
-                                    "url": null,
-                                    "id": 9742
                                 },
                                 {
                                     "label": "oco (Old Cornish)",
@@ -3804,12 +3792,6 @@
                                     "id": 9736
                                 },
                                 {
-                                    "label": "isl (Islandic)",
-                                    "description": "Islandic",
-                                    "url": "https://iso639-3.sil.org/code/isl",
-                                    "id": 9737
-                                },
-                                {
                                     "label": "ita (Italian)",
                                     "description": "Italian",
                                     "url": "https://iso639-3.sil.org/code/ita",
@@ -3822,22 +3804,16 @@
                                     "id": 9739
                                 },
                                 {
-                                    "label": "non (Old Norse)",
-                                    "description": "Old Norse",
+                                    "label": "non_WEST (West Old Norse)",
+                                    "description": "West Old Norse",
                                     "url": "https://iso639-3.sil.org/code/non",
                                     "id": 9740
                                 },
                                 {
-                                    "label": "non_DAN (Old Danish)",
-                                    "description": "Old Danish",
+                                    "label": "non_EAST (East Old Norse)",
+                                    "description": "East Old Norse",
                                     "url": null,
                                     "id": 9741
-                                },
-                                {
-                                    "label": "non_SWE (Old Swedish)",
-                                    "description": "Old Swedish",
-                                    "url": null,
-                                    "id": 9742
                                 },
                                 {
                                     "label": "oco (Old Cornish)",
