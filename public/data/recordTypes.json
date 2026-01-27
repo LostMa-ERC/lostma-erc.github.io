@@ -1,5 +1,5 @@
 {
-    "lastModified": "2026-01-26",
+    "lastModified": "2026-01-27",
     "items": [
         {
             "id": 101,
@@ -4301,6 +4301,45 @@
                 {
                     "sectionName": "Description",
                     "fields": [
+                        {
+                            "rst_DisplayName": "is_deprecated",
+                            "rst_DisplayHelpText": "Whether the digitization is deprecated (True) or not (False).",
+                            "dty_ID": 1266,
+                            "dty_Type": "enum",
+                            "dty_PtrTargetRectypeIDs": [],
+                            "dty_SemanticReferenceURL": null,
+                            "trm_TreeID": 9481,
+                            "trm_Label": "yes/no/maybe vocab",
+                            "trm_Description": null,
+                            "rst_RequirementType": "required",
+                            "rst_MaxValues": 1,
+                            "vocabTerms": [
+                                {
+                                    "label": "Yes",
+                                    "description": null,
+                                    "url": null,
+                                    "id": 9482
+                                },
+                                {
+                                    "label": "No",
+                                    "description": null,
+                                    "url": null,
+                                    "id": 9483
+                                },
+                                {
+                                    "label": "Maybe",
+                                    "description": null,
+                                    "url": null,
+                                    "id": 9484
+                                },
+                                {
+                                    "label": "unknown",
+                                    "description": "The information is not ready to be input.",
+                                    "url": null,
+                                    "id": 9770
+                                }
+                            ]
+                        },
                         {
                             "rst_DisplayName": "IIIF",
                             "rst_DisplayHelpText": "If encoded according to IIIF standards, a URI linking to the file of a IIIF manifest.",
