@@ -1,4 +1,20 @@
 [
+                        {
+    "start": "2026-01-09",
+    "category": "Event",
+    "title": "Participation to an event",
+    "detail": "9 January, 2026",
+    "description": "2 projects for the Master Humanités Numériques Hackathon Week",
+    "location": {
+            "venue": "Ecole des chartes",
+            "city": "Paris, France"
+        },
+        "link": {
+            "page": false,
+            "label": "List of projects",
+            "url": "https://www.chartes.psl.eu/projets-pour-la-semaine-de-hackathons-pour-les-shs"
+        }
+  },
             {
     "start": "2025-12-11",
     "category": "Event",
