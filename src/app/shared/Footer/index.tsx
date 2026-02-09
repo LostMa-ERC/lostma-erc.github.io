@@ -62,7 +62,7 @@ const Pages = () => {
                 <div className='truncate'><Link className='link' href='/corpus/documentation'>Data Model</Link></div>
                 <div className='truncate'><Link className='link' href='/publications'>Publications</Link></div>
                 <div className='truncate'><Link className='link' href='/releases'>Releases</Link></div>
-                <div className='truncate'><Link className='link' href='/about'>Events</Link></div>
+                <div className='truncate'><Link className='link' href='/news'>News</Link></div>
             </div>
         </>
     )
