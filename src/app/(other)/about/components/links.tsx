@@ -88,11 +88,11 @@ export default function Links() {
 
                 <dt>
                 <h2 className="text-xl w-fit shadow-md border-solid border-2 hover:bg-gray-300 hover:border-dark rounded-xl p-1 bg-white/50">
-                    <Link className="flex items-center gap-4 px-4" href='/events'>
+                    <Link className="flex items-center gap-4 px-4" href='/news'>
                     <div className="md:size-8 size-6">
                         {ChartSVG}
                     </div>
-                    Events
+                    News
                     </Link>
                 </h2>
                 <p className="inline-block tracking-tight font-light">
