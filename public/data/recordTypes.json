@@ -1,5 +1,5 @@
 {
-    "lastModified": "2026-02-11",
+    "lastModified": "2026-02-12",
     "items": [
         {
             "id": 101,
@@ -3083,6 +3083,20 @@
                             "trm_Description": null,
                             "rst_RequirementType": "optional",
                             "rst_MaxValues": 0,
+                            "vocabTerms": null
+                        },
+                        {
+                            "rst_DisplayName": "description_freetext",
+                            "rst_DisplayHelpText": "Briefly describe any additional elements known on the document",
+                            "dty_ID": 1368,
+                            "dty_Type": "freetext",
+                            "dty_PtrTargetRectypeIDs": [],
+                            "dty_SemanticReferenceURL": null,
+                            "trm_TreeID": null,
+                            "trm_Label": null,
+                            "trm_Description": null,
+                            "rst_RequirementType": "optional",
+                            "rst_MaxValues": 1,
                             "vocabTerms": null
                         }
                     ]
