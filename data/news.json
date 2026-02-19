@@ -1,4 +1,18 @@
-[
+[ 
+        {
+        "start": "2025-02-19",
+        "category": "Publication",
+        "title": "Saved in translation? Diversity shared in French and Dutch medieval literature",
+        "detail": ["Mike Kestemont", "Folgert Karsdorp", "Jean-Baptiste Camps", "Remco Sleiderink", "Anne Chao"],
+        "description": "Over the past millennium, each of the three centuries of most rapid demographic growth in the West coincided with the diffusion of a new communications technology. This paper examines the hypothesis of Harold Innis (1894—1952) that there is two-way feedback between such innovations and economic growth. First, detailed historical evidence is studied. Second, Innis’s ideas are translated into a formal growth model. Finally, the model is simulated and its predictions compared with historical data. The results suggest a technological explanation for the long cycles of the period 1000—1975 and for the puzzling productivity growth slowdown in industrialized countries after 1975.",
+        "link": {
+            "page": false,
+            "label": "Read Online",
+            "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/E753799CA7E4888E98523E3E66461621/S2513843X2610036Xa.pdf/saved_in_translation_diversity_shared_in_french_and_dutch_medieval_literature.pdf"
+        },
+        "image": "/images/kestemont_karsdorp_al_2026.png",
+        "pub_category": "Preprint"
+    },
                         {
     "start": "2026-01-09",
     "category": "Event",
