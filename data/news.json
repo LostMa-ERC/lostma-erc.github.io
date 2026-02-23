@@ -1,4 +1,20 @@
 [ 
+                           {
+    "start": "2026-02-20",
+    "category": "Event",
+    "title": "Participation to an event",
+    "detail": "20 February, 2026",
+    "description": "Communication at the Centre Jean-Mabillon seminar",
+    "location": {
+            "venue": "Campus Condorcet",
+            "city": "Aubervilliers, France"
+        },
+        "link": {
+            "page": false,
+            "label": "Institution Website",
+            "url": "https://www.chartes.psl.eu/recherche/le-centre-jean-mabillon"
+        }
+  },
         {
         "start": "2026-02-19",
         "category": "Publication",
