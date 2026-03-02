@@ -141,10 +141,10 @@ export default function News() {
             <div className="grid md:grid-cols-2 p-4">
               <div className="pt-4 md:pt-2 text-black">
                 <h2 className="md:text-2xl text-xl italic">
-                  {/* <a target="_blank" rel="noreferrer" href="LINK GOES HERE">Dataset name</a> */}
+                  <a target="_blank" rel="noreferrer" href="https://zenodo.org/records/18793812">Medieval European Chivalric Narratives - Metadata on Stories, Texts and Witnesses</a>
                 </h2>
                 <p className="font-light text-xs md:text-base tracking-wide md:px-8"> {/* ADD THE FOLLOWING: min-h-20 */}
-                  {/* Dataset description */}
+                  Repository of the data collected as part of the LostMa project. It contains metadata on the Storyverses (~cycles), Stories, Texts, Witnesses, and document parts.
                 </p>
               </div>
               <div className="pt-4 md:pt-2">
