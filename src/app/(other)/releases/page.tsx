@@ -140,12 +140,18 @@ export default function News() {
           <div className="bg-light/30 text-white rounded-md md:rounded-lg">
             <div className="grid md:grid-cols-2 p-4">
               <div className="pt-4 md:pt-2 text-black">
+                <div className="border p-2 m-4 rounded">
                 <h2 className="md:text-2xl text-xl italic">
+                  <div className="md:w-[32px] w-[28px]">{CLISVG}</div>
                   <a target="_blank" rel="noreferrer" href="https://zenodo.org/records/18793812">Medieval European Chivalric Narratives - Metadata on Stories, Texts and Witnesses</a>
                 </h2>
                 <p className="font-light text-xs md:text-base tracking-wide md:px-8"> {/* ADD THE FOLLOWING: min-h-20 */}
                   Repository of the data collected as part of the LostMa project. It contains metadata on the Storyverses (~cycles), Stories, Texts, Witnesses, and document parts.
                 </p>
+                  <a className="grid place-content-center" href="https://zenodo.org/records/18793812" target="_blank" rel="noreferrer">
+                  <p className="link font-light text-xs md:text-base tracking-wide md:px-8 w-fit">https://zenodo.org/records/18793812</p>
+                </a>
+                </div>
               </div>
               <div className="pt-4 md:pt-2">
                 {/* <Image alt="IMAGE DESCRIPTION GOES HERE" width={800} height={300} src="IMAGE LINK GOES HERE"/> */}
