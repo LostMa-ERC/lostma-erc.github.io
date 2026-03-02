@@ -1,32 +1,4 @@
 [ 
-           {
-        "start": "2025-11-21",
-        "category": "Publication",
-        "title": "Transmission and Survival of Iberian Patristic Texts (3rd–5th Centuries)",
-        "detail": ["Émilie Guidi", "Théo Moins", "Jean-Baptiste Camps"],
-        "description": "This paper analyses the textual transmission of the Church Fathers from the Iberian Peninsula. The corpus is characterised by formal (prose, verse) and generic (sermons, letters, chronicles, epics) heterogeneity. Our computational analyses reveal two contrasting transmission dynamics: prose texts are more numerous but are transmitted by fewer witnesses, sometimes only via their inclusion in medieval collections. Poetic texts, fewer in number, have generated a higher number of witnesses, likely due to their integration in large literary projects. We model these dynamics using two approaches: probabilistic unseen species models, which estimate an upper bound of text and witness survival rates and indicate low corpus diversity and evenness; and stochastic birth-death models, which explore cultural evolutionary patterns in text and witness populations. Results suggest a text survival rate below 67% (potentially closer to 20%) and a manuscript survival rate below 10% (possibly under 1%). Notably, these estimates diverge from prior findings for Medieval French literature, where unseen species and birth-death models yielded similar results. This discrepancy suggests that diachrony - specifically, the broader chronological range of the patristic corpus - plays a key role in shaping transmission outcomes. Our findings also highlight limitations of the birth-death model, particularly in accounting for highly successful texts and in temporal variations in production/destruction rates.",
-        "link": {
-            "page": false,
-            "label": "Read Online",
-            "url": "https://anthology.ach.org/volumes/vol0003/transmission-survival-of-iberian-patristic-texts/10.63744@WVZDLY7xI2fT.pdf"
-        },
-        "image": "/images/guidi_moins_al_2025.png",
-        "pub_category": "Conference Proceedings"
-    },
-         {
-        "start": "2025-11-21",
-        "category": "Publication",
-        "title": "Why Do Older Books Survive (Sometimes)? Modelling the Time Distribution of Manuscripts with a Birth-Death Approach",
-        "detail": ["Ulysse Godreau", "Théo Moins", "Kelly Christensen", "Jean-Baptiste Camps"],
-        "description": "Understanding the survival of ancient manuscripts dating back to different periods and centuries is crucial for gathering insights into historical textual traditions and, more generally, cultural history. Previous studies have modelled the transmission of texts, particularly in manuscript form, as a birth-death process, in which the existing manuscript witnesses of a given text are simultaneously being copied and destroyed at given rates. However, these models have not fully accounted for key properties observed in real historical written traditions, such as the temporal distribution of surviving manuscripts and the heavy-tailed distribution of surviving witnesses by text. In this study, we refine the birth-death process to better explain these dynamics. We investigate the role of extrinsic historical factors on the transmission of texts, through the use of variable copy and destruction rates to reflect extrinsic historical factors, such as fluctuations in the book market or disruptions like wars. Additionally, we look into the effect of intrinsic features of the book themselves and the uses for which they were designed, be it to be stored on a library shelf or to be intensively used and copied. We test those refinements against empirical data collected for medieval traditions. Preliminary results indicate that these enhancements allow us to establish variations in production and destruction rates that align with known macro-level historical dynamics. This revised approach helps explain why we do in fact preserve (some) of the older manuscripts, and not only their most recent descendants, offering a more comprehensive understanding of manuscript survival.",
-        "link": {
-            "page": false,
-            "label": "Read Online",
-            "url": "https://anthology.ach.org/volumes/vol0003/why-do-older-books-survive-sometimes-modelling-of/10.63744@c4L67UxjQVI3.pdf"
-        },
-        "image": "/images/godreau_moins_al_2025.png",
-        "pub_category": "Conference Proceedings"
-    },
                            {
     "start": "2026-02-20",
     "category": "Event",
@@ -73,6 +45,34 @@
             "url": "https://www.chartes.psl.eu/projets-pour-la-semaine-de-hackathons-pour-les-shs"
         }
   },
+                      {
+        "start": "2025-12-11",
+        "category": "Publication",
+        "title": "Transmission and Survival of Iberian Patristic Texts (3rd–5th Centuries)",
+        "detail": ["Émilie Guidi", "Théo Moins", "Jean-Baptiste Camps"],
+        "description": "This paper analyses the textual transmission of the Church Fathers from the Iberian Peninsula. The corpus is characterised by formal (prose, verse) and generic (sermons, letters, chronicles, epics) heterogeneity. Our computational analyses reveal two contrasting transmission dynamics: prose texts are more numerous but are transmitted by fewer witnesses, sometimes only via their inclusion in medieval collections. Poetic texts, fewer in number, have generated a higher number of witnesses, likely due to their integration in large literary projects. We model these dynamics using two approaches: probabilistic unseen species models, which estimate an upper bound of text and witness survival rates and indicate low corpus diversity and evenness; and stochastic birth-death models, which explore cultural evolutionary patterns in text and witness populations. Results suggest a text survival rate below 67% (potentially closer to 20%) and a manuscript survival rate below 10% (possibly under 1%). Notably, these estimates diverge from prior findings for Medieval French literature, where unseen species and birth-death models yielded similar results. This discrepancy suggests that diachrony - specifically, the broader chronological range of the patristic corpus - plays a key role in shaping transmission outcomes. Our findings also highlight limitations of the birth-death model, particularly in accounting for highly successful texts and in temporal variations in production/destruction rates.",
+        "link": {
+            "page": false,
+            "label": "Read Online",
+            "url": "https://anthology.ach.org/volumes/vol0003/transmission-survival-of-iberian-patristic-texts/10.63744@WVZDLY7xI2fT.pdf"
+        },
+        "image": "/images/guidi_moins_al_2025.png",
+        "pub_category": "Conference Proceedings"
+    },
+         {
+        "start": "2025-12-11",
+        "category": "Publication",
+        "title": "Why Do Older Books Survive (Sometimes)? Modelling the Time Distribution of Manuscripts with a Birth-Death Approach",
+        "detail": ["Ulysse Godreau", "Théo Moins", "Kelly Christensen", "Jean-Baptiste Camps"],
+        "description": "Understanding the survival of ancient manuscripts dating back to different periods and centuries is crucial for gathering insights into historical textual traditions and, more generally, cultural history. Previous studies have modelled the transmission of texts, particularly in manuscript form, as a birth-death process, in which the existing manuscript witnesses of a given text are simultaneously being copied and destroyed at given rates. However, these models have not fully accounted for key properties observed in real historical written traditions, such as the temporal distribution of surviving manuscripts and the heavy-tailed distribution of surviving witnesses by text. In this study, we refine the birth-death process to better explain these dynamics. We investigate the role of extrinsic historical factors on the transmission of texts, through the use of variable copy and destruction rates to reflect extrinsic historical factors, such as fluctuations in the book market or disruptions like wars. Additionally, we look into the effect of intrinsic features of the book themselves and the uses for which they were designed, be it to be stored on a library shelf or to be intensively used and copied. We test those refinements against empirical data collected for medieval traditions. Preliminary results indicate that these enhancements allow us to establish variations in production and destruction rates that align with known macro-level historical dynamics. This revised approach helps explain why we do in fact preserve (some) of the older manuscripts, and not only their most recent descendants, offering a more comprehensive understanding of manuscript survival.",
+        "link": {
+            "page": false,
+            "label": "Read Online",
+            "url": "https://anthology.ach.org/volumes/vol0003/why-do-older-books-survive-sometimes-modelling-of/10.63744@c4L67UxjQVI3.pdf"
+        },
+        "image": "/images/godreau_moins_al_2025.png",
+        "pub_category": "Conference Proceedings"
+    },
             {
     "start": "2025-12-11",
     "category": "Event",
@@ -189,7 +189,7 @@
         "category": "Publication",
         "title": "One tree to Yule them all? Reflexions on intertextuality and text transmission",
         "detail": ["Jean-Baptiste Camps", "Kelly Christensen", "Ulysse Godreau", "Théo Moins"],
-        "description": "",
+        "description": "The production of narrative fictions often balances between innovation, where new characters and stories are created, and derivation, where new works are based on existing ones. Medieval chivalric narratives are a typical example, in which many texts are situated inside existing cycles (e.g. the Grail cycle) and build off one another. This work will report on an ongoing experiment in modelling medieval manuscript transmission. Distributions of witnesses per text exhibit a Pareto-like character, for which simple birth-and-death models cannot account. We show that they are superseded by models including speciation events (such as Yule model). An Approximate Bayesian Computation (ABC) algorithm is then used to estimate parameters for Medieval Western European literature based on a corpus of 30,000 texts produced between 1100 and 1500.",
         "link": {
             "page": false,
             "label": "Read Online",
