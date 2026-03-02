@@ -2,11 +2,15 @@
    {
         "start": "2026-02-26",
         "category": "Other",
-        "title": "Data set published online",
+        "title": "Dataset published online",
         "detail": "26 February, 2026",
         "description": "The first release of the data collected by the team is now available online",
         "location": null,
-        "link": "https://zenodo.org/records/18793812"
+        "link": {
+            "page": false,
+            "label": "Zenodo",
+            "url": "https://zenodo.org/records/18793812"
+         },
     },
                            {
     "start": "2026-02-20",
