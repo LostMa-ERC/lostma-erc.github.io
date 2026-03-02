@@ -152,6 +152,18 @@ export default function News() {
                   <p className="link font-light text-xs md:text-base tracking-wide md:px-8 w-fit">https://zenodo.org/records/18793812</p>
                 </a>
                 </div>
+                <div className="border p-2 m-4 rounded">
+                <h2 className="flex space-x-1">
+                  <div className="md:w-[32px] w-[28px]">{CLISVG}</div>
+                  <a className="md:text-2xl text-xl italic" target="_blank" rel="noreferrer" href="https://github.com/OpenStemmata/database">Open Stemmata Database</a>
+                </h2>
+                <p className="font-light text-xs md:text-base tracking-wide md:px-8"> {/* ADD THE FOLLOWING: min-h-20 */}
+                  This repository contains an open source collection of historical text genealogies, in forms of tree-like graphs (stemma) for a variety of languages. More informations on the <a className="link" href="https://openstemmata.github.io/" target="_blank" rel="noreferrer">Website</a>
+                </p>
+                  <a className="grid place-content-center" href="https://github.com/OpenStemmata/database" target="_blank" rel="noreferrer">
+                  <p className="link font-light text-xs md:text-base tracking-wide md:px-8 w-fit">https://github.com/OpenStemmata/database</p>
+                </a>
+                </div>
               </div>
               <div className="pt-4 md:pt-2">
                 {/* <Image alt="IMAGE DESCRIPTION GOES HERE" width={800} height={300} src="IMAGE LINK GOES HERE"/> */}
