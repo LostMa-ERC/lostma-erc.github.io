@@ -184,6 +184,20 @@
         },
         "location": null
     },
+               {
+        "start": "2025-07-17",
+        "category": "Publication",
+        "title": "One tree to Yule them all? Reflexions on intertextuality and text transmission",
+        "detail": ["Jean-Baptiste Camps", "Kelly Christensen", "Ulysse Godreau", "Théo Moins"],
+        "description": "",
+        "link": {
+            "page": false,
+            "label": "Read Online",
+            "url": "https://enc.hal.science/hal-05531280"
+        },
+        "image": "/images/camps_christensen_al_2025.png",
+        "pub_category": "Communication"
+    },
     {
         "start": "2025-07-17",
         "category": "Publication",
