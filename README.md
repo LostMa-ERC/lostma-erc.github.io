@@ -95,7 +95,7 @@ $ npm run dev
 - [Kelly Christensen](https://github.com/kat-kel/):
 development, documentation, CI/CD workflows, content
 - [Virgile Reignier](https://github.com/virgile-reignier):
-development, CI/CD workflows, content
+development, content
 - [Jean-Baptiste Camps](https://github.com/Jean-Baptiste-Camps):
 project leader, content
 - [Théo Moins](https://github.com/TheoMoins/):
