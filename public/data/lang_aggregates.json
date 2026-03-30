@@ -1,5 +1,5 @@
 {
-  "lastModified": "2026-03-27",
+  "lastModified": "2026-03-30",
   "items": [
     {
       "texts": 78,
@@ -50,8 +50,8 @@
       "lang": "Franco-provençal"
     },
     {
-      "texts": 6,
-      "witnesses": 0,
+      "texts": 153,
+      "witnesses": 106,
       "code": "gmh",
       "lang": "Middle High German"
     },
@@ -78,6 +78,12 @@
       "witnesses": 16,
       "code": "pro",
       "lang": "Old Occitan, Provençal"
+    },
+    {
+      "texts": 1,
+      "witnesses": 0,
+      "code": "spa",
+      "lang": "Spanish or Castilian"
     }
   ]
 }
