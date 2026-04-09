@@ -1,5 +1,5 @@
 {
-    "lastModified": "2026-04-08",
+    "lastModified": "2026-04-09",
     "items": [
         {
             "id": 101,
@@ -178,6 +178,12 @@
                                     "description": "Latin",
                                     "url": "https://iso639-3.sil.org/code/lat",
                                     "id": 9839
+                                },
+                                {
+                                    "label": "sga (Old Irish)",
+                                    "description": "Old Irish",
+                                    "url": "https://iso639-3.sil.org/code/sga",
+                                    "id": 9842
                                 }
                             ]
                         },
@@ -3852,6 +3858,12 @@
                                     "description": "Latin",
                                     "url": "https://iso639-3.sil.org/code/lat",
                                     "id": 9839
+                                },
+                                {
+                                    "label": "sga (Old Irish)",
+                                    "description": "Old Irish",
+                                    "url": "https://iso639-3.sil.org/code/sga",
+                                    "id": 9842
                                 }
                             ]
                         },
