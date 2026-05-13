@@ -1,29 +1,29 @@
 {
-  "lastModified": "2026-05-12",
+  "lastModified": "2026-05-13",
   "items": [
     {
       "prose_texts": 47,
-      "verse_texts": 238,
+      "verse_texts": 241,
       "wit_count": 1
     },
     {
       "prose_texts": 21,
-      "verse_texts": 77,
+      "verse_texts": 80,
       "wit_count": 2
     },
     {
       "prose_texts": 8,
-      "verse_texts": 37,
+      "verse_texts": 43,
       "wit_count": 3
     },
     {
       "prose_texts": 4,
-      "verse_texts": 30,
+      "verse_texts": 31,
       "wit_count": 4
     },
     {
       "prose_texts": 11,
-      "verse_texts": 30,
+      "verse_texts": 27,
       "wit_count": 5
     },
     {
@@ -33,37 +33,37 @@
     },
     {
       "prose_texts": 2,
-      "verse_texts": 15,
+      "verse_texts": 20,
       "wit_count": 7
     },
     {
       "prose_texts": 4,
-      "verse_texts": 8,
+      "verse_texts": 9,
       "wit_count": 8
     },
     {
       "prose_texts": 1,
-      "verse_texts": 12,
+      "verse_texts": 10,
       "wit_count": 9
     },
     {
       "prose_texts": 2,
-      "verse_texts": 5,
+      "verse_texts": 6,
       "wit_count": 10
     },
     {
       "prose_texts": 0,
-      "verse_texts": 10,
+      "verse_texts": 6,
       "wit_count": 11
     },
     {
       "prose_texts": 1,
-      "verse_texts": 6,
+      "verse_texts": 7,
       "wit_count": 12
     },
     {
       "prose_texts": 2,
-      "verse_texts": 7,
+      "verse_texts": 3,
       "wit_count": 13
     },
     {
@@ -73,17 +73,17 @@
     },
     {
       "prose_texts": 0,
-      "verse_texts": 4,
+      "verse_texts": 5,
       "wit_count": 15
     },
     {
       "prose_texts": 0,
-      "verse_texts": 2,
+      "verse_texts": 4,
       "wit_count": 16
     },
     {
       "prose_texts": 0,
-      "verse_texts": 5,
+      "verse_texts": 1,
       "wit_count": 17
     },
     {
@@ -98,8 +98,13 @@
     },
     {
       "prose_texts": 0,
-      "verse_texts": 1,
+      "verse_texts": 3,
       "wit_count": 20
+    },
+    {
+      "prose_texts": 0,
+      "verse_texts": 2,
+      "wit_count": 21
     },
     {
       "prose_texts": 1,
@@ -107,13 +112,8 @@
       "wit_count": 22
     },
     {
-      "prose_texts": 0,
-      "verse_texts": 2,
-      "wit_count": 24
-    },
-    {
       "prose_texts": 1,
-      "verse_texts": 1,
+      "verse_texts": 0,
       "wit_count": 26
     },
     {
@@ -122,19 +122,24 @@
       "wit_count": 27
     },
     {
-      "prose_texts": 0,
-      "verse_texts": 1,
-      "wit_count": 28
-    },
-    {
       "prose_texts": 1,
-      "verse_texts": 1,
+      "verse_texts": 2,
       "wit_count": 30
     },
     {
       "prose_texts": 0,
       "verse_texts": 1,
+      "wit_count": 31
+    },
+    {
+      "prose_texts": 0,
+      "verse_texts": 1,
       "wit_count": 32
+    },
+    {
+      "prose_texts": 0,
+      "verse_texts": 1,
+      "wit_count": 34
     },
     {
       "prose_texts": 1,
@@ -147,13 +152,18 @@
       "wit_count": 37
     },
     {
+      "prose_texts": 0,
+      "verse_texts": 1,
+      "wit_count": 38
+    },
+    {
       "prose_texts": 1,
       "verse_texts": 0,
       "wit_count": 39
     },
     {
       "prose_texts": 0,
-      "verse_texts": 2,
+      "verse_texts": 1,
       "wit_count": 40
     },
     {
@@ -164,12 +174,17 @@
     {
       "prose_texts": 0,
       "verse_texts": 1,
-      "wit_count": 47
+      "wit_count": 43
     },
     {
       "prose_texts": 0,
       "verse_texts": 1,
-      "wit_count": 55
+      "wit_count": 48
+    },
+    {
+      "prose_texts": 0,
+      "verse_texts": 1,
+      "wit_count": 53
     },
     {
       "prose_texts": 1,
@@ -178,8 +193,13 @@
     },
     {
       "prose_texts": 1,
-      "verse_texts": 1,
+      "verse_texts": 0,
       "wit_count": 59
+    },
+    {
+      "prose_texts": 0,
+      "verse_texts": 1,
+      "wit_count": 60
     },
     {
       "prose_texts": 1,
@@ -197,14 +217,19 @@
       "wit_count": 67
     },
     {
-      "prose_texts": 1,
+      "prose_texts": 0,
       "verse_texts": 1,
-      "wit_count": 93
+      "wit_count": 81
     },
     {
       "prose_texts": 0,
       "verse_texts": 1,
-      "wit_count": 117
+      "wit_count": 88
+    },
+    {
+      "prose_texts": 1,
+      "verse_texts": 0,
+      "wit_count": 93
     },
     {
       "prose_texts": 1,

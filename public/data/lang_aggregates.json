@@ -1,5 +1,5 @@
 {
-  "lastModified": "2026-05-12",
+  "lastModified": "2026-05-13",
   "items": [
     {
       "texts": 78,
@@ -50,10 +50,22 @@
       "lang": "Franco-provençal"
     },
     {
+      "texts": 21,
+      "witnesses": 0,
+      "code": "ghg",
+      "lang": "Early Modern Irish, Hiberno-Scottish Gaelic"
+    },
+    {
       "texts": 153,
-      "witnesses": 1145,
+      "witnesses": 1165,
       "code": "gmh",
       "lang": "Middle High German"
+    },
+    {
+      "texts": 2,
+      "witnesses": 1,
+      "code": "gml",
+      "lang": "Middle Low German"
     },
     {
       "texts": 1,
@@ -68,6 +80,12 @@
       "lang": "Latin"
     },
     {
+      "texts": 92,
+      "witnesses": 0,
+      "code": "mga",
+      "lang": "Middle Irish"
+    },
+    {
       "texts": 79,
       "witnesses": 58,
       "code": "non_WEST",
@@ -78,6 +96,12 @@
       "witnesses": 16,
       "code": "pro",
       "lang": "Old Occitan, Provençal"
+    },
+    {
+      "texts": 72,
+      "witnesses": 0,
+      "code": "sga",
+      "lang": "Old Irish"
     },
     {
       "texts": 1,
