@@ -1,5 +1,5 @@
 {
-    "lastModified": "2026-05-15",
+    "lastModified": "2026-05-18",
     "items": [
         {
             "id": 101,
@@ -462,12 +462,6 @@
                                     "description": "Reserved for \\'petit vers\\' of unknown length, until correct length is known",
                                     "url": null,
                                     "id": 9840
-                                },
-                                {
-                                    "label": "pentasyllabic",
-                                    "description": null,
-                                    "url": null,
-                                    "id": 9843
                                 }
                             ]
                         },
