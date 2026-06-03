@@ -1,5 +1,5 @@
 {
-  "lastModified": "2026-06-02",
+  "lastModified": "2026-06-03",
   "items": [
     {
       "texts": 78,
@@ -20,7 +20,7 @@
       "lang": "Middle French"
     },
     {
-      "texts": 280,
+      "texts": 283,
       "witnesses": 1807,
       "code": "fro",
       "lang": "Old French"
@@ -56,7 +56,7 @@
       "lang": "Early Modern Irish, Hiberno-Scottish Gaelic"
     },
     {
-      "texts": 153,
+      "texts": 150,
       "witnesses": 1165,
       "code": "gmh",
       "lang": "Middle High German"
@@ -74,7 +74,7 @@
       "lang": "Italian"
     },
     {
-      "texts": 17,
+      "texts": 30,
       "witnesses": 0,
       "code": "lat",
       "lang": "Latin"
