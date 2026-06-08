@@ -1,5 +1,5 @@
 {
-  "lastModified": "2026-06-04",
+  "lastModified": "2026-06-08",
   "items": [
     {
       "prose_texts": 51,
@@ -8,7 +8,7 @@
     },
     {
       "prose_texts": 23,
-      "verse_texts": 78,
+      "verse_texts": 77,
       "wit_count": 2
     },
     {
@@ -23,7 +23,7 @@
     },
     {
       "prose_texts": 11,
-      "verse_texts": 27,
+      "verse_texts": 28,
       "wit_count": 5
     },
     {
@@ -123,13 +123,8 @@
     },
     {
       "prose_texts": 1,
-      "verse_texts": 2,
+      "verse_texts": 3,
       "wit_count": 30
-    },
-    {
-      "prose_texts": 0,
-      "verse_texts": 1,
-      "wit_count": 31
     },
     {
       "prose_texts": 0,
@@ -219,7 +214,7 @@
     {
       "prose_texts": 0,
       "verse_texts": 1,
-      "wit_count": 81
+      "wit_count": 80
     },
     {
       "prose_texts": 0,
