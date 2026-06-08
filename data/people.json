@@ -59,7 +59,7 @@
         {
             "forename": "Elisabeth de",
             "surname": "Bruijn",
-            "role": "Middle Dutch Corpus"
+            "role": "Middle Dutch Corpus, Middle High German Corpus"
         },
         {
             "forename": "Mike",
@@ -74,12 +74,22 @@
         {
             "forename": "Cecile",
             "surname": "Vermaas",
-            "role": "Middle Dutch Corpus, Middle English Corpus"
+            "role": "Middle Dutch Corpus, Middle English Corpus, Middle High German Corpus"
         },
         {
             "forename": "Katarzyna",
             "surname": "Kapitan",
             "role": "Old Norse Corpus"
+        },
+                {
+            "forename": "Paola",
+            "surname": "Peratello",
+            "role": "Old Norse Corpus"
+        },
+                {
+            "forename": "Anaïs",
+            "surname": "Leucht",
+            "role": "Irish Corpus"
         },
         {
             "forename": "Carolina",
