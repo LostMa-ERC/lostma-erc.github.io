@@ -24,6 +24,11 @@
         "location": {
             "venue": "École nationale des chartes",
             "city": "Paris, France"
+        },
+        "link": {
+            "page": false,
+            "label": "The team",
+            "url": "https://lostma-erc.github.io/about"
         }
     },
    {
