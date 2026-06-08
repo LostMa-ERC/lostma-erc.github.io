@@ -15,6 +15,17 @@
             "url": "https://c2s.sciencesconf.org/data/pages/booklet.pdf"
         }
   },
+      {
+        "start": "2026-03-30",
+        "category": "Event",
+        "title": "LostMa Workshop",
+        "detail": "30 March to 1st April 2026",
+        "description": "Workshop to work with initial corpora entered into the database and setting the direction for our future work, with the involvement of all our collaborators.",
+        "location": {
+            "venue": "École nationale des chartes",
+            "city": "Paris, France"
+        }
+    },
    {
         "start": "2026-02-26",
         "category": "Other",
@@ -297,22 +308,6 @@
             "page": false,
             "label": "Job Description",
             "url": "https://euraxess.ec.europa.eu/jobs/320469"
-        }
-    },
-    {
-        "start": "2025-04-01",
-        "category": "Event",
-        "title": "Hackathon 2025",
-        "detail": "TBD, 2025",
-        "description": "With initial corpora entered into the database, hackathon to work with and analyse the data, driven by scientific inquiries and leading to early results.",
-        "location": {
-            "venue": "École nationale des chartes",
-            "city": "Paris, France"
-        },
-        "link": {
-            "page": true,
-            "label": "Conference Website",
-            "url": "/news/hackathon2025"
         }
     },
     {
