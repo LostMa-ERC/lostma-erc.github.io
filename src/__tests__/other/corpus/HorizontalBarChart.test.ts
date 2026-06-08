@@ -5,11 +5,13 @@ import '@testing-library/jest-dom/vitest';
 import Page from "@/app/(other)/corpus/page";
 
 // Patch fix for Reference Error with ResizeObserver, necessary for Charts
-global.ResizeObserver = vi.fn().mockImplementation(() => ({
-  observe: vi.fn(),
-  unobserve: vi.fn(),
-  disconnect: vi.fn(),
-}))
+class ResizeObserverMock {
+  observe = vi.fn()
+  unobserve = vi.fn()
+  disconnect = vi.fn()
+}
+
+global.ResizeObserver = ResizeObserverMock as unknown as typeof ResizeObserver
 
 describe('Charts', () => {
   it('Render page with generated barchart', () => {
