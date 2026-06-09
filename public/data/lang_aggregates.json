@@ -1,5 +1,5 @@
 {
-  "lastModified": "2026-06-08",
+  "lastModified": "2026-06-09",
   "items": [
     {
       "texts": 78,
@@ -38,8 +38,8 @@
       "lang": "Franco-italian"
     },
     {
-      "texts": 2,
-      "witnesses": 6,
+      "texts": 3,
+      "witnesses": 8,
       "code": "fro_PRO",
       "lang": "Franco-Occitan"
     },
@@ -92,7 +92,7 @@
       "lang": "West Old Norse"
     },
     {
-      "texts": 17,
+      "texts": 19,
       "witnesses": 16,
       "code": "pro",
       "lang": "Old Occitan, Provençal"
