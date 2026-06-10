@@ -1,5 +1,5 @@
 {
-    "lastModified": "2026-06-09",
+    "lastModified": "2026-06-10",
     "items": [
         {
             "id": 101,
@@ -2619,6 +2619,20 @@
                             "trm_Label": null,
                             "trm_Description": null,
                             "rst_RequirementType": "recommended",
+                            "rst_MaxValues": 1,
+                            "vocabTerms": null
+                        },
+                        {
+                            "rst_DisplayName": "place_of_creation_freetext",
+                            "rst_DisplayHelpText": "Placeholder notes about the entity\\'s place of creation, to eventually be converted into a relation to a Place entity.",
+                            "dty_ID": 1328,
+                            "dty_Type": "freetext",
+                            "dty_PtrTargetRectypeIDs": [],
+                            "dty_SemanticReferenceURL": null,
+                            "trm_TreeID": null,
+                            "trm_Label": null,
+                            "trm_Description": null,
+                            "rst_RequirementType": "optional",
                             "rst_MaxValues": 1,
                             "vocabTerms": null
                         },

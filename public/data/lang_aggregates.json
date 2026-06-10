@@ -1,5 +1,5 @@
 {
-  "lastModified": "2026-06-09",
+  "lastModified": "2026-06-10",
   "items": [
     {
       "texts": 78,
@@ -92,8 +92,8 @@
       "lang": "West Old Norse"
     },
     {
-      "texts": 19,
-      "witnesses": 16,
+      "texts": 23,
+      "witnesses": 19,
       "code": "pro",
       "lang": "Old Occitan, Provençal"
     },
