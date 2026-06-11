@@ -1,6 +1,12 @@
 {
-  "lastModified": "2026-06-10",
+  "lastModified": "2026-06-11",
   "items": [
+    {
+      "texts": 1,
+      "witnesses": 0,
+      "code": "cat",
+      "lang": "Catalan"
+    },
     {
       "texts": 78,
       "witnesses": 170,
