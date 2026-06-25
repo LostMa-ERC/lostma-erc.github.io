@@ -114,7 +114,7 @@ export default function News() {
                   <a className="md:text-2xl text-xl italic" href="https://github.com/LostMa-ERC/hsc-scraper" target="_blank" rel="noreferrer">Handschriftencensus</a>
                 </h2>
                 <p className="font-light text-xs md:text-base tracking-wide md:px-8">
-                  Scrape metadata about manuscripts and works from the <a className="link" href="https://www.handschriftencensus.de/" target="_blank" rel="noreferrer">Handschriftencensus</a> website, which is managed by the <a className="link" href="https://www.uni-marburg.de/" target="_blank" rel="noreferrer">Philipps-Universität Marburg</a> and the <a className="link" href="https://www.adwmainz.de" target="_blank" rel="noreferrer">kademie der Wissenschaften und der Literatur Mainz</a>.
+                  Scrape metadata about manuscripts and works from the <a className="link" href="https://www.handschriftencensus.de/" target="_blank" rel="noreferrer">Handschriftencensus</a> website, which is managed by the <a className="link" href="https://www.uni-marburg.de/" target="_blank" rel="noreferrer">Philipps-Universität Marburg</a> and the <a className="link" href="https://www.adwmainz.de" target="_blank" rel="noreferrer">Akademie der Wissenschaften und der Literatur Mainz</a>.
                 </p>
                 <p className="font-light text-xs md:text-base tracking-wide md:px-8">
                   Collect works and their witnesses, and create records for all the linked codicological units.
