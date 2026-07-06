@@ -1,4 +1,32 @@
 [ 
+                   {
+        "start": "2026-09-16",
+        "category": "Publication",
+        "title": "Linking Medieval Europe: collecting and connecting data on multilingual textual traditions",
+        "detail": ["Virgile Reignier", "Jean-Baptiste Camp", "Elisabeth de Bruijn", "Mike Kestemont", "Maud Mélinand", "Remco Sleiderink", "Cecile Vermaas"],
+        "description": "This paper presents the data infrastructure developed by the ERC LostMa project to collect, connect and publish multilingual data on medieval textual traditions. It introduces an interoperable data model and an open workflow linking descriptive metadata, transcriptions and stemmata to support large-scale computational research on textual transmission.",
+        "link": {
+            "page": false,
+            "label": "Read Online",
+            "url": "https://enc.hal.science/hal-05676740"
+        },
+        "image": "/images/reignier_camps_2026.png",
+        "pub_category": "Communication"
+    },
+                 {
+        "start": "2026-09-16",
+        "category": "Publication",
+        "title": "Automated detection and transcription of stemmata codicum from digitised publications",
+        "detail": ["Marie Bizais-Lillig", "Jean-Baptiste Camp", "Ombeline Ferraris", "Eglantine Gaglione", "Mathias Garnier", "Ulysse Godreau"],
+        "description": "This paper presents an automated pipeline for detecting stemmata codicum in digitised scholarly publications and converting them into structured, machine-readable data. Developed within the OpenStemmata project, it combines computer vision, vision-language models and semantic encoding to support the large-scale study of textual transmission",
+        "link": {
+            "page": false,
+            "label": "Read Online",
+            "url": "https://enc.hal.science/hal-05674427v1"
+        },
+        "image": "/images/bizais_lilling_camps_al_2026.png",
+        "pub_category": "Communication"
+    },
                               {
     "start": "2026-05-18",
     "category": "Event",
