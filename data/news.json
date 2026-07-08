@@ -1,4 +1,18 @@
 [ 
+          {
+        "start": "2026-07-07",
+        "category": "Publication",
+        "title": "On the transmission of texts: written cultures as complex systems",
+        "detail": ["Jean-Baptiste Camps", "Julien Randon-Furling", "Ulysse Godreau"],
+        "description": "Our knowledge of past cultures relies considerably on written material. For centuries, texts have been copied, altered, then transmitted or lost - eventually, from surviving documents, philologists attempt to reconstruct text phylogenies (“stemmata”), and past written cultures. Nonetheless, fundamental questions on the extent of losses, representativeness of surviving artefacts, and the dynamics of text genealogies have remained open since the earliest days of philology. To address these, we radically rethink the study of text transmission through a complexity science approach, integrating stochastic modelling, computer simulations, and data analysis, in a parsimonious mindset akin to statistical physics and evolutionary biology. Thus, we design models that are simple and general, while accounting for diachrony and other key aspects of the dynamical process underlying text phylogenies, such as the extinction of entire branches or trees. On the well-known case study of Medieval French chivalric literature, we find that up to 60% of texts and 99% of manuscripts were lost (consistent with recent synchronic “biodiversity” analyses). We also settle a hundred-year-old controversy on the bifidity of stemmata. Further, our null model suggests that pure chance (“drift”) is not the only mechanism at play, and we provide a theoretical and empirical framework for future investigation.",
+        "link": {
+            "page": false,
+            "label": "Read Online",
+            "url": "https://academic.oup.com/pnasnexus/article/5/7/pgag207/8724046"
+        },
+        "image": "/images/camps_randon-furling_al_2025.png",
+        "pub_category": "Article"
+    },
                    {
         "start": "2026-09-16",
         "category": "Publication",
@@ -312,20 +326,6 @@
         },
         "image": "/images/camps_cafiero_al_2025.png",
         "pub_category": "Communication"
-    },
-        {
-        "start": "2025-06-03",
-        "category": "Publication",
-        "title": "On the transmission of texts: written cultures as complex systems",
-        "detail": ["Jean-Baptiste Camps", "Julien Randon-Furling", "Ulysse Godreau"],
-        "description": "Our knowledge of past cultures relies considerably on written material. For centuries, texts have been copied, altered, then transmitted or lost - eventually, from surviving documents, philologists attempt to reconstruct text phylogenies (“stemmata”), and past written cultures. Nonetheless, fundamental questions on the extent of losses, representativeness of surviving artefacts, and the dynamics of text genealogies have remained open since the earliest days of philology. To address these, we radically rethink the study of text transmission through a complexity science approach, integrating stochastic modelling, computer simulations, and data analysis, in a parsimonious mindset akin to statistical physics and evolutionary biology. Thus, we design models that are simple and general, while accounting for diachrony and other key aspects of the dynamical process underlying text phylogenies, such as the extinction of entire branches or trees. On the well-known case study of Medieval French chivalric literature, we find that up to 60% of texts and 99% of manuscripts were lost (consistent with recent synchronic “biodiversity” analyses). We also settle a hundred-year-old controversy on the bifidity of stemmata. Further, our null model suggests that pure chance (“drift”) is not the only mechanism at play, and we provide a theoretical and empirical framework for future investigation.",
-        "link": {
-            "page": false,
-            "label": "Read Online",
-            "url": "https://arxiv.org/abs/2505.19246"
-        },
-        "image": "/images/camps_randon-furling_al_2025.png",
-        "pub_category": "Preprint"
     },
     {
         "start": "2025-03-01",
