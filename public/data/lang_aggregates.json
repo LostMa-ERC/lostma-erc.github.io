@@ -1,5 +1,5 @@
 {
-  "lastModified": "2026-07-07",
+  "lastModified": "2026-07-08",
   "items": [
     {
       "texts": 1,
@@ -57,7 +57,7 @@
     },
     {
       "texts": 21,
-      "witnesses": 0,
+      "witnesses": 39,
       "code": "ghg",
       "lang": "Early Modern Irish, Hiberno-Scottish Gaelic"
     },
@@ -87,7 +87,7 @@
     },
     {
       "texts": 92,
-      "witnesses": 0,
+      "witnesses": 228,
       "code": "mga",
       "lang": "Middle Irish"
     },
@@ -105,7 +105,7 @@
     },
     {
       "texts": 72,
-      "witnesses": 0,
+      "witnesses": 253,
       "code": "sga",
       "lang": "Old Irish"
     },
