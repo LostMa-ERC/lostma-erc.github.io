@@ -1,5 +1,5 @@
 {
-  "lastModified": "2026-08-25",
+  "lastModified": "2026-08-26",
   "items": [
     {
       "texts": 1,
@@ -60,6 +60,12 @@
       "witnesses": 39,
       "code": "ghg",
       "lang": "Early Modern Irish, Hiberno-Scottish Gaelic"
+    },
+    {
+      "texts": 1,
+      "witnesses": 1,
+      "code": "glg_POR",
+      "lang": "Galician-Portugese"
     },
     {
       "texts": 150,
