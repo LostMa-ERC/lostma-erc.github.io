@@ -1,5 +1,5 @@
 {
-  "lastModified": "2026-08-26",
+  "lastModified": "2026-08-27",
   "items": [
     {
       "texts": 1,
@@ -62,7 +62,7 @@
       "lang": "Early Modern Irish, Hiberno-Scottish Gaelic"
     },
     {
-      "texts": 1,
+      "texts": 2,
       "witnesses": 1,
       "code": "glg_POR",
       "lang": "Galician-Portugese"
@@ -102,6 +102,12 @@
       "witnesses": 58,
       "code": "non_WEST",
       "lang": "West Old Norse"
+    },
+    {
+      "texts": 1,
+      "witnesses": 1,
+      "code": "por",
+      "lang": "Portugese"
     },
     {
       "texts": 23,
