@@ -1,5 +1,5 @@
 {
-  "lastModified": "2026-08-27",
+  "lastModified": "2026-08-28",
   "items": [
     {
       "texts": 1,
@@ -122,8 +122,8 @@
       "lang": "Old Irish"
     },
     {
-      "texts": 1,
-      "witnesses": 0,
+      "texts": 4,
+      "witnesses": 2,
       "code": "spa",
       "lang": "Spanish or Castilian"
     }
