@@ -1,4 +1,17 @@
-[ 
+[
+             {
+        "start": "2026-09-07",
+        "category": "Other",
+        "title": "Popular science for the general public",
+        "detail": "7 September, 2026",
+        "description": "Presenting our results on the radio",
+        "location": null,
+        "link": {
+            "page": false,
+            "label": "Podcast",
+            "url": "https://www.radiofrance.fr/franceculture/podcasts/avec-sciences/comment-les-best-sellers-du-moyen-age-nous-sont-ils-parvenus-9952200"
+         }
+    },
           {
         "start": "2026-07-07",
         "category": "Publication",
