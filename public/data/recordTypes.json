@@ -1,5 +1,5 @@
 {
-    "lastModified": "2026-09-07",
+    "lastModified": "2026-09-11",
     "items": [
         {
             "id": 101,
@@ -156,8 +156,8 @@
                                     "id": 9744
                                 },
                                 {
-                                    "label": "spa (Spanish)",
-                                    "description": "Spanish or Castilian",
+                                    "label": "osp (Old Spanish)",
+                                    "description": "Medieval Spanish or Castilian",
                                     "url": "https://iso639-3.sil.org/code/spa",
                                     "id": 9745
                                 },
@@ -3850,8 +3850,8 @@
                                     "id": 9744
                                 },
                                 {
-                                    "label": "spa (Spanish)",
-                                    "description": "Spanish or Castilian",
+                                    "label": "osp (Old Spanish)",
+                                    "description": "Medieval Spanish or Castilian",
                                     "url": "https://iso639-3.sil.org/code/spa",
                                     "id": 9745
                                 },

@@ -1,5 +1,5 @@
 {
-  "lastModified": "2026-09-07",
+  "lastModified": "2026-09-11",
   "items": [
     {
       "texts": 1,
@@ -104,6 +104,12 @@
       "lang": "West Old Norse"
     },
     {
+      "texts": 5,
+      "witnesses": 3,
+      "code": "osp",
+      "lang": "Medieval Spanish or Castilian"
+    },
+    {
       "texts": 1,
       "witnesses": 1,
       "code": "por",
@@ -120,12 +126,6 @@
       "witnesses": 253,
       "code": "sga",
       "lang": "Old Irish"
-    },
-    {
-      "texts": 4,
-      "witnesses": 2,
-      "code": "spa",
-      "lang": "Spanish or Castilian"
     }
   ]
 }
