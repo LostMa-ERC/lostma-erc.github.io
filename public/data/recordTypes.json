@@ -96,9 +96,9 @@
                                     "id": 9729
                                 },
                                 {
-                                    "label": "ghg (Early Modern Irish)",
+                                    "label": "ghc (Early Modern Irish)",
                                     "description": "Early Modern Irish, Hiberno-Scottish Gaelic",
-                                    "url": "https://iso639-3.sil.org/code/ghg",
+                                    "url": "https://iso639-3.sil.org/code/ghc",
                                     "id": 9732
                                 },
                                 {
@@ -158,7 +158,7 @@
                                 {
                                     "label": "osp (Old Spanish)",
                                     "description": "Medieval Spanish or Castilian",
-                                    "url": "https://iso639-3.sil.org/code/spa",
+                                    "url": "https://iso639-3.sil.org/code/osp",
                                     "id": 9745
                                 },
                                 {
@@ -3790,9 +3790,9 @@
                                     "id": 9729
                                 },
                                 {
-                                    "label": "ghg (Early Modern Irish)",
+                                    "label": "ghc (Early Modern Irish)",
                                     "description": "Early Modern Irish, Hiberno-Scottish Gaelic",
-                                    "url": "https://iso639-3.sil.org/code/ghg",
+                                    "url": "https://iso639-3.sil.org/code/ghc",
                                     "id": 9732
                                 },
                                 {
@@ -3852,7 +3852,7 @@
                                 {
                                     "label": "osp (Old Spanish)",
                                     "description": "Medieval Spanish or Castilian",
-                                    "url": "https://iso639-3.sil.org/code/spa",
+                                    "url": "https://iso639-3.sil.org/code/osp",
                                     "id": 9745
                                 },
                                 {
