@@ -1,4 +1,32 @@
-[
+[ 
+                   {
+        "start": "2026-09-18",
+        "category": "Publication",
+        "title": "Linking Medieval Europe: collecting and connecting data on multilingual textual traditions",
+        "detail": ["Virgile Reignier", "Jean-Baptiste Camp", "Elisabeth de Bruijn", "Mike Kestemont", "Maud Mélinand", "Remco Sleiderink", "Cecile Vermaas"],
+        "description": "This paper presents the data infrastructure developed by the ERC LostMa project to collect, connect and publish multilingual data on medieval textual traditions. It introduces an interoperable data model and an open workflow linking descriptive metadata, transcriptions and stemmata to support large-scale computational research on textual transmission.",
+        "link": {
+            "page": false,
+            "label": "Read Online",
+            "url": "https://enc.hal.science/hal-05676740"
+        },
+        "image": "/images/reignier_camps_2026.png",
+        "pub_category": "Communication"
+    },
+                 {
+        "start": "2026-09-16",
+        "category": "Publication",
+        "title": "Automated detection and transcription of stemmata codicum from digitised publications",
+        "detail": ["Marie Bizais-Lillig", "Jean-Baptiste Camp", "Ombeline Ferraris", "Eglantine Gaglione", "Mathias Garnier", "Ulysse Godreau"],
+        "description": "This paper presents an automated pipeline for detecting stemmata codicum in digitised scholarly publications and converting them into structured, machine-readable data. Developed within the OpenStemmata project, it combines computer vision, vision-language models and semantic encoding to support the large-scale study of textual transmission",
+        "link": {
+            "page": false,
+            "label": "Read Online",
+            "url": "https://enc.hal.science/hal-05674427v1"
+        },
+        "image": "/images/bizais_lilling_camps_al_2026.png",
+        "pub_category": "Communication"
+    },
              {
         "start": "2026-09-07",
         "category": "Other",
@@ -25,6 +53,20 @@
             "url": "https://www.chartes.psl.eu/gazette-chartiste/actualites/lecole-brille-la-conference-internationale-ICDAR-2026"
          }
     },
+                   {
+        "start": "2026-08-30",
+        "category": "Publication",
+        "title": "MEDUSA: A Curriculum-Based Vision-Language Framework for Multilingual Medieval Handwritten Text Recognition",
+        "detail": ["Théo Moins", " Brenna Hensley", "Florian Cafiero", "Jean-Baptiste Camps", "Lilla Conte", "Émilie Guidi", "Katarzyna Anna Kapitan", "Carolina Macedo", "Paola Peratello", "Cecile Vermaas", "Chahan Vidal-Gorène"],
+        "description": "Multilingual Handwritten Text Recognition (HTR) for medieval manuscripts remains difficult because of strong variation in scripts, languages, editorial conventions, abbreviation practices, and manuscript quality, as well as the uneven distribution of available annotated resources. Recent vision-language models offer a promising alternative to traditional task-specific recognizers, but their use in historical HTR raises two major challenges: robust generalization to unseen manuscript conditions and control of hallucinated transcriptions, that is, fluent outputs insufficiently grounded in the visual input. We present MEDUSA (Medieval European Documents Unified System for Automated text recognition), a curriculum-based framework for multilingual medieval HTR built around a vision-language model fine-tuned in successive stages on three tiers of resources: Silver text-only data, Gold image-text pairs following heterogeneous editorial conventions, and Platinum image-text pairs aligned with the target transcription guidelines. This design separates language adaptation, visual adaptation, and convention-specific specialization. Evaluated on the ICDAR 2026 CMMHWR competition, the different versions of MEDUSA outperform the strongest baseline on all tasks, using a single set of model weights across all evaluation conditions. A first controlled experiment further shows that the convention-parameterised prompting mechanism may steer toward alternative editorial outputs -including silent abbreviation expansion -without retraining, making the framework usable by practitioners whose annotation traditions diverge from each other. Model weights, synthetic training data, and the document analysis pipeline are released publicly.",
+        "link": {
+            "page": false,
+            "label": "Read Online",
+            "url": "https://enc.hal.science/hal-05744493"
+        },
+        "image": "/images/moins_hensley_al_2026.png",
+        "pub_category": "Communication"
+    },
           {
         "start": "2026-07-07",
         "category": "Publication",
@@ -38,34 +80,6 @@
         },
         "image": "/images/camps_randon-furling_al_2025.png",
         "pub_category": "Article"
-    },
-                   {
-        "start": "2026-09-16",
-        "category": "Publication",
-        "title": "Linking Medieval Europe: collecting and connecting data on multilingual textual traditions",
-        "detail": ["Virgile Reignier", "Jean-Baptiste Camp", "Elisabeth de Bruijn", "Mike Kestemont", "Maud Mélinand", "Remco Sleiderink", "Cecile Vermaas"],
-        "description": "This paper presents the data infrastructure developed by the ERC LostMa project to collect, connect and publish multilingual data on medieval textual traditions. It introduces an interoperable data model and an open workflow linking descriptive metadata, transcriptions and stemmata to support large-scale computational research on textual transmission.",
-        "link": {
-            "page": false,
-            "label": "Read Online",
-            "url": "https://enc.hal.science/hal-05676740"
-        },
-        "image": "/images/reignier_camps_2026.png",
-        "pub_category": "Communication"
-    },
-                 {
-        "start": "2026-09-16",
-        "category": "Publication",
-        "title": "Automated detection and transcription of stemmata codicum from digitised publications",
-        "detail": ["Marie Bizais-Lillig", "Jean-Baptiste Camp", "Ombeline Ferraris", "Eglantine Gaglione", "Mathias Garnier", "Ulysse Godreau"],
-        "description": "This paper presents an automated pipeline for detecting stemmata codicum in digitised scholarly publications and converting them into structured, machine-readable data. Developed within the OpenStemmata project, it combines computer vision, vision-language models and semantic encoding to support the large-scale study of textual transmission",
-        "link": {
-            "page": false,
-            "label": "Read Online",
-            "url": "https://enc.hal.science/hal-05674427v1"
-        },
-        "image": "/images/bizais_lilling_camps_al_2026.png",
-        "pub_category": "Communication"
     },
                               {
     "start": "2026-05-18",
