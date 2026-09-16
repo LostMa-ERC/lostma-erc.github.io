@@ -41,10 +41,10 @@
          }
     },
                  {
-        "start": "2026-09-04",
+        "start": "2026-09-02",
         "category": "Other",
         "title": "Competition",
-        "detail": "4 September, 2026",
+        "detail": "2 September, 2026",
         "description": "Award won at the ICDAR 2026 Competition on Multilingual Medieval Handwriting Recognition",
         "location": null,
         "link": {
@@ -54,7 +54,7 @@
          }
     },
                    {
-        "start": "2026-08-30",
+        "start": "2026-09-02",
         "category": "Publication",
         "title": "MEDUSA: A Curriculum-Based Vision-Language Framework for Multilingual Medieval Handwritten Text Recognition",
         "detail": ["Théo Moins", " Brenna Hensley", "Florian Cafiero", "Jean-Baptiste Camps", "Lilla Conte", "Émilie Guidi", "Katarzyna Anna Kapitan", "Carolina Macedo", "Paola Peratello", "Cecile Vermaas", "Chahan Vidal-Gorène"],
