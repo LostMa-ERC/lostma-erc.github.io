@@ -1,5 +1,5 @@
 {
-    "lastModified": "2026-09-28",
+    "lastModified": "2026-09-30",
     "items": [
         {
             "id": 101,
@@ -146,7 +146,7 @@
                                 {
                                     "label": "non_EAST (East Old Norse)",
                                     "description": "East Old Norse",
-                                    "url": null,
+                                    "url": "https://iso639-3.sil.org/code/non",
                                     "id": 9741
                                 },
                                 {
@@ -170,7 +170,7 @@
                                 {
                                     "label": "frp (Franco-Provençal)",
                                     "description": "Franco-provençal",
-                                    "url": null,
+                                    "url": "https://iso639-3.sil.org/code/frp",
                                     "id": 9838
                                 },
                                 {
@@ -3840,7 +3840,7 @@
                                 {
                                     "label": "non_EAST (East Old Norse)",
                                     "description": "East Old Norse",
-                                    "url": null,
+                                    "url": "https://iso639-3.sil.org/code/non",
                                     "id": 9741
                                 },
                                 {
@@ -3864,7 +3864,7 @@
                                 {
                                     "label": "frp (Franco-Provençal)",
                                     "description": "Franco-provençal",
-                                    "url": null,
+                                    "url": "https://iso639-3.sil.org/code/frp",
                                     "id": 9838
                                 },
                                 {
