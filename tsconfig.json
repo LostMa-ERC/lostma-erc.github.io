@@ -15,7 +15,7 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "incremental": true,
     "plugins": [
       {
@@ -45,6 +45,7 @@
     "public/*.jpg",
     "public/*.png",
     "dist/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
     // "src/app/(other)/corpus/components/HorizontalBarchart.tsx"
   ],
   "exclude": [
